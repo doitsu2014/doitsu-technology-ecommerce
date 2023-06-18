@@ -4,7 +4,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Dtos.ApiScopes
+namespace IdentityServer.Admin.Api.Dtos.ApiScopes
 {
     public class ApiScopeApiDto
     {

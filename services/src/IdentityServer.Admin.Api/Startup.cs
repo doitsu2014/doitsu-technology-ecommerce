@@ -4,8 +4,17 @@
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using HatDieu.Domain.Entities.Identity;
+using Domain.Entities.Identity;
 using HealthChecks.UI.Client;
+using IdentityServer.Admin.Api.Configuration;
+using IdentityServer.Admin.Api.Configuration.Authorization;
+using IdentityServer.Admin.Api.ExceptionHandling;
+using IdentityServer.Admin.Api.Helpers;
+using IdentityServer.Admin.Api.Mappers;
+using IdentityServer.Admin.Api.Resources;
+using IdentityServer.Admin.EntityFramework.Shared.DbContexts;
+using IdentityServer.Shared.Dtos;
+using IdentityServer.Shared.Dtos.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
@@ -14,20 +23,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Skoruba.AuditLogging.EntityFramework.Entities;
-using Hatdieu.IdentityServer.Admin.Api.Configuration;
-using Hatdieu.IdentityServer.Admin.Api.Configuration.Authorization;
-using Hatdieu.IdentityServer.Admin.Api.ExceptionHandling;
-using Hatdieu.IdentityServer.Admin.Api.Helpers;
-using Hatdieu.IdentityServer.Admin.Api.Mappers;
-using Hatdieu.IdentityServer.Admin.Api.Resources;
 using Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Extensions;
 using Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Identity.Extensions;
-using Hatdieu.IdentityServer.Admin.EntityFramework.Shared.DbContexts;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Helpers;
-using Hatdieu.IdentityServer.Shared.Dtos;
-using Hatdieu.IdentityServer.Shared.Dtos.Identity;
 
-namespace Hatdieu.IdentityServer.Admin.Api
+namespace IdentityServer.Admin.Api
 {
     public class Startup
     {

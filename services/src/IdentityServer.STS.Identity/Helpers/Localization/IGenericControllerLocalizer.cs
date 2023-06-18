@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.Extensions.Localization;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Helpers.Localization
+namespace IdentityServer.STS.Identity.Helpers.Localization
 {
     public interface IGenericControllerLocalizer<out T>
     {

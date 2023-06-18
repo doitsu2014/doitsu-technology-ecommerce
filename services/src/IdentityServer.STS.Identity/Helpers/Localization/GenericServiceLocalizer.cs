@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Reflection;
 using Microsoft.Extensions.Localization;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Helpers.Localization
+namespace IdentityServer.STS.Identity.Helpers.Localization
 {
     public class GenericControllerLocalizer<TResourceSource> : IGenericControllerLocalizer<TResourceSource>
     {

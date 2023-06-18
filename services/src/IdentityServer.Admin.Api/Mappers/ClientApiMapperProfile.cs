@@ -2,10 +2,10 @@
 // Licensed under the Apache License, Version 2.0.
 
 using AutoMapper;
-using Hatdieu.IdentityServer.Admin.Api.Dtos.Clients;
+using IdentityServer.Admin.Api.Dtos.Clients;
 using Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Dtos.Configuration;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Mappers
+namespace IdentityServer.Admin.Api.Mappers
 {
     public class ClientApiMapperProfile : Profile
     {

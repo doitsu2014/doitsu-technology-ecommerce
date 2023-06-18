@@ -8,9 +8,9 @@ using System.Security.Claims;
 using IdentityModel;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using Hatdieu.IdentityServer.STS.Identity.Configuration.Constants;
+using IdentityServer.STS.Identity.Configuration.Constants;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Helpers
+namespace IdentityServer.STS.Identity.Helpers
 {
     public static class OpenIdClaimHelpers
     {

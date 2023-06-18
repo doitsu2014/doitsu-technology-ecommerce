@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace HatDieu.Infrastructure.Options;
+namespace Infrastructure.Options;
 
 public class ClientCredentialOptions
 {

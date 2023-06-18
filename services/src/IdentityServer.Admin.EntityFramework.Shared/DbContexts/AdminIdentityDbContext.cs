@@ -1,12 +1,12 @@
 ﻿// Copyright (c) Jan Škoruba. All Rights Reserved.
 // Licensed under the Apache License, Version 2.0.
 
-using HatDieu.Domain.Entities.Identity;
+using Domain.Entities.Identity;
+using IdentityServer.Admin.EntityFramework.Shared.Constants;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Hatdieu.IdentityServer.Admin.EntityFramework.Shared.Constants;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.Shared.DbContexts
+namespace IdentityServer.Admin.EntityFramework.Shared.DbContexts
 {
     public class AdminIdentityDbContext : IdentityDbContext<UserIdentity, UserIdentityRole, string, UserIdentityUserClaim, UserIdentityUserRole, UserIdentityUserLogin, UserIdentityRoleClaim, UserIdentityUserToken>
     {

@@ -1,4 +1,4 @@
-namespace HatDieu.Domain.Interfaces.BizServices;
+namespace Domain.Interfaces.BizServices;
 
 public interface IPayrixEntityBizService
 {

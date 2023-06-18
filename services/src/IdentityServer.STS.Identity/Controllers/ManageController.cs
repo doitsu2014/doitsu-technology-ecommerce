@@ -11,11 +11,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
-using Hatdieu.IdentityServer.STS.Identity.Helpers;
-using Hatdieu.IdentityServer.STS.Identity.Helpers.Localization;
-using Hatdieu.IdentityServer.STS.Identity.ViewModels.Manage;
+using IdentityServer.STS.Identity.Helpers;
+using IdentityServer.STS.Identity.Helpers.Localization;
+using IdentityServer.STS.Identity.ViewModels.Manage;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Controllers
+namespace IdentityServer.STS.Identity.Controllers
 {    
     [Authorize]
     public class ManageController<TUser, TKey> : Controller

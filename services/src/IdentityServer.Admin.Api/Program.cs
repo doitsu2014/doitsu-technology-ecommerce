@@ -9,7 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Helpers;
 
-namespace Hatdieu.IdentityServer.Admin.Api
+namespace IdentityServer.Admin.Api
 {
     public class Program
     {

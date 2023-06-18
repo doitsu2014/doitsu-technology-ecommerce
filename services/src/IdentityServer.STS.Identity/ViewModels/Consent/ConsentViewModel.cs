@@ -6,7 +6,7 @@
 
 using System.Collections.Generic;
 
-namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Consent
+namespace IdentityServer.STS.Identity.ViewModels.Consent
 {
     public class ConsentViewModel : ConsentInputModel
     {

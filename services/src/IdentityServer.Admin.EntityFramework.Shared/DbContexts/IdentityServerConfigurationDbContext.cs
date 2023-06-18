@@ -6,7 +6,7 @@ using Duende.IdentityServer.EntityFramework.Entities;
 using Microsoft.EntityFrameworkCore;
 using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Interfaces;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.Shared.DbContexts
+namespace IdentityServer.Admin.EntityFramework.Shared.DbContexts
 {
     public class IdentityServerConfigurationDbContext : ConfigurationDbContext<IdentityServerConfigurationDbContext>, IAdminConfigurationDbContext
     {

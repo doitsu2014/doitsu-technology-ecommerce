@@ -5,7 +5,7 @@ using OpenTelemetry.Exporter;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 
-namespace HatDieu.Infrastructure.Otel;
+namespace Infrastructure.Otel;
 
 public static class DependencyInjection
 {

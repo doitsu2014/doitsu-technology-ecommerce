@@ -1,8 +1,8 @@
-﻿using HatDieu.ApplicationCore;
+﻿using ApplicationCore;
 using Microsoft.Net.Http.Headers;
 using Microsoft.OpenApi.Models;
 
-namespace HatDieu.Api;
+namespace Api;
 
 public static class HostingExtensions
 {

@@ -1,4 +1,4 @@
-namespace HatDieu.Domain.Entities.Products;
+namespace Domain.Entities.Products;
 
 public class Product
 {

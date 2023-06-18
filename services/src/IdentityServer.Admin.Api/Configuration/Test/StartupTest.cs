@@ -1,18 +1,18 @@
 ﻿// Copyright (c) Jan Škoruba. All Rights Reserved.
 // Licensed under the Apache License, Version 2.0.
 
-using HatDieu.Domain.Entities.Identity;
+using Domain.Entities.Identity;
+using IdentityServer.Admin.Api.Helpers;
+using IdentityServer.Admin.Api.Middlewares;
+using IdentityServer.Admin.EntityFramework.Shared.DbContexts;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Hatdieu.IdentityServer.Admin.Api.Helpers;
-using Hatdieu.IdentityServer.Admin.Api.Middlewares;
-using Hatdieu.IdentityServer.Admin.EntityFramework.Shared.DbContexts;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Configuration.Test
+namespace IdentityServer.Admin.Api.Configuration.Test
 {
     public class StartupTest : Startup
     {

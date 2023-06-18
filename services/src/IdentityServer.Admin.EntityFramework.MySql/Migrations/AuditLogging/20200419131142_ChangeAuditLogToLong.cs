@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.MySql.Migrations.AuditLogging
+namespace IdentityServer.Admin.EntityFramework.MySql.Migrations.AuditLogging
 {
     public partial class ChangeAuditLogToLong : Migration
     {

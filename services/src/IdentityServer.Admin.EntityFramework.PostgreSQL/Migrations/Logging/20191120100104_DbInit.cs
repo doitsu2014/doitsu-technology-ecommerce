@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Migrations;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.PostgreSQL.Migrations.Logging
+namespace IdentityServer.Admin.EntityFramework.PostgreSQL.Migrations.Logging
 {
     public partial class DbInit : Migration
     {

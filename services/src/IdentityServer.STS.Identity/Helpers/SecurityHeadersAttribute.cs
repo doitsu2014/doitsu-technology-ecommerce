@@ -7,7 +7,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Helpers
+namespace IdentityServer.STS.Identity.Helpers
 {
     public class SecurityHeadersAttribute : ActionFilterAttribute
     {

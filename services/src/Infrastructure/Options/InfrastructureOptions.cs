@@ -1,6 +1,6 @@
 ﻿using Hangfire.Redis.StackExchange;
 
-namespace HatDieu.Infrastructure.Options;
+namespace Infrastructure.Options;
 
 public class InfrastructureOptions
 {

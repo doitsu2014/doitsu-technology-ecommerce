@@ -10,7 +10,7 @@ using IdentityModel;
 using Microsoft.AspNetCore.Authentication;
 using Newtonsoft.Json;
 
-namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Diagnostics
+namespace IdentityServer.STS.Identity.ViewModels.Diagnostics
 {
     public class DiagnosticsViewModel
     {

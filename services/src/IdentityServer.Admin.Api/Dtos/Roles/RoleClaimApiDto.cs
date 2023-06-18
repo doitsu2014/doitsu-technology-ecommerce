@@ -3,7 +3,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Dtos.Roles
+namespace IdentityServer.Admin.Api.Dtos.Roles
 {
     public class RoleClaimApiDto<TKey>
     {

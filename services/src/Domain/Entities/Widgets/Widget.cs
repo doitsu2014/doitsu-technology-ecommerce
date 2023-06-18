@@ -1,4 +1,4 @@
-namespace HatDieu.Domain.Entities.Widgets;
+namespace Domain.Entities.Widgets;
 
 public class Widget
 {

@@ -1,4 +1,4 @@
-﻿namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Account
+﻿namespace IdentityServer.STS.Identity.ViewModels.Account
 {
     public class RegisterConfirmationViewModel
     {

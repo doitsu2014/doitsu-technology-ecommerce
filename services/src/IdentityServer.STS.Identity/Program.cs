@@ -6,7 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Serilog;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Helpers;
 
-namespace Hatdieu.IdentityServer.STS.Identity
+namespace IdentityServer.STS.Identity
 {
     public class Program
     {

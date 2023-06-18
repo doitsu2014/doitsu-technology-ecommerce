@@ -5,7 +5,7 @@ using Duende.IdentityServer.EntityFramework.DbContexts;
 using Microsoft.EntityFrameworkCore;
 using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Interfaces;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.Shared.DbContexts
+namespace IdentityServer.Admin.EntityFramework.Shared.DbContexts
 {
     public class IdentityServerPersistedGrantDbContext : PersistedGrantDbContext<IdentityServerPersistedGrantDbContext>, IAdminPersistedGrantDbContext
     {

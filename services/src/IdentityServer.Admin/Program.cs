@@ -5,17 +5,17 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using HatDieu.Domain.Entities.Identity;
+using Domain.Entities.Identity;
+using IdentityServer.Admin.EntityFramework.Shared.DbContexts;
+using IdentityServer.Admin.EntityFramework.Shared.Helpers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Configuration.Configuration;
-using Hatdieu.IdentityServer.Admin.EntityFramework.Shared.DbContexts;
-using Hatdieu.IdentityServer.Admin.EntityFramework.Shared.Helpers;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Helpers;
 
-namespace Hatdieu.IdentityServer.Admin
+namespace IdentityServer.Admin
 {
 	public class Program
     {

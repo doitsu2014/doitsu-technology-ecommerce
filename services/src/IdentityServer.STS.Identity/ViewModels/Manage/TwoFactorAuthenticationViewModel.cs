@@ -1,4 +1,4 @@
-﻿namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Manage
+﻿namespace IdentityServer.STS.Identity.ViewModels.Manage
 {
     public class TwoFactorAuthenticationViewModel
     {

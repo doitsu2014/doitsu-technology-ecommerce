@@ -4,6 +4,11 @@
 using System;
 using Duende.IdentityServer.EntityFramework.Options;
 using IdentityModel;
+using IdentityServer.Admin.Api.Configuration;
+using IdentityServer.Admin.Api.Configuration.ApplicationParts;
+using IdentityServer.Admin.Api.Configuration.AuditLogging;
+using IdentityServer.Admin.Api.Configuration.Constants;
+using IdentityServer.Admin.Api.Helpers.Localization;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.DataProtection.EntityFrameworkCore;
@@ -13,17 +18,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
-using Microsoft.IdentityModel.Tokens;
 using Skoruba.AuditLogging.EntityFramework.DbContexts;
 using Skoruba.AuditLogging.EntityFramework.Entities;
 using Skoruba.AuditLogging.EntityFramework.Extensions;
 using Skoruba.AuditLogging.EntityFramework.Repositories;
 using Skoruba.AuditLogging.EntityFramework.Services;
-using Hatdieu.IdentityServer.Admin.Api.Configuration;
-using Hatdieu.IdentityServer.Admin.Api.Configuration.ApplicationParts;
-using Hatdieu.IdentityServer.Admin.Api.Configuration.AuditLogging;
-using Hatdieu.IdentityServer.Admin.Api.Configuration.Constants;
-using Hatdieu.IdentityServer.Admin.Api.Helpers.Localization;
 using Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Identity.Dtos.Identity;
 using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Configuration.Configuration;
 using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Configuration.MySql;
@@ -32,7 +31,7 @@ using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Configuration.SqlServe
 using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Helpers;
 using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Interfaces;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Helpers
+namespace IdentityServer.Admin.Api.Helpers
 {
     public static class StartupHelpers
     {

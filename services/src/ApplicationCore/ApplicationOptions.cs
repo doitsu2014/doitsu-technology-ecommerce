@@ -1,4 +1,4 @@
-﻿namespace HatDieu.ApplicationCore;
+﻿namespace ApplicationCore;
 
 public class ApplicationOptions
 {

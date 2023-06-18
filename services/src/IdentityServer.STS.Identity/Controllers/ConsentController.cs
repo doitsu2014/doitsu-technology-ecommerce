@@ -16,11 +16,11 @@ using Duende.IdentityServer.Validation;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Hatdieu.IdentityServer.STS.Identity.Configuration;
-using Hatdieu.IdentityServer.STS.Identity.Helpers;
-using Hatdieu.IdentityServer.STS.Identity.ViewModels.Consent;
+using IdentityServer.STS.Identity.Configuration;
+using IdentityServer.STS.Identity.Helpers;
+using IdentityServer.STS.Identity.ViewModels.Consent;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Controllers
+namespace IdentityServer.STS.Identity.Controllers
 {
     /// <summary>
     /// This controller processes the consent UI

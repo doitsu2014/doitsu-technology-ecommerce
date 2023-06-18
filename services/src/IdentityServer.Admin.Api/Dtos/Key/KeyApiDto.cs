@@ -3,7 +3,7 @@
 
 using System;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Dtos.Key
+namespace IdentityServer.Admin.Api.Dtos.Key
 {
     public class KeyApiDto
     {

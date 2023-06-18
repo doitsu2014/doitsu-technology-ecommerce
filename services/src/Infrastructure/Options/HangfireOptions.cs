@@ -1,7 +1,7 @@
 ﻿using Hangfire.Redis.StackExchange;
 using StackExchange.Redis.Extensions.Core.Configuration;
 
-namespace HatDieu.Infrastructure.Options;
+namespace Infrastructure.Options;
 
 public class HangfireOptions
 {

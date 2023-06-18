@@ -2,17 +2,17 @@
 // Licensed under the Apache License, Version 2.0.
 
 using System.Threading.Tasks;
+using IdentityServer.Admin.Api.Configuration.Constants;
+using IdentityServer.Admin.Api.Dtos.ApiResources;
+using IdentityServer.Admin.Api.ExceptionHandling;
+using IdentityServer.Admin.Api.Mappers;
+using IdentityServer.Admin.Api.Resources;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Hatdieu.IdentityServer.Admin.Api.Configuration.Constants;
-using Hatdieu.IdentityServer.Admin.Api.Dtos.ApiResources;
-using Hatdieu.IdentityServer.Admin.Api.ExceptionHandling;
-using Hatdieu.IdentityServer.Admin.Api.Mappers;
-using Hatdieu.IdentityServer.Admin.Api.Resources;
 using Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Dtos.Configuration;
 using Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Services.Interfaces;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Controllers
+namespace IdentityServer.Admin.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

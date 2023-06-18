@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.MySql.Migrations.Logging
+namespace IdentityServer.Admin.EntityFramework.MySql.Migrations.Logging
 {
     public partial class DbInit : Migration
     {

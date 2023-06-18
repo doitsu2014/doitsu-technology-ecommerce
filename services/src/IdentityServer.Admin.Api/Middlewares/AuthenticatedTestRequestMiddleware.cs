@@ -9,7 +9,7 @@ using IdentityModel;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Middlewares
+namespace IdentityServer.Admin.Api.Middlewares
 {
     public class AuthenticatedTestRequestMiddleware
     {

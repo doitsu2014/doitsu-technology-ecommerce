@@ -5,7 +5,7 @@
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <UserSecretsId>ca036061-6125-40ff-92f4-0102222fa26d</UserSecretsId>
-        <RootNamespace>HatDieu.Api</RootNamespace>
+        <RootNamespace>Api</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

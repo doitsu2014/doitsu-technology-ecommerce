@@ -2,7 +2,12 @@
 // Licensed under the Apache License, Version 2.0.
 
 using System.IdentityModel.Tokens.Jwt;
-using HatDieu.Domain.Entities.Identity;
+using Domain.Entities.Identity;
+using IdentityServer.Admin.Configuration.Database;
+using IdentityServer.Admin.EntityFramework.Shared.DbContexts;
+using IdentityServer.Admin.Helpers;
+using IdentityServer.Shared.Dtos;
+using IdentityServer.Shared.Dtos.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -10,16 +15,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Skoruba.AuditLogging.EntityFramework.Entities;
-using Hatdieu.IdentityServer.Admin.Configuration.Database;
-using Hatdieu.IdentityServer.Admin.EntityFramework.Shared.DbContexts;
-using Hatdieu.IdentityServer.Admin.Helpers;
 using Skoruba.Duende.IdentityServer.Admin.UI.Helpers.ApplicationBuilder;
 using Skoruba.Duende.IdentityServer.Admin.UI.Helpers.DependencyInjection;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Helpers;
-using Hatdieu.IdentityServer.Shared.Dtos;
-using Hatdieu.IdentityServer.Shared.Dtos.Identity;
 
-namespace Hatdieu.IdentityServer.Admin
+namespace IdentityServer.Admin
 {
     public class Startup
     {

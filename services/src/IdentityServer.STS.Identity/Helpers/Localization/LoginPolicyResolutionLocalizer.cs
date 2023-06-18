@@ -3,7 +3,7 @@
 
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Configuration.Identity;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Helpers.Localization
+namespace IdentityServer.STS.Identity.Helpers.Localization
 {
     public static class LoginPolicyResolutionLocalizer
     {

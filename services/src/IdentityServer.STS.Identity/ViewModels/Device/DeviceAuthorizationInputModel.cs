@@ -4,9 +4,9 @@
 // Original file: https://github.com/DuendeSoftware/IdentityServer.Quickstart.UI
 // Modified by Jan Škoruba
 
-using Hatdieu.IdentityServer.STS.Identity.ViewModels.Consent;
+using IdentityServer.STS.Identity.ViewModels.Consent;
 
-namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Device
+namespace IdentityServer.STS.Identity.ViewModels.Device
 {
     public class DeviceAuthorizationInputModel : ConsentInputModel
     {

@@ -3,7 +3,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Dtos.Users
+namespace IdentityServer.Admin.Api.Dtos.Users
 {
     public class UserChangePasswordApiDto<TKey>
     {

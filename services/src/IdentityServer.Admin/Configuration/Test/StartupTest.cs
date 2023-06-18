@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Skoruba.Duende.IdentityServer.Admin.UI.Helpers.DependencyInjection;
 
-namespace Hatdieu.IdentityServer.Admin.Configuration.Test
+namespace IdentityServer.Admin.Configuration.Test
 {
 	public class StartupTest : Startup
     {

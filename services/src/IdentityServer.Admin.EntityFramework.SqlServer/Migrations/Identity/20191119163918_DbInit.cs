@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.SqlServer.Migrations.Identity
+namespace IdentityServer.Admin.EntityFramework.SqlServer.Migrations.Identity
 {
     public partial class DbInit : Migration
     {

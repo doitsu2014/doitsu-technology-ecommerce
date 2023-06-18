@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Hatdieu.IdentityServer.STS.Identity.Helpers;
-using Hatdieu.IdentityServer.STS.Identity.ViewModels.Diagnostics;
+using IdentityServer.STS.Identity.Helpers;
+using IdentityServer.STS.Identity.ViewModels.Diagnostics;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Controllers
+namespace IdentityServer.STS.Identity.Controllers
 {
     [SecurityHeaders]
     [Authorize]

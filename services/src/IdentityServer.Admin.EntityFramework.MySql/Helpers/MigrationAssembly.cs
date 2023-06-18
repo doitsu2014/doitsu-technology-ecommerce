@@ -1,4 +1,4 @@
-﻿namespace Hatdieu.IdentityServer.Admin.EntityFramework.MySql.Helpers
+﻿namespace IdentityServer.Admin.EntityFramework.MySql.Helpers
 {
     public class MigrationAssembly
     {

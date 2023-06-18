@@ -3,7 +3,7 @@
 
 using System;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Dtos.PersistedGrants
+namespace IdentityServer.Admin.Api.Dtos.PersistedGrants
 {
     public class PersistedGrantSubjectApiDto
     {

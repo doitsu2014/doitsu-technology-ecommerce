@@ -16,7 +16,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Hatdieu.IdentityServer.Admin": {
+    "IdentityServer.Admin": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

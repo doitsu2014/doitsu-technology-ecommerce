@@ -1,6 +1,6 @@
 using AutoMapper;
 
-namespace HatDieu.ApplicationCore.MapperProfiles
+namespace ApplicationCore.MapperProfiles
 {
     public class MapperProfile : Profile
     {

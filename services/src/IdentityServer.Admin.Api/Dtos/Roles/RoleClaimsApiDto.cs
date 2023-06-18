@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Dtos.Roles
+namespace IdentityServer.Admin.Api.Dtos.Roles
 {
     public class RoleClaimsApiDto<TKey>
     {

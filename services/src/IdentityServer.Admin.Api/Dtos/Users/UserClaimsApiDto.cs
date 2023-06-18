@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Dtos.Users
+namespace IdentityServer.Admin.Api.Dtos.Users
 {
     public class UserClaimsApiDto<TKey>
     {

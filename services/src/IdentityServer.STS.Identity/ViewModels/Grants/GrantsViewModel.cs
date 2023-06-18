@@ -7,7 +7,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Grants
+namespace IdentityServer.STS.Identity.ViewModels.Grants
 {
     public class GrantsViewModel
     {

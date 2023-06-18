@@ -2,7 +2,7 @@ using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace HatDieu.Api.Filters;
+namespace Api.Filters;
 
 public class ApiExceptionFilterAttribute : ExceptionFilterAttribute
 {

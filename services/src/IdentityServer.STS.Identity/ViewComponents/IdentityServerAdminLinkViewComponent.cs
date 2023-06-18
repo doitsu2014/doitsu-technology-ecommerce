@@ -2,9 +2,9 @@
 // Licensed under the Apache License, Version 2.0.
 
 using Microsoft.AspNetCore.Mvc;
-using Hatdieu.IdentityServer.STS.Identity.Configuration.Interfaces;
+using IdentityServer.STS.Identity.Configuration.Interfaces;
 
-namespace Hatdieu.IdentityServer.STS.Identity.ViewComponents
+namespace IdentityServer.STS.Identity.ViewComponents
 {
     public class IdentityServerAdminLinkViewComponent : ViewComponent
     {

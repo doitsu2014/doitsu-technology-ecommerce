@@ -3,7 +3,7 @@
 
 using System.ComponentModel.DataAnnotations;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Dtos.Clients
+namespace IdentityServer.Admin.Api.Dtos.Clients
 {
     public class ClientClaimApiDto
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Account
+namespace IdentityServer.STS.Identity.ViewModels.Account
 {
     public class ExternalLoginConfirmationViewModel
     {

@@ -30,14 +30,14 @@ using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Helpers;
 using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Interfaces;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Authentication;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Configuration.Identity;
-using Hatdieu.IdentityServer.STS.Identity.Configuration;
-using Hatdieu.IdentityServer.STS.Identity.Configuration.ApplicationParts;
-using Hatdieu.IdentityServer.STS.Identity.Configuration.Constants;
-using Hatdieu.IdentityServer.STS.Identity.Configuration.Interfaces;
-using Hatdieu.IdentityServer.STS.Identity.Helpers.Localization;
-using Hatdieu.IdentityServer.STS.Identity.Services;
+using IdentityServer.STS.Identity.Configuration;
+using IdentityServer.STS.Identity.Configuration.ApplicationParts;
+using IdentityServer.STS.Identity.Configuration.Constants;
+using IdentityServer.STS.Identity.Configuration.Interfaces;
+using IdentityServer.STS.Identity.Helpers.Localization;
+using IdentityServer.STS.Identity.Services;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Helpers
+namespace IdentityServer.STS.Identity.Helpers
 {
     public static class StartupHelpers
     {

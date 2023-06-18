@@ -1,4 +1,4 @@
-﻿namespace HatDieu.Infrastructure.Otel.Configurations;
+﻿namespace Infrastructure.Otel.Configurations;
 
 public class JaegerOptions
 {

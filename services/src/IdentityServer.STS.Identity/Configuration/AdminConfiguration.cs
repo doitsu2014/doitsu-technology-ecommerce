@@ -1,7 +1,7 @@
 ﻿// Copyright (c) Jan Škoruba. All Rights Reserved.
 // Licensed under the Apache License, Version 2.0.
 
-namespace Hatdieu.IdentityServer.STS.Identity.Configuration
+namespace IdentityServer.STS.Identity.Configuration
 {
     public class AdminConfiguration
     {

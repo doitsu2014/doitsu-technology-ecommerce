@@ -4,7 +4,7 @@
 using Microsoft.AspNetCore.DataProtection.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.Shared.DbContexts
+namespace IdentityServer.Admin.EntityFramework.Shared.DbContexts
 {
     public class IdentityServerDataProtectionDbContext : DbContext, IDataProtectionKeyContext
     {

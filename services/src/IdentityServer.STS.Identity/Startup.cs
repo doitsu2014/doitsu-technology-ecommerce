@@ -1,5 +1,5 @@
 ﻿using System;
-using HatDieu.Domain.Entities.Identity;
+using Domain.Entities.Identity;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -7,14 +7,14 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Hatdieu.IdentityServer.Admin.EntityFramework.Shared.DbContexts;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Helpers;
-using Hatdieu.IdentityServer.STS.Identity.Configuration;
-using Hatdieu.IdentityServer.STS.Identity.Configuration.Constants;
-using Hatdieu.IdentityServer.STS.Identity.Configuration.Interfaces;
-using Hatdieu.IdentityServer.STS.Identity.Helpers;
+using IdentityServer.STS.Identity.Configuration;
+using IdentityServer.STS.Identity.Configuration.Constants;
+using IdentityServer.STS.Identity.Configuration.Interfaces;
+using IdentityServer.STS.Identity.Helpers;
+using IdentityServer.Admin.EntityFramework.Shared.DbContexts;
 
-namespace Hatdieu.IdentityServer.STS.Identity
+namespace IdentityServer.STS.Identity
 {
     public class Startup
     {

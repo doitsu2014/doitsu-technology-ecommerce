@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Configuration.Authorization
+namespace IdentityServer.Admin.Api.Configuration.Authorization
 {
     public class AuthorizeCheckOperationFilter : IOperationFilter
     {

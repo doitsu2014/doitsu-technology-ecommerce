@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Duende.IdentityServer.Models;
 using Duende.IdentityServer.Validation;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Helpers
+namespace IdentityServer.STS.Identity.Helpers
 {
     public class DelegationGrantValidator : IExtensionGrantValidator
     {

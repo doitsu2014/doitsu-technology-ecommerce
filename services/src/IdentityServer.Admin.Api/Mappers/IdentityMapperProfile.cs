@@ -2,11 +2,11 @@
 // Licensed under the Apache License, Version 2.0.
 
 using AutoMapper;
-using Hatdieu.IdentityServer.Admin.Api.Dtos.Roles;
-using Hatdieu.IdentityServer.Admin.Api.Dtos.Users;
+using IdentityServer.Admin.Api.Dtos.Roles;
+using IdentityServer.Admin.Api.Dtos.Users;
 using Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Identity.Dtos.Identity;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Mappers
+namespace IdentityServer.Admin.Api.Mappers
 {
     public class IdentityMapperProfile<TRoleDto, TUserRolesDto, TKey, TUserClaimsDto, TUserClaimDto, TUserProviderDto, TUserProvidersDto, TUserChangePasswordDto, TRoleClaimDto, TRoleClaimsDto> : Profile
         where TUserClaimsDto : UserClaimsDto<TUserClaimDto, TKey>

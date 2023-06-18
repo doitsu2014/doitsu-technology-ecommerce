@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Hatdieu.IdentityServer.Admin.Api": {
+    "IdentityServer.Admin.Api": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",

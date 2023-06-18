@@ -2,9 +2,9 @@
 // Licensed under the Apache License, Version 2.0.
 
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Configuration.Identity;
-using Hatdieu.IdentityServer.STS.Identity.Configuration.Interfaces;
+using IdentityServer.STS.Identity.Configuration.Interfaces;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Configuration
+namespace IdentityServer.STS.Identity.Configuration
 {
     public class RootConfiguration : IRootConfiguration
     {      

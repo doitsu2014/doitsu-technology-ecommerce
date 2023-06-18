@@ -1,9 +1,9 @@
-using HatDieu.Api.Models;
-using HatDieu.ApplicationCore.Models;
+using Api.Models;
+using ApplicationCore.Models;
 using Microsoft.AspNetCore.Mvc;
 using Optional;
 
-namespace HatDieu.Api.Extensions;
+namespace Api.Extensions;
 
 public static class ApiExtension
 {

@@ -1,4 +1,4 @@
-﻿namespace HatDieu.ApplicationCore.Contracts;
+﻿namespace ApplicationCore.Contracts;
 
 public abstract record NotificationContract
 {

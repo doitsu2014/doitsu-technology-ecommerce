@@ -13,10 +13,10 @@ using Duende.IdentityServer.Services;
 using Duende.IdentityServer.Stores;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Hatdieu.IdentityServer.STS.Identity.Helpers;
-using Hatdieu.IdentityServer.STS.Identity.ViewModels.Grants;
+using IdentityServer.STS.Identity.Helpers;
+using IdentityServer.STS.Identity.ViewModels.Grants;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Controllers
+namespace IdentityServer.STS.Identity.Controllers
 {
     /// <summary>
     /// This sample controller allows a user to revoke grants given to clients

@@ -7,9 +7,9 @@
 using System;
 using Duende.IdentityServer.Models;
 using Microsoft.AspNetCore.Mvc;
-using Hatdieu.IdentityServer.STS.Identity.ViewModels.Account;
+using IdentityServer.STS.Identity.ViewModels.Account;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Helpers
+namespace IdentityServer.STS.Identity.Helpers
 {
     public static class Extensions
     {

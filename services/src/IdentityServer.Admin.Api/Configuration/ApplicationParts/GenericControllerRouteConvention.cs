@@ -3,7 +3,7 @@
 
 using Microsoft.AspNetCore.Mvc.ApplicationModels;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Configuration.ApplicationParts
+namespace IdentityServer.Admin.Api.Configuration.ApplicationParts
 {
     public class GenericControllerRouteConvention : IControllerModelConvention
     {

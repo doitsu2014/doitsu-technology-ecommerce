@@ -2,7 +2,7 @@ using System.Reflection;
 using FluentValidation.AspNetCore;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace HatDieu.ApplicationCore;
+namespace ApplicationCore;
 
 public static class DependencyInjection
 {

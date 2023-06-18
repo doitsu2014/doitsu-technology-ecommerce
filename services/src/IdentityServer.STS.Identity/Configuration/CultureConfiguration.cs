@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Configuration
+namespace IdentityServer.STS.Identity.Configuration
 {
     public class CultureConfiguration
     {

@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace HatDieu.ApplicationCore.Models;
+namespace ApplicationCore.Models;
 
 public class ErrorResult
 {

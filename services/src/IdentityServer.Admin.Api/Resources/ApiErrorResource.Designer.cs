@@ -8,10 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Hatdieu.IdentityServer.Admin.Api.Resources {
-    using System;
-    
-    
+namespace IdentityServer.Admin.Api.Resources {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>

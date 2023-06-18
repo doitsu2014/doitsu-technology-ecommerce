@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.SqlServer.Migrations.DataProtection
+namespace IdentityServer.Admin.EntityFramework.SqlServer.Migrations.DataProtection
 {
     public partial class DbInit : Migration
     {

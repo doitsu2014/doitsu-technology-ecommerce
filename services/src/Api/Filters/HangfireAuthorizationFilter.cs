@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 
-namespace HatDieu.Api.Filters;
+namespace Api.Filters;
 
 public class HangfireAuthorizationFilter : IDashboardAuthorizationFilter
 {

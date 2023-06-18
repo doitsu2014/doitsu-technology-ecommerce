@@ -2,7 +2,7 @@
 using System.Text.Json;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace HatDieu.Api;
+namespace Api;
 
 public static class AppExtensions
 {

@@ -6,7 +6,7 @@
 
 using Duende.IdentityServer.Models;
 
-namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Consent
+namespace IdentityServer.STS.Identity.ViewModels.Consent
 {
     public class ProcessConsentResult
     {

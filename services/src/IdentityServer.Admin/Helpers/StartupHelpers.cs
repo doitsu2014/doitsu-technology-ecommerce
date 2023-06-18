@@ -6,7 +6,7 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using Skoruba.Duende.IdentityServer.Admin.UI.Helpers.ApplicationBuilder;
 
-namespace Hatdieu.IdentityServer.Admin.Helpers
+namespace IdentityServer.Admin.Helpers
 {
     public static class StartupHelpers
     {

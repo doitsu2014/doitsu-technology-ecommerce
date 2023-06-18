@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Helpers.TagHelpers
+namespace IdentityServer.STS.Identity.Helpers.TagHelpers
 {
     [HtmlTargetElement("toggle-button")]
     public class SwitchTagHelper : TagHelper

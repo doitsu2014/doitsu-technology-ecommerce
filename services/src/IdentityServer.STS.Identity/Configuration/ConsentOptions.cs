@@ -4,7 +4,7 @@
 // Original file: https://github.com/DuendeSoftware/IdentityServer.Quickstart.UI
 // Modified by Jan Škoruba
 
-namespace Hatdieu.IdentityServer.STS.Identity.Configuration
+namespace IdentityServer.STS.Identity.Configuration
 {
     public class ConsentOptions
     {

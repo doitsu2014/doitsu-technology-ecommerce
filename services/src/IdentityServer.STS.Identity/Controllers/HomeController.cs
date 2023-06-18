@@ -11,10 +11,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Helpers;
-using Hatdieu.IdentityServer.STS.Identity.Helpers;
-using Hatdieu.IdentityServer.STS.Identity.ViewModels.Home;
+using IdentityServer.STS.Identity.Helpers;
+using IdentityServer.STS.Identity.ViewModels.Home;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Controllers
+namespace IdentityServer.STS.Identity.Controllers
 {
     [SecurityHeaders]
     public class HomeController : Controller

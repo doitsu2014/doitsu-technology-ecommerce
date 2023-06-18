@@ -25,12 +25,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Configuration.Identity;
-using Hatdieu.IdentityServer.STS.Identity.Configuration;
-using Hatdieu.IdentityServer.STS.Identity.Helpers;
-using Hatdieu.IdentityServer.STS.Identity.Helpers.Localization;
-using Hatdieu.IdentityServer.STS.Identity.ViewModels.Account;
+using IdentityServer.STS.Identity.Configuration;
+using IdentityServer.STS.Identity.Helpers;
+using IdentityServer.STS.Identity.Helpers.Localization;
+using IdentityServer.STS.Identity.ViewModels.Account;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Controllers
+namespace IdentityServer.STS.Identity.Controllers
 {
     [SecurityHeaders]
     [Authorize]

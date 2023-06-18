@@ -1,7 +1,7 @@
 ﻿// Copyright (c) Jan Škoruba. All Rights Reserved.
 // Licensed under the Apache License, Version 2.0.
 
-namespace Hatdieu.IdentityServer.Admin.Api.Helpers
+namespace IdentityServer.Admin.Api.Helpers
 {
     public static class UrlHelpers
     {

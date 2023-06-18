@@ -1,6 +1,6 @@
-﻿using HatDieu.Domain.Interfaces.BizServices;
+﻿using Domain.Interfaces.BizServices;
 
-namespace HatDieu.Infrastructure.Jobs;
+namespace Infrastructure.Jobs;
 
 public class SyncAllEntitiesDailyJob
 {

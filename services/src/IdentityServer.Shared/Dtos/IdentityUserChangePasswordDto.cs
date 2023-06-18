@@ -3,7 +3,7 @@
 
 using Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Identity.Dtos.Identity;
 
-namespace Hatdieu.IdentityServer.Shared.Dtos
+namespace IdentityServer.Shared.Dtos
 {
     public class IdentityUserChangePasswordDto : UserChangePasswordDto<string>
     {

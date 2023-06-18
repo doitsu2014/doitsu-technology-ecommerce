@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.MySql.Migrations.IdentityServerGrants
+namespace IdentityServer.Admin.EntityFramework.MySql.Migrations.IdentityServerGrants
 {
     public partial class UpdateIdentityServerToVersion4 : Migration
     {

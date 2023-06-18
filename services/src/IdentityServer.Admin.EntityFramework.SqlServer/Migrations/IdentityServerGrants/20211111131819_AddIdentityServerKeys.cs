@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.SqlServer.Migrations.IdentityServerGrants
+namespace IdentityServer.Admin.EntityFramework.SqlServer.Migrations.IdentityServerGrants
 {
     public partial class AddIdentityServerKeys : Migration
     {

@@ -1,12 +1,12 @@
 using System.Text.Json;
+using Api;
+using Api.Filters;
+using Api.HostedServices;
+using ApplicationCore;
+using ApplicationCore.Configurations;
 using Hangfire;
-using HatDieu.Api;
-using HatDieu.Api.Filters;
-using HatDieu.Api.HostedServices;
-using HatDieu.ApplicationCore;
-using HatDieu.ApplicationCore.Configurations;
-using HatDieu.Infrastructure;
-using HatDieu.Infrastructure.Otel;
+using Infrastructure;
+using Infrastructure.Otel;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Serilog;
 

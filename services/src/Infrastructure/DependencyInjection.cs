@@ -2,10 +2,10 @@ using System.Reflection;
 using Hangfire;
 using Hangfire.JobsLogger;
 using Hangfire.Redis.StackExchange;
-using HatDieu.Infrastructure.Jobs;
-using HatDieu.Infrastructure.Options;
 using IdentityModel;
 using IdentityModel.Client;
+using Infrastructure.Jobs;
+using Infrastructure.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
@@ -16,9 +16,9 @@ using StackExchange.Redis.Extensions.Core.Abstractions;
 using StackExchange.Redis.Extensions.Core.Configuration;
 using StackExchange.Redis.Extensions.Core.Implementations;
 using StackExchange.Redis.Extensions.System.Text.Json;
-using static HatDieu.Infrastructure.Constants;
+using static Infrastructure.Constants;
 
-namespace HatDieu.Infrastructure;
+namespace Infrastructure;
 
 public static class DependencyInjection
 {

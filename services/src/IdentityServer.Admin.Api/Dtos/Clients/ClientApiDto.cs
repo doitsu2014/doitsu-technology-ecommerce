@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Dtos.Clients
+namespace IdentityServer.Admin.Api.Dtos.Clients
 {
     public class ClientApiDto
     {

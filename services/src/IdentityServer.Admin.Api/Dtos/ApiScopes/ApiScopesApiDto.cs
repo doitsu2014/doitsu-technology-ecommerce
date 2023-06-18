@@ -3,7 +3,7 @@
 
 using System.Collections.Generic;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Dtos.ApiScopes
+namespace IdentityServer.Admin.Api.Dtos.ApiScopes
 {
     public class ApiScopesApiDto
     {

@@ -15,6 +15,21 @@ ij_smart_tabs = false
 ij_visual_guides = none
 ij_wrap_on_typing = false
 
+# ReSharper properties
+resharper_csharp_int_align_comments = true
+resharper_int_align_assignments = true
+resharper_int_align_binary_expressions = true
+resharper_int_align_fields = true
+resharper_int_align_fix_in_adjacent = true
+resharper_int_align_invocations = true
+resharper_int_align_nested_ternary = true
+resharper_int_align_parameters = true
+resharper_int_align_properties = true
+resharper_int_align_property_patterns = true
+resharper_int_align_switch_expressions = true
+resharper_int_align_switch_sections = true
+resharper_int_align_variables = true
+
 [*.css]
 ij_css_align_closing_brace_with_properties = false
 ij_css_blank_lines_around_nested_selector = 1

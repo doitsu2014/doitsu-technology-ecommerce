@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Manage
+namespace IdentityServer.STS.Identity.ViewModels.Manage
 {
     public class EnableAuthenticatorViewModel
     {

@@ -4,10 +4,10 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Hatdieu.IdentityServer.Admin.EntityFramework.Shared.DbContexts;
-using Hatdieu.IdentityServer.STS.Identity.Helpers;
+using IdentityServer.STS.Identity.Helpers;
+using IdentityServer.Admin.EntityFramework.Shared.DbContexts;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Configuration.Test
+namespace IdentityServer.STS.Identity.Configuration.Test
 {
     public class StartupTest : Startup
     {

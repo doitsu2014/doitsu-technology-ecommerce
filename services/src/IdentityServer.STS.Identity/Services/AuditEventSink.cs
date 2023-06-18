@@ -6,7 +6,7 @@ using Duende.IdentityServer.Events;
 using Duende.IdentityServer.Services;
 using Microsoft.Extensions.Logging;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Services
+namespace IdentityServer.STS.Identity.Services
 {
     public class AuditEventSink : DefaultEventSink
     {

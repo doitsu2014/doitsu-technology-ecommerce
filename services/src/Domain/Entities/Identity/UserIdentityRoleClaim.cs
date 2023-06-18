@@ -3,7 +3,7 @@
 
 using Microsoft.AspNetCore.Identity;
 
-namespace HatDieu.Domain.Entities.Identity
+namespace Domain.Entities.Identity
 {
     public class UserIdentityRoleClaim : IdentityRoleClaim<string>
     {

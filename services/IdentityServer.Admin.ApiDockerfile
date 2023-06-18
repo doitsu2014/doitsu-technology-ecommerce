@@ -5,22 +5,22 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["src/Hatdieu.IdentityServer.Admin.Api/Hatdieu.IdentityServer.Admin.Api.csproj", "src/Hatdieu.IdentityServer.Admin.Api/"]
-COPY ["src/Hatdieu.IdentityServer.Admin.EntityFramework.Shared/Hatdieu.IdentityServer.Admin.EntityFramework.Shared.csproj", "src/Hatdieu.IdentityServer.Admin.EntityFramework.Shared/"]
-COPY ["src/Hatdieu.IdentityServer.Admin.EntityFramework.SqlServer/Hatdieu.IdentityServer.Admin.EntityFramework.SqlServer.csproj", "src/Hatdieu.IdentityServer.Admin.EntityFramework.SqlServer/"]
-COPY ["src/Hatdieu.IdentityServer.Shared/Hatdieu.IdentityServer.Shared.csproj", "src/Hatdieu.IdentityServer.Shared/"]
-COPY ["src/Hatdieu.IdentityServer.Admin.EntityFramework.PostgreSQL/Hatdieu.IdentityServer.Admin.EntityFramework.PostgreSQL.csproj", "src/Hatdieu.IdentityServer.Admin.EntityFramework.PostgreSQL/"]
-COPY ["src/Hatdieu.IdentityServer.Admin.EntityFramework.MySql/Hatdieu.IdentityServer.Admin.EntityFramework.MySql.csproj", "src/Hatdieu.IdentityServer.Admin.EntityFramework.MySql/"]
-RUN dotnet restore "src/Hatdieu.IdentityServer.Admin.Api/Hatdieu.IdentityServer.Admin.Api.csproj"
+COPY ["src/IdentityServer.Admin.Api/IdentityServer.Admin.Api.csproj", "src/IdentityServer.Admin.Api/"]
+COPY ["src/IdentityServer.Admin.EntityFramework.Shared/IdentityServer.Admin.EntityFramework.Shared.csproj", "src/IdentityServer.Admin.EntityFramework.Shared/"]
+COPY ["src/IdentityServer.Admin.EntityFramework.SqlServer/IdentityServer.Admin.EntityFramework.SqlServer.csproj", "src/IdentityServer.Admin.EntityFramework.SqlServer/"]
+COPY ["src/IdentityServer.Shared/IdentityServer.Shared.csproj", "src/IdentityServer.Shared/"]
+COPY ["src/IdentityServer.Admin.EntityFramework.PostgreSQL/IdentityServer.Admin.EntityFramework.PostgreSQL.csproj", "src/IdentityServer.Admin.EntityFramework.PostgreSQL/"]
+COPY ["src/IdentityServer.Admin.EntityFramework.MySql/IdentityServer.Admin.EntityFramework.MySql.csproj", "src/IdentityServer.Admin.EntityFramework.MySql/"]
+RUN dotnet restore "src/IdentityServer.Admin.Api/IdentityServer.Admin.Api.csproj"
 COPY . .
-WORKDIR "/src/src/Hatdieu.IdentityServer.Admin.Api"
-RUN dotnet build "Hatdieu.IdentityServer.Admin.Api.csproj" -c Release -o /app/build
+WORKDIR "/src/src/IdentityServer.Admin.Api"
+RUN dotnet build "IdentityServer.Admin.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Hatdieu.IdentityServer.Admin.Api.csproj" -c Release -o /app/publish
+RUN dotnet publish "IdentityServer.Admin.Api.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENV ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
-ENTRYPOINT ["dotnet", "Hatdieu.IdentityServer.Admin.Api.dll"]
+ENTRYPOINT ["dotnet", "IdentityServer.Admin.Api.dll"]

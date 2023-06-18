@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿#nullable disable
 
-#nullable disable
+using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.MySql.Migrations.IdentityServerConfiguration
+namespace IdentityServer.Admin.EntityFramework.MySql.Migrations.IdentityServerConfiguration
 {
     public partial class UpdateToIS621 : Migration
     {

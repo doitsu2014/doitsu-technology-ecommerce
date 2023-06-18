@@ -1,4 +1,4 @@
-namespace HatDieu.Infrastructure;
+namespace Infrastructure;
 
 public class Constants
 {

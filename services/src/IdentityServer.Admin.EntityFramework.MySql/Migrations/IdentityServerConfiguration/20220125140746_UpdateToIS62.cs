@@ -1,9 +1,9 @@
-﻿using System;
+﻿#nullable disable
+
+using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-#nullable disable
-
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.MySql.Migrations.IdentityServerConfiguration
+namespace IdentityServer.Admin.EntityFramework.MySql.Migrations.IdentityServerConfiguration
 {
     public partial class UpdateToIS62 : Migration
     {

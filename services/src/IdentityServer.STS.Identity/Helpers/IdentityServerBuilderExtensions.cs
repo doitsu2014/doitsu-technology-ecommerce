@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Configuration.Common;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Helpers;
 
-namespace Hatdieu.IdentityServer.STS.Identity.Helpers
+namespace IdentityServer.STS.Identity.Helpers
 {
     public static class IdentityServerBuilderExtensions
     {

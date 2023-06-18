@@ -5,18 +5,18 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
+using IdentityServer.Admin.Api.Configuration.Constants;
+using IdentityServer.Admin.Api.Dtos.Roles;
+using IdentityServer.Admin.Api.ExceptionHandling;
+using IdentityServer.Admin.Api.Helpers.Localization;
+using IdentityServer.Admin.Api.Resources;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Hatdieu.IdentityServer.Admin.Api.Configuration.Constants;
-using Hatdieu.IdentityServer.Admin.Api.Dtos.Roles;
-using Hatdieu.IdentityServer.Admin.Api.ExceptionHandling;
-using Hatdieu.IdentityServer.Admin.Api.Helpers.Localization;
-using Hatdieu.IdentityServer.Admin.Api.Resources;
 using Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Identity.Dtos.Identity;
 using Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Identity.Services.Interfaces;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Controllers
+namespace IdentityServer.Admin.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

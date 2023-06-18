@@ -17,7 +17,7 @@ using Skoruba.AuditLogging.EntityFramework.Entities;
 using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Configuration.Configuration;
 using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Interfaces;
 
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.Shared.Helpers
+namespace IdentityServer.Admin.EntityFramework.Shared.Helpers
 {
 	public static class DbMigrationHelpers
     {

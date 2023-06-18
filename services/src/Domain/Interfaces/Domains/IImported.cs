@@ -1,4 +1,4 @@
-﻿namespace HatDieu.Domain.Interfaces.Domains;
+﻿namespace Domain.Interfaces.Domains;
 
 public interface IImported
 {

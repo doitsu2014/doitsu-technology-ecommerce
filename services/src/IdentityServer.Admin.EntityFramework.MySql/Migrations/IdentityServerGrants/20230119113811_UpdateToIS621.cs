@@ -1,10 +1,10 @@
-﻿using System;
+﻿#nullable disable
+
+using System;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-#nullable disable
-
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.MySql.Migrations.IdentityServerGrants
+namespace IdentityServer.Admin.EntityFramework.MySql.Migrations.IdentityServerGrants
 {
     public partial class UpdateToIS621 : Migration
     {

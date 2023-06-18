@@ -1,4 +1,4 @@
-﻿namespace HatDieu.Api.Models;
+﻿namespace Api.Models;
 
 public class BaseApiResponseModel
 {

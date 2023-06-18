@@ -1,7 +1,7 @@
-using HatDieu.Domain.Interfaces.BizServices;
+using Domain.Interfaces.BizServices;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HatDieu.Api.Controllers;
+namespace Api.Controllers;
 
 [Route("api/data-warehouse")]
 [ApiController]

@@ -3,7 +3,7 @@
     <PropertyGroup>
 	    <TargetFramework>net6.0</TargetFramework>
 		<Description>Entity Framework layer for the administration of the Duende IdentityServer and Asp.Net Core Identity with PostrgreSQL support</Description>
-		<RootNamespace>Hatdieu.IdentityServer.Admin.EntityFramework.PostgreSQL</RootNamespace>
+		<RootNamespace>IdentityServer.Admin.EntityFramework.PostgreSQL</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

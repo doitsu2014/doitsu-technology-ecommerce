@@ -1,9 +1,9 @@
-﻿using System;
+﻿#nullable disable
+
+using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-#nullable disable
-
-namespace Hatdieu.IdentityServer.Admin.EntityFramework.SqlServer.Migrations.IdentityServerGrants
+namespace IdentityServer.Admin.EntityFramework.SqlServer.Migrations.IdentityServerGrants
 {
     public partial class UpdateToIS61 : Migration
     {

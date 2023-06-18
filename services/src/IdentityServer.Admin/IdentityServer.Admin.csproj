@@ -6,7 +6,7 @@
 		<DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
 		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
 		<DockerfileContext>..\..</DockerfileContext>
-		<RootNamespace>Hatdieu.IdentityServer.Admin</RootNamespace>
+		<RootNamespace>IdentityServer.Admin</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>

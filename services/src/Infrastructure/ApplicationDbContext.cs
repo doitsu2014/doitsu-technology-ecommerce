@@ -1,8 +1,8 @@
-using HatDieu.Domain.Interfaces.Domains;
+using Domain.Interfaces.Domains;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
-namespace HatDieu.Infrastructure;
+namespace Infrastructure;
 
 public sealed class ApplicationDbContext : DbContext
 {

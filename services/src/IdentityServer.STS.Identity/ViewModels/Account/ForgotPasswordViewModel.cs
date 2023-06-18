@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Configuration.Identity;
 
-namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Account
+namespace IdentityServer.STS.Identity.ViewModels.Account
 {
     public class ForgotPasswordViewModel
     {

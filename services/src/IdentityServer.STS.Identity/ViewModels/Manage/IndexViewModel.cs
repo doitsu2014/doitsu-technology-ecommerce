@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Manage
+namespace IdentityServer.STS.Identity.ViewModels.Manage
 {
     public class IndexViewModel
     {

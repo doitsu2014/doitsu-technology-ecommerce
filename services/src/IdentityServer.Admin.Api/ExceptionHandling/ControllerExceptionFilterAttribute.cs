@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Skoruba.Duende.IdentityServer.Admin.BusinessLogic.Shared.ExceptionHandling;
 
-namespace Hatdieu.IdentityServer.Admin.Api.ExceptionHandling
+namespace IdentityServer.Admin.Api.ExceptionHandling
 {
     public class ControllerExceptionFilterAttribute : ExceptionFilterAttribute
     {

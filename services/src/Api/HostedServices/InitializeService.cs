@@ -1,12 +1,12 @@
-﻿using Hangfire;
-using HatDieu.ApplicationCore;
-using HatDieu.Infrastructure;
-using HatDieu.Infrastructure.Jobs;
-using HatDieu.Infrastructure.Options;
+﻿using ApplicationCore;
+using Hangfire;
+using Infrastructure;
+using Infrastructure.Jobs;
+using Infrastructure.Options;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 
-namespace HatDieu.Api.HostedServices;
+namespace Api.HostedServices;
 
 public class InitializeService : IHostedService
 {

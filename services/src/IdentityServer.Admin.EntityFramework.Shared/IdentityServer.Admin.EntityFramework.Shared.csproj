@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>net6.0</TargetFramework>
 		<Description>DbContexts and Identity entities for the administration of the Duende IdentityServer and Asp.Net Core Identity</Description>
-		<RootNamespace>Hatdieu.IdentityServer.Admin.EntityFramework.Shared</RootNamespace>
+		<RootNamespace>IdentityServer.Admin.EntityFramework.Shared</RootNamespace>
 	</PropertyGroup>
 
 	<ItemGroup>

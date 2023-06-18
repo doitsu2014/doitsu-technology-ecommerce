@@ -6,7 +6,7 @@
         <DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
         <DockerfileContext>..\..</DockerfileContext>
-        <RootNamespace>Hatdieu.IdentityServer.STS.Identity</RootNamespace>
+        <RootNamespace>IdentityServer.STS.Identity</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
@@ -83,6 +83,10 @@
         <EmbeddedResource Update="Resources\Views\Account\RegisterConfirmation.en.resx">
             <Generator>ResXFileCodeGenerator</Generator>
         </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Log\" />
     </ItemGroup>
 
 </Project>

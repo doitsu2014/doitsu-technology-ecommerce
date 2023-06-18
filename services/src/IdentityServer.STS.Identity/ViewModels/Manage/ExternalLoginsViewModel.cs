@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 
-namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Manage
+namespace IdentityServer.STS.Identity.ViewModels.Manage
 {
     public class ExternalLoginsViewModel
     {

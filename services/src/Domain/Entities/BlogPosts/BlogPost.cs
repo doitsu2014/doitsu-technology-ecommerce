@@ -1,4 +1,4 @@
-namespace HatDieu.Domain.Entities.BlogPosts;
+namespace Domain.Entities.BlogPosts;
 
 public class BlogPost
 {

@@ -6,7 +6,7 @@
 
 using Duende.IdentityServer.Models;
 
-namespace Hatdieu.IdentityServer.STS.Identity.ViewModels.Home
+namespace IdentityServer.STS.Identity.ViewModels.Home
 {
     public class ErrorViewModel
     {

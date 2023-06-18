@@ -3,7 +3,7 @@
 
 using AutoMapper;
 
-namespace Hatdieu.IdentityServer.Admin.Api.Mappers
+namespace IdentityServer.Admin.Api.Mappers
 {
     public static class ClientApiMappers
     {
