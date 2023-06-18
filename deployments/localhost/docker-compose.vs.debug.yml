@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  hatdieu.identityserver.admin:
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  "bin/Debug/net6.0/Hatdieu.IdentityServer.Admin.dll" /seed'
+
+  hatdieu.identityserver.admin.api:
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
+
+  hatdieu.identityserver.sts.identity:
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro

@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "HatDieu.Api": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_URLS": "http://localhost:49980;https://localhost:49443"
+      }
+    }
+  }
+}

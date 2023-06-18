@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>HatDieu.Infrastructure.PayrixGateway</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\HatDieu.ApplicationCore\HatDieu.ApplicationCore.csproj" />
+      <ProjectReference Include="..\HatDieu.Infrastructure\HatDieu.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Duende.AccessTokenManagement" Version="2.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="DataAccessServices\" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>HatDieu.Infrastructure.ServiceBus</RootNamespace>
+        <UserSecretsId>159962b5-dd65-462f-9fdc-0f8395b49f8e</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MassTransit" Version="8.0.14" />
+        <PackageReference Include="MassTransit.Abstractions" Version="8.0.14" />
+        <PackageReference Include="MassTransit.Azure.ServiceBus.Core" Version="8.0.14" />
+        <PackageReference Include="MassTransit.Extensions.DependencyInjection" Version="7.3.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\HatDieu.ApplicationCore\HatDieu.ApplicationCore.csproj" />
+    </ItemGroup>
+
+</Project>
