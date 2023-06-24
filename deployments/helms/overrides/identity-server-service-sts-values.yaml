@@ -1,9 +1,9 @@
 replicaCount: $(SERVICE_REPLICA_COUNT)
 
 image:
-  repository: $(REGISTRY_URL)/$(REGISTRY_NAMESPACE)/$(IMAGE_NAME)
+  repository: $(REGISTRY_URL)/$(REGISTRY_NAMESPACE)/$(REGISTRY_REPOSITORY)
   pullPolicy: Always
-  tag: "latest"
+  tag: "$(IMAGE_TAG)"
 
 imageCredentials:
   registry: $(REGISTRY_URL)
