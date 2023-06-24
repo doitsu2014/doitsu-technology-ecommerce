@@ -1,0 +1,91 @@
+{
+  "tasks": [
+    {
+      "environment": {},
+      "displayName": "Build and Push",
+      "alwaysRun": false,
+      "continueOnError": false,
+      "condition": "succeeded()",
+      "enabled": true,
+      "timeoutInMinutes": 0,
+      "retryCountOnTaskFailure": 0,
+      "inputs": {
+        "containerRegistry": "30fd2196-ff4a-46b8-8f96-5f487b50eca7",
+        "repository": "$(repository)",
+        "command": "buildAndPush",
+        "Dockerfile": "**/$(dockerfile-name)",
+        "buildContext": "**",
+        "tags": "$(Build.SourceBranch)_$(Build.SourceVersion)",
+        "arguments": "",
+        "addPipelineData": "true",
+        "addBaseImageData": "true",
+        "container": ""
+      },
+      "task": {
+        "id": "e28912f1-0114-4464-802a-a3a35437fd16",
+        "versionSpec": "2.*",
+        "definitionType": "task"
+      }
+    }
+  ],
+  "runsOn": ["Agent", "DeploymentGroup"],
+  "revision": 10,
+  "createdBy": {
+    "displayName": "Duc Tran Huu",
+    "id": "6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+    "uniqueName": "thd1152018@gmail.com"
+  },
+  "createdOn": "2023-06-18T10:38:02.873Z",
+  "modifiedBy": {
+    "displayName": "Duc Tran Huu",
+    "id": "6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+    "uniqueName": "thd1152018@gmail.com"
+  },
+  "modifiedOn": "2023-06-24T07:12:45.067Z",
+  "comment": "",
+  "id": "24716a87-39ab-4e53-b6d4-12221f7bd934",
+  "name": "Doitsu Technology - Docker Build And Push",
+  "version": { "major": 1, "minor": 0, "patch": 0, "isTest": false },
+  "iconUrl": "https://cdn.vsassets.io/v/M222_20230612.2/_content/icon-meta-task.png",
+  "friendlyName": "Doitsu Technology - Docker Build And Push",
+  "description": "",
+  "category": "Build",
+  "definitionType": "metaTask",
+  "author": "Duc Tran Huu",
+  "demands": [],
+  "groups": [],
+  "inputs": [
+    {
+      "aliases": [],
+      "options": {},
+      "properties": {},
+      "name": "dockerfile-name",
+      "label": "dockerfile-name",
+      "defaultValue": "",
+      "required": true,
+      "type": "string",
+      "helpMarkDown": "",
+      "groupName": ""
+    },
+    {
+      "aliases": [],
+      "options": {},
+      "properties": { "EditableOptions": "True" },
+      "name": "repository",
+      "label": "repository",
+      "defaultValue": "",
+      "required": true,
+      "type": "string",
+      "helpMarkDown": "",
+      "groupName": ""
+    }
+  ],
+  "satisfies": [],
+  "sourceDefinitions": [],
+  "dataSourceBindings": [],
+  "instanceNameFormat": "Task group: Doitsu Technology - Docker Build And Push $(dockerfile-name)",
+  "preJobExecution": {},
+  "execution": {},
+  "postJobExecution": {},
+  "_buildConfigMapping": {}
+}

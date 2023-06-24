@@ -1,0 +1,741 @@
+{
+  "source": 2,
+  "revision": 41,
+  "description": null,
+  "createdBy": {
+    "displayName": "Duc Tran Huu",
+    "url": "https://spsprodsea1.vssps.visualstudio.com/A45c780e3-e2fb-43a7-b9dd-7ada669d50ba/_apis/Identities/6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+    "_links": {
+      "avatar": {
+        "href": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+      }
+    },
+    "id": "6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+    "uniqueName": "thd1152018@gmail.com",
+    "imageUrl": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2",
+    "descriptor": "msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+  },
+  "createdOn": "2023-06-18T09:32:44.370Z",
+  "modifiedBy": {
+    "displayName": "Duc Tran Huu",
+    "url": "https://spsprodsea1.vssps.visualstudio.com/A45c780e3-e2fb-43a7-b9dd-7ada669d50ba/_apis/Identities/6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+    "_links": {
+      "avatar": {
+        "href": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+      }
+    },
+    "id": "6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+    "uniqueName": "thd1152018@gmail.com",
+    "imageUrl": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2",
+    "descriptor": "msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+  },
+  "modifiedOn": "2023-06-24T15:41:21.190Z",
+  "isDeleted": false,
+  "lastRelease": {
+    "id": 14,
+    "name": "Release-14",
+    "artifacts": [],
+    "_links": {},
+    "description": "",
+    "releaseDefinition": { "id": 1, "projectReference": null, "_links": {} },
+    "createdOn": "2023-06-24T15:46:23.800Z",
+    "createdBy": {
+      "displayName": "Duc Tran Huu",
+      "url": "https://spsprodsea1.vssps.visualstudio.com/A45c780e3-e2fb-43a7-b9dd-7ada669d50ba/_apis/Identities/6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+      "_links": {
+        "avatar": {
+          "href": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+        }
+      },
+      "id": "6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+      "uniqueName": "thd1152018@gmail.com",
+      "imageUrl": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2",
+      "descriptor": "msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+    }
+  },
+  "variables": {
+    "IMAGE_TAG": { "value": "$(Build.SourceBranch)_$(Build.SourceVersion)" }
+  },
+  "variableGroups": [],
+  "environments": [
+    {
+      "id": 1,
+      "name": "Stage Build",
+      "rank": 1,
+      "owner": {
+        "displayName": "Duc Tran Huu",
+        "url": "https://spsprodsea1.vssps.visualstudio.com/A45c780e3-e2fb-43a7-b9dd-7ada669d50ba/_apis/Identities/6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+          }
+        },
+        "id": "6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+        "uniqueName": "thd1152018@gmail.com",
+        "imageUrl": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2",
+        "descriptor": "msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+      },
+      "variables": {},
+      "variableGroups": [2],
+      "preDeployApprovals": {
+        "approvals": [
+          { "rank": 1, "isAutomated": true, "isNotificationOn": false, "id": 1 }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": { "id": 2 },
+      "postDeployApprovals": {
+        "approvals": [
+          { "rank": 1, "isAutomated": true, "isNotificationOn": false, "id": 3 }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": { "parallelExecutionType": 0 },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": { "downloadInputs": [] },
+            "queueId": 138,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Building Identity Server Admin Job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "24716a87-39ab-4e53-b6d4-12221f7bd934",
+              "version": "1.*",
+              "name": "Task Group: Build And Push",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": true,
+              "continueOnError": true,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "metaTask",
+              "overrideInputs": {},
+              "condition": "succeededOrFailed()",
+              "inputs": {
+                "dockerfile-name": "$(IDENTITYSERVER_ADMIN_DOCKERFILE)",
+                "repository": "$(IDENTITYSERVER_ADMIN_REPOSITORY)"
+              }
+            }
+          ]
+        },
+        {
+          "deploymentInput": {
+            "parallelExecution": { "parallelExecutionType": 0 },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": { "downloadInputs": [] },
+            "queueId": 138,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 2,
+          "phaseType": 1,
+          "name": "Building Identity Server Admin Api Job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "24716a87-39ab-4e53-b6d4-12221f7bd934",
+              "version": "1.*",
+              "name": "Task Group: Build And Push Identity Server Admin Api",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": true,
+              "continueOnError": true,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "metaTask",
+              "overrideInputs": {},
+              "condition": "succeededOrFailed()",
+              "inputs": {
+                "dockerfile-name": "$(IDENTITYSERVER_ADMIN_API_DOCKERFILE)",
+                "repository": "$(IDENTITYSERVER_ADMIN_API_REPOSITORY)"
+              }
+            }
+          ]
+        },
+        {
+          "deploymentInput": {
+            "parallelExecution": { "parallelExecutionType": 0 },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": { "downloadInputs": [] },
+            "queueId": 138,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 3,
+          "phaseType": 1,
+          "name": "Building Identity Server Api Job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "24716a87-39ab-4e53-b6d4-12221f7bd934",
+              "version": "1.*",
+              "name": "Task Group: Build And Push Identity Server STS",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": true,
+              "continueOnError": true,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "metaTask",
+              "overrideInputs": {},
+              "condition": "succeededOrFailed()",
+              "inputs": {
+                "dockerfile-name": "$(IDENTITYSERVER_STS_DOCKERFILE)",
+                "repository": "$(IDENTITYSERVER_STS_REPOSITORY)"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        { "name": "ReleaseStarted", "conditionType": 1, "value": "" }
+      ],
+      "executionPolicy": { "concurrencyCount": 1, "queueDepthCount": 0 },
+      "schedules": [],
+      "currentRelease": {
+        "id": 14,
+        "url": "https://vsrm.dev.azure.com/doitsutechnology/ab22629a-b21d-481e-80bf-ce1083827798/_apis/Release/releases/14",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": { "$type": "System.String", "$value": "False" }
+      },
+      "preDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "postDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "environmentTriggers": [],
+      "badgeUrl": "https://vsrm.dev.azure.com/doitsutechnology/_apis/public/Release/badge/ab22629a-b21d-481e-80bf-ce1083827798/1/1"
+    },
+    {
+      "id": 3,
+      "name": "Stage Identity Server Admin UI Deployment",
+      "rank": 2,
+      "owner": {
+        "displayName": "Duc Tran Huu",
+        "url": "https://spsprodsea1.vssps.visualstudio.com/A45c780e3-e2fb-43a7-b9dd-7ada669d50ba/_apis/Identities/6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+          }
+        },
+        "id": "6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+        "uniqueName": "thd1152018@gmail.com",
+        "imageUrl": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2",
+        "descriptor": "msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+      },
+      "variables": {},
+      "variableGroups": [3, 4],
+      "preDeployApprovals": {
+        "approvals": [
+          { "rank": 1, "isAutomated": true, "isNotificationOn": false, "id": 7 }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": { "id": 8 },
+      "postDeployApprovals": {
+        "approvals": [
+          { "rank": 1, "isAutomated": true, "isNotificationOn": false, "id": 9 }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": { "parallelExecutionType": 0 },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": { "downloadInputs": [] },
+            "queueId": 138,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "724fca99-aeb5-4f09-8645-ba14f25b44da",
+              "version": "1.*",
+              "name": "Deploy Application Using Helm",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": true,
+              "continueOnError": true,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "metaTask",
+              "overrideInputs": {},
+              "condition": "succeededOrFailed()",
+              "inputs": {
+                "Chart Path": "$(System.DefaultWorkingDirectory)/_doitsu2014_doitsu-technology-ecommerce/deployments/helms/identity-server-admin-ui-chart/",
+                "Namespace": "$(KUBERNETES_NAMESPACE)",
+                "Release Name": "identity-server-admin-ui-dev",
+                "Value File": "$(System.DefaultWorkingDirectory)/_doitsu2014_doitsu-technology-ecommerce/deployments/helms/overrides/identity-server-admin-ui-values.yaml"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        { "name": "Stage Build", "conditionType": 2, "value": "4" }
+      ],
+      "executionPolicy": { "concurrencyCount": 1, "queueDepthCount": 0 },
+      "schedules": [],
+      "currentRelease": {
+        "id": 14,
+        "url": "https://vsrm.dev.azure.com/doitsutechnology/ab22629a-b21d-481e-80bf-ce1083827798/_apis/Release/releases/14",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": { "$type": "System.String", "$value": "False" }
+      },
+      "preDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "postDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "environmentTriggers": [],
+      "badgeUrl": "https://vsrm.dev.azure.com/doitsutechnology/_apis/public/Release/badge/ab22629a-b21d-481e-80bf-ce1083827798/1/3"
+    },
+    {
+      "id": 4,
+      "name": "Stage Identity Server Admin API Deployment",
+      "rank": 3,
+      "owner": {
+        "displayName": "Duc Tran Huu",
+        "url": "https://spsprodsea1.vssps.visualstudio.com/A45c780e3-e2fb-43a7-b9dd-7ada669d50ba/_apis/Identities/6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+          }
+        },
+        "id": "6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+        "uniqueName": "thd1152018@gmail.com",
+        "imageUrl": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2",
+        "descriptor": "msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+      },
+      "variables": {},
+      "variableGroups": [3, 4],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 10
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": { "id": 11 },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 12
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": { "parallelExecutionType": 0 },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": { "downloadInputs": [] },
+            "queueId": 138,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "724fca99-aeb5-4f09-8645-ba14f25b44da",
+              "version": "1.*",
+              "name": "Deploy Application Using Helm",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": true,
+              "continueOnError": true,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "metaTask",
+              "overrideInputs": {},
+              "condition": "succeededOrFailed()",
+              "inputs": {
+                "Chart Path": "$(System.DefaultWorkingDirectory)/_doitsu2014_doitsu-technology-ecommerce/deployments/helms/identity-server-admin-api-chart",
+                "Namespace": "$(KUBERNETES_NAMESPACE)",
+                "Release Name": "identity-server-admin-api-dev",
+                "Value File": "$(System.DefaultWorkingDirectory)/_doitsu2014_doitsu-technology-ecommerce/deployments/helms/overrides/identity-server-admin-api-values.yaml"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        { "name": "Stage Build", "conditionType": 2, "value": "4" }
+      ],
+      "executionPolicy": { "concurrencyCount": 1, "queueDepthCount": 0 },
+      "schedules": [],
+      "currentRelease": {
+        "id": 14,
+        "url": "https://vsrm.dev.azure.com/doitsutechnology/ab22629a-b21d-481e-80bf-ce1083827798/_apis/Release/releases/14",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": { "$type": "System.String", "$value": "False" }
+      },
+      "preDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "postDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "environmentTriggers": [],
+      "badgeUrl": "https://vsrm.dev.azure.com/doitsutechnology/_apis/public/Release/badge/ab22629a-b21d-481e-80bf-ce1083827798/1/4"
+    },
+    {
+      "id": 5,
+      "name": "Stage Identity Server STS Deployment",
+      "rank": 4,
+      "owner": {
+        "displayName": "Duc Tran Huu",
+        "url": "https://spsprodsea1.vssps.visualstudio.com/A45c780e3-e2fb-43a7-b9dd-7ada669d50ba/_apis/Identities/6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+        "_links": {
+          "avatar": {
+            "href": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+          }
+        },
+        "id": "6df1ae5d-dee8-490c-a3ce-cc6ba203e570",
+        "uniqueName": "thd1152018@gmail.com",
+        "imageUrl": "https://dev.azure.com/doitsutechnology/_apis/GraphProfile/MemberAvatars/msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2",
+        "descriptor": "msa.MzRlYjNlM2MtMTBkOS03Zjg3LWEwMTUtNjJhZjk0NTZkOGI2"
+      },
+      "variables": {},
+      "variableGroups": [3, 4],
+      "preDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 13
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 1
+        }
+      },
+      "deployStep": { "id": 14 },
+      "postDeployApprovals": {
+        "approvals": [
+          {
+            "rank": 1,
+            "isAutomated": true,
+            "isNotificationOn": false,
+            "id": 15
+          }
+        ],
+        "approvalOptions": {
+          "requiredApproverCount": null,
+          "releaseCreatorCanBeApprover": false,
+          "autoTriggeredAndPreviousEnvironmentApprovedCanBeSkipped": false,
+          "enforceIdentityRevalidation": false,
+          "timeoutInMinutes": 0,
+          "executionOrder": 2
+        }
+      },
+      "deployPhases": [
+        {
+          "deploymentInput": {
+            "parallelExecution": { "parallelExecutionType": 0 },
+            "agentSpecification": null,
+            "skipArtifactsDownload": false,
+            "artifactsDownloadInput": { "downloadInputs": [] },
+            "queueId": 138,
+            "demands": [],
+            "enableAccessToken": false,
+            "timeoutInMinutes": 0,
+            "jobCancelTimeoutInMinutes": 1,
+            "condition": "succeeded()",
+            "overrideInputs": {}
+          },
+          "rank": 1,
+          "phaseType": 1,
+          "name": "Agent job",
+          "refName": null,
+          "workflowTasks": [
+            {
+              "environment": {},
+              "taskId": "724fca99-aeb5-4f09-8645-ba14f25b44da",
+              "version": "1.*",
+              "name": "Deploy Application Using Helm",
+              "refName": "",
+              "enabled": true,
+              "alwaysRun": true,
+              "continueOnError": true,
+              "timeoutInMinutes": 0,
+              "retryCountOnTaskFailure": 0,
+              "definitionType": "metaTask",
+              "overrideInputs": {},
+              "condition": "succeededOrFailed()",
+              "inputs": {
+                "Chart Path": "$(System.DefaultWorkingDirectory)/_doitsu2014_doitsu-technology-ecommerce/deployments/helms/identity-server-sts-chart/",
+                "Namespace": "$(KUBERNETES_NAMESPACE)",
+                "Release Name": "identity-server-admin-ui-dev",
+                "Value File": "$(System.DefaultWorkingDirectory)/_doitsu2014_doitsu-technology-ecommerce/deployments/helms/overrides/identity-server-sts-values.yaml"
+              }
+            }
+          ]
+        }
+      ],
+      "environmentOptions": {
+        "emailNotificationType": "OnlyOnFailure",
+        "emailRecipients": "release.environment.owner;release.creator",
+        "skipArtifactsDownload": false,
+        "timeoutInMinutes": 0,
+        "enableAccessToken": false,
+        "publishDeploymentStatus": true,
+        "badgeEnabled": false,
+        "autoLinkWorkItems": false,
+        "pullRequestDeploymentEnabled": false
+      },
+      "demands": [],
+      "conditions": [
+        { "name": "Stage Build", "conditionType": 2, "value": "4" }
+      ],
+      "executionPolicy": { "concurrencyCount": 1, "queueDepthCount": 0 },
+      "schedules": [],
+      "currentRelease": {
+        "id": 14,
+        "url": "https://vsrm.dev.azure.com/doitsutechnology/ab22629a-b21d-481e-80bf-ce1083827798/_apis/Release/releases/14",
+        "_links": {}
+      },
+      "retentionPolicy": {
+        "daysToKeep": 30,
+        "releasesToKeep": 3,
+        "retainBuild": true
+      },
+      "processParameters": {},
+      "properties": {
+        "BoardsEnvironmentType": {
+          "$type": "System.String",
+          "$value": "unmapped"
+        },
+        "LinkBoardsWorkItems": { "$type": "System.String", "$value": "False" }
+      },
+      "preDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "postDeploymentGates": { "id": 0, "gatesOptions": null, "gates": [] },
+      "environmentTriggers": [],
+      "badgeUrl": "https://vsrm.dev.azure.com/doitsutechnology/_apis/public/Release/badge/ab22629a-b21d-481e-80bf-ce1083827798/1/5"
+    }
+  ],
+  "artifacts": [
+    {
+      "sourceId": "d6eed2f6-d909-482e-88a9-c358615f5d56:doitsu2014/doitsu-technology-ecommerce",
+      "type": "GitHub",
+      "alias": "_doitsu2014_doitsu-technology-ecommerce",
+      "definitionReference": {
+        "artifactSourceDefinitionUrl": {
+          "id": "https://github.com/doitsu2014/doitsu-technology-ecommerce",
+          "name": ""
+        },
+        "branch": { "id": "develop", "name": "develop" },
+        "checkoutNestedSubmodules": {
+          "id": "True",
+          "name": "Any nested submodules within"
+        },
+        "checkoutSubmodules": { "id": "", "name": "" },
+        "connection": {
+          "id": "d6eed2f6-d909-482e-88a9-c358615f5d56",
+          "name": "github.com_doitsu2014"
+        },
+        "defaultVersionSpecific": { "id": "", "name": "" },
+        "defaultVersionType": {
+          "id": "latestFromBranchType",
+          "name": "Latest from the default branch"
+        },
+        "definition": {
+          "id": "doitsu2014/doitsu-technology-ecommerce",
+          "name": "doitsu2014/doitsu-technology-ecommerce"
+        },
+        "fetchDepth": { "id": "", "name": "" },
+        "gitHubRepositoryId": { "id": "655220186", "name": "655220186" },
+        "gitLfsSupport": { "id": "", "name": "" }
+      },
+      "isPrimary": true,
+      "isRetained": false
+    }
+  ],
+  "triggers": [],
+  "releaseNameFormat": "Release-$(rev:r)",
+  "tags": [],
+  "properties": {
+    "DefinitionCreationSource": {
+      "$type": "System.String",
+      "$value": "ReleaseNew"
+    },
+    "IntegrateBoardsWorkItems": { "$type": "System.String", "$value": "False" },
+    "IntegrateJiraWorkItems": { "$type": "System.String", "$value": "false" }
+  },
+  "id": 1,
+  "name": "dev",
+  "path": "\\dev",
+  "projectReference": null,
+  "url": "https://vsrm.dev.azure.com/doitsutechnology/ab22629a-b21d-481e-80bf-ce1083827798/_apis/Release/definitions/1",
+  "_links": {
+    "self": {
+      "href": "https://vsrm.dev.azure.com/doitsutechnology/ab22629a-b21d-481e-80bf-ce1083827798/_apis/Release/definitions/1"
+    },
+    "web": {
+      "href": "https://dev.azure.com/doitsutechnology/ab22629a-b21d-481e-80bf-ce1083827798/_release?definitionId=1"
+    }
+  }
+}
