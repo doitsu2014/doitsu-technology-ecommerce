@@ -46,7 +46,9 @@ namespace IdentityServer.Admin.Api
                 .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
                 .AddJsonFile($"appsettings.{environment}.json", optional: true, reloadOnChange: true)
                 .AddJsonFile("serilog.json", optional: true, reloadOnChange: true)
-                .AddJsonFile($"serilog.{environment}.json", optional: true, reloadOnChange: true);
+                .AddJsonFile($"serilog.{environment}.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"secrets/appsettings.secret.json", optional: true, reloadOnChange: true)
+                ;
 
             if (isDevelopment)
             {

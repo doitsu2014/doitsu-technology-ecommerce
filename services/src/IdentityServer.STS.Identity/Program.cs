@@ -34,15 +34,17 @@ namespace IdentityServer.STS.Identity
 
         private static IConfiguration GetConfiguration(string[] args)
         {
-            var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            var environment   = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
             var isDevelopment = environment == Environments.Development;
 
             var configurationBuilder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{environment}.json", optional: true, reloadOnChange: true)
-                .AddJsonFile("serilog.json", optional: true, reloadOnChange: true)
-                .AddJsonFile($"serilog.{environment}.json", optional: true, reloadOnChange: true);
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json",                 optional: false, reloadOnChange: true)
+                    .AddJsonFile($"appsettings.{environment}.json",  optional: true,  reloadOnChange: true)
+                    .AddJsonFile("serilog.json",                     optional: true,  reloadOnChange: true)
+                    .AddJsonFile($"serilog.{environment}.json",      optional: true,  reloadOnChange: true)
+                    .AddJsonFile($"secrets/appsettings.secret.json", optional: true,  reloadOnChange: true)
+                ;
 
             if (isDevelopment)
             {
@@ -61,26 +63,26 @@ namespace IdentityServer.STS.Identity
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                 .ConfigureAppConfiguration((hostContext, configApp) =>
-                 {
-                     var configurationRoot = configApp.Build();
+                .ConfigureAppConfiguration((hostContext, configApp) =>
+                {
+                    var configurationRoot = configApp.Build();
 
-                     configApp.AddJsonFile("serilog.json", optional: true, reloadOnChange: true);
+                    configApp.AddJsonFile("serilog.json", optional: true, reloadOnChange: true);
 
-                     var env = hostContext.HostingEnvironment;
+                    var env = hostContext.HostingEnvironment;
 
-                     configApp.AddJsonFile($"serilog.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+                    configApp.AddJsonFile($"serilog.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
 
-                     if (env.IsDevelopment())
-                     {
-                         configApp.AddUserSecrets<Startup>(true);
-                     }
+                    if (env.IsDevelopment())
+                    {
+                        configApp.AddUserSecrets<Startup>(true);
+                    }
 
-                     configurationRoot.AddAzureKeyVaultConfiguration(configApp);
+                    configurationRoot.AddAzureKeyVaultConfiguration(configApp);
 
-                     configApp.AddEnvironmentVariables();
-                     configApp.AddCommandLine(args);
-                 })
+                    configApp.AddEnvironmentVariables();
+                    configApp.AddCommandLine(args);
+                })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.ConfigureKestrel(options => options.AddServerHeader = false);
@@ -94,10 +96,3 @@ namespace IdentityServer.STS.Identity
                 });
     }
 }
-
-
-
-
-
-
-

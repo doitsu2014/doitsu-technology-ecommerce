@@ -1,0 +1,84 @@
+replicaCount: $(SERVICE_REPLICA_COUNT)
+
+image:
+  repository: $(REGISTRY_URL)/$(REGISTRY_NAMESPACE)/$(IMAGE_NAME)
+  pullPolicy: Always
+  tag: "latest"
+
+imageCredentials:
+  registry: $(REGISTRY_URL)
+  username: $(REGISTRY_USERNAME)
+  password: $(REGISTRY_PASSWORD)
+  email: no-reply@dtech.com
+
+nameOverride: ""
+fullnameOverride: ""
+env: []
+podAnnotations: {}
+
+podSecurityContext:
+  {}
+  # fsGroup: 2000
+
+securityContext:
+  {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: ClusterIP
+  port: 5000
+
+ingress:
+  enabled: $(SERVICE_INGRESS_ENABLED)
+  className: "$(INGRESS_CLASS_NAME)"
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+  hosts:
+    - host: $(SERVICE_INGRESS_HOST) 
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
+
+ingressApiGateway:
+  enabled: $(SERVICE_INGRESS_API_GATEWAY_ENABLED) 
+  className: "$(INGRESS_CLASS_NAME)"
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/rewrite-target: "/$2"
+    nginx.ingress.kubernetes.io/app-root: "/$(SERVICE_API_GATEWAY_APP_ROOT)"
+  hosts:
+    - host: $(INGRESS_API_GATEWAY_HOST)
+      paths:
+        - path: /$(SERVICE_API_GATEWAY_APP_ROOT)(/|$)(.*)
+          pathType: Prefix
+  tls: []
+
+resources:
+  {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
