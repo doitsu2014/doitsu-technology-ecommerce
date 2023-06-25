@@ -20,4 +20,5 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENV ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
+ENV ASPNETCORE_URLS=http://+:5000
 ENTRYPOINT ["dotnet", "IdentityServer.STS.Identity.dll"]

@@ -53,6 +53,7 @@
 
 	<ItemGroup>
 		<Folder Include="Helpers\" />
+		<Folder Include="secrets\" />
 	</ItemGroup>
 
 </Project>
