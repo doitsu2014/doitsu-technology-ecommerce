@@ -13,7 +13,9 @@ imageCredentials:
 
 nameOverride: ""
 fullnameOverride: ""
-env: []
+env:
+  - name: ASPNETCORE_URLS
+    value: http://+:5000
 podAnnotations: {}
 
 podSecurityContext:
