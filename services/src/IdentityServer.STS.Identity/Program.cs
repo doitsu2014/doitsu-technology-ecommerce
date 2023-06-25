@@ -43,7 +43,7 @@ namespace IdentityServer.STS.Identity
                     .AddJsonFile($"appsettings.{environment}.json",  optional: true,  reloadOnChange: true)
                     .AddJsonFile("serilog.json",                     optional: true,  reloadOnChange: true)
                     .AddJsonFile($"serilog.{environment}.json",      optional: true,  reloadOnChange: true)
-                    .AddJsonFile($"secrets/appsettings.secret.json", optional: true,  reloadOnChange: true)
+                    .AddJsonFile($"secrets/appsettings.secrets.json", optional: true,  reloadOnChange: true)
                 ;
 
             if (isDevelopment)

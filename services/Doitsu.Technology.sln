@@ -21,8 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{2CA927
 		..\.gitignore = ..\.gitignore
 		Dockerfile = Dockerfile
 		IdentityServer.Admin.Dockerfile = IdentityServer.Admin.Dockerfile
-		IdentityServer.Admin.ApiDockerfile = IdentityServer.Admin.ApiDockerfile
 		IdentityServer.Api.Dockerfile = IdentityServer.Api.Dockerfile
+		IdentityServer.Admin.Api.Dockerfile = IdentityServer.Admin.Api.Dockerfile
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "identity", "identity", "{2019793C-8CB0-4389-B80E-CF97D1CF580A}"
