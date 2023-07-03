@@ -40,6 +40,8 @@ ingress:
   className: "$(INGRESS_CLASS_NAME)"
   annotations:
     nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/client-body-buffer-size: 4m
+    nginx.ingress.kubernetes.io/proxy-body-size: 8m
   hosts:
     - host: $(SERVICE_INGRESS_HOST) 
       paths:
@@ -52,6 +54,8 @@ ingressApiGateway:
   className: "$(INGRESS_CLASS_NAME)"
   annotations:
     nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/client-body-buffer-size: 4m
+    nginx.ingress.kubernetes.io/proxy-body-size: 8m
     nginx.ingress.kubernetes.io/rewrite-target: "/$2"
     nginx.ingress.kubernetes.io/app-root: "/$(SERVICE_API_GATEWAY_APP_ROOT)"
   hosts:
