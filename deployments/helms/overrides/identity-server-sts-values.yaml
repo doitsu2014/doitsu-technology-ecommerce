@@ -1,0 +1,112 @@
+replicaCount: $(SERVICE_REPLICA_COUNT)
+
+image:
+  repository: $(REGISTRY_URL)/$(REGISTRY_NAMESPACE)/$(REGISTRY_REPOSITORY)
+  pullPolicy: Always
+  tag: "$(IMAGE_TAG)"
+
+imageCredentials:
+  registry: $(REGISTRY_URL)
+  username: $(REGISTRY_USERNAME)
+  password: $(REGISTRY_PASSWORD)
+  email: no-reply@dtech.com
+
+nameOverride: ""
+fullnameOverride: ""
+env:
+  - name: ASPNETCORE_URLS
+    value: http://+:5000;https://+:44310
+podAnnotations: {}
+
+podSecurityContext:
+  {}
+  # fsGroup: 2000
+
+securityContext:
+  {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+service:
+  type: ClusterIP
+  port: 44310
+  ports:
+    - port: 5000
+      targetPort: http
+      protocol: TCP
+      name: http
+    - port: 44310
+      targetPort: https
+      protocol: TCP
+      name: https
+
+container_ports:
+  - name: http
+    containerPort: 5000
+    protocol: TCP
+  - name: https 
+    containerPort: 44310
+    protocol: TCP
+
+ingress:
+  enabled: $(SERVICE_INGRESS_ENABLED)
+  className: "$(INGRESS_CLASS_NAME)"
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    nginx.ingress.kubernetes.io/proxy-buffering: "on"
+    nginx.ingress.kubernetes.io/proxy-body-size: "8m"
+    nginx.ingress.kubernetes.io/proxy-buffer-size: "1m"
+    nginx.ingress.kubernetes.io/proxy-buffers-number: "12"
+    nginx.ingress.kubernetes.io/client-body-buffer-size: 1m
+    nginx.ingress.kubernetes.io/affinity: "cookie"
+  hosts:
+    - host: $(SERVICE_INGRESS_HOST) 
+      paths:
+        - path: /
+          pathType: Prefix
+  tls: []
+
+ingressApiGateway:
+  enabled: $(SERVICE_INGRESS_API_GATEWAY_ENABLED) 
+  className: "$(INGRESS_CLASS_NAME)"
+  annotations:
+    nginx.ingress.kubernetes.io/use-regex: "true"
+    nginx.ingress.kubernetes.io/client-body-buffer-size: 4m
+    nginx.ingress.kubernetes.io/proxy-body-size: 8m
+    nginx.ingress.kubernetes.io/rewrite-target: "/$2"
+    nginx.ingress.kubernetes.io/app-root: "/$(SERVICE_API_GATEWAY_APP_ROOT)"
+  hosts:
+    - host: $(INGRESS_API_GATEWAY_HOST)
+      paths:
+        - path: /$(SERVICE_API_GATEWAY_APP_ROOT)(/|$)(.*)
+          pathType: Prefix
+  tls: []
+
+resources:
+  {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+tolerations: []
+affinity: {}

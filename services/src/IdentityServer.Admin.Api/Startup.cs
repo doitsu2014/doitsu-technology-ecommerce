@@ -140,7 +140,7 @@ namespace IdentityServer.Admin.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-
+                
                 endpoints.MapHealthChecks("/health", new HealthCheckOptions
                 {
                     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse

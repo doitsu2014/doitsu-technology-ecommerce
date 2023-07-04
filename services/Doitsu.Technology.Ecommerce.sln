@@ -21,8 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{2CA927
 		..\.gitignore = ..\.gitignore
 		Dockerfile = Dockerfile
 		IdentityServer.Admin.Dockerfile = IdentityServer.Admin.Dockerfile
-		IdentityServer.Admin.ApiDockerfile = IdentityServer.Admin.ApiDockerfile
 		IdentityServer.Api.Dockerfile = IdentityServer.Api.Dockerfile
+		IdentityServer.Admin.Api.Dockerfile = IdentityServer.Admin.Api.Dockerfile
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "identity", "identity", "{2019793C-8CB0-4389-B80E-CF97D1CF580A}"
@@ -44,6 +44,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer.Admin", "src\IdentityServer.Admin\IdentityServer.Admin.csproj", "{63FD968E-790A-46AA-B6E7-1B24B157455B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{89B4B4EC-75CB-4312-8B86-F148C92AC06A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployment", "deployment", "{F09D6BF4-BEC2-4F75-B987-5636E23003BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "identity-server-admin-ui", "identity-server-admin-ui", "{F0FA7BB4-784B-4405-82BB-C471C9C396E1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "identity-server-admin-api", "identity-server-admin-api", "{F124D3EC-0F3F-4D0A-A6BA-B92106DFA2B6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "identity-server", "identity-server", "{4C5B0325-E608-472F-889B-8B95E95A65E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -68,6 +76,9 @@ Global
 		{B3FED8EE-7DCF-4AB9-8BDD-BB553D518417} = {2019793C-8CB0-4389-B80E-CF97D1CF580A}
 		{63FD968E-790A-46AA-B6E7-1B24B157455B} = {2019793C-8CB0-4389-B80E-CF97D1CF580A}
 		{89B4B4EC-75CB-4312-8B86-F148C92AC06A} = {4C598E54-8546-4970-A600-52848F23FFF6}
+		{F0FA7BB4-784B-4405-82BB-C471C9C396E1} = {F09D6BF4-BEC2-4F75-B987-5636E23003BD}
+		{F124D3EC-0F3F-4D0A-A6BA-B92106DFA2B6} = {F09D6BF4-BEC2-4F75-B987-5636E23003BD}
+		{4C5B0325-E608-472F-889B-8B95E95A65E1} = {F09D6BF4-BEC2-4F75-B987-5636E23003BD}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DD88B7E7-9281-404A-92BF-209FDBAB343C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
