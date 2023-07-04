@@ -34,7 +34,23 @@ securityContext:
 
 service:
   type: ClusterIP
-  port: 5000
+  ports:
+    - port: 5000
+      targetPort: http
+      protocol: TCP
+      name: http
+    - port: 44302
+      targetPort: https
+      protocol: TCP
+      name: https
+
+container_ports:
+  - name: http
+    containerPort: 5000
+    protocol: TCP
+  - name: https 
+    containerPort: 44302
+    protocol: TCP
 
 ingress:
   enabled: false

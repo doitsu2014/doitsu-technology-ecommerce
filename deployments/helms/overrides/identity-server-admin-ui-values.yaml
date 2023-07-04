@@ -15,7 +15,7 @@ nameOverride: ""
 fullnameOverride: ""
 env:
   - name: ASPNETCORE_URLS
-    value: http://+:5000
+    value: http://+:5000;https://+:44303
 podAnnotations: {}
 
 podSecurityContext:
@@ -33,15 +33,36 @@ securityContext:
 
 service:
   type: ClusterIP
-  port: 5000
+  ports:
+    - port: 5000
+      targetPort: http
+      protocol: TCP
+      name: http
+    - port: 44303
+      targetPort: https
+      protocol: TCP
+      name: https
+
+container_ports:
+  - name: http
+    containerPort: 5000
+    protocol: TCP
+  - name: https 
+    containerPort: 44303
+    protocol: TCP
 
 ingress:
   enabled: $(SERVICE_INGRESS_ENABLED)
   className: "$(INGRESS_CLASS_NAME)"
   annotations:
-    nginx.ingress.kubernetes.io/use-regex: "true"
-    nginx.ingress.kubernetes.io/client-body-buffer-size: 4m
-    nginx.ingress.kubernetes.io/proxy-body-size: 8m
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
+    nginx.ingress.kubernetes.io/proxy-buffering: "on"
+    nginx.ingress.kubernetes.io/proxy-body-size: "8m"
+    nginx.ingress.kubernetes.io/proxy-buffer-size: "1m"
+    nginx.ingress.kubernetes.io/proxy-buffers-number: "12"
+    nginx.ingress.kubernetes.io/limit-rpm: "$(ingress-policy-rpm)"
+    nginx.ingress.kubernetes.io/client-body-buffer-size: 1m
+    nginx.ingress.kubernetes.io/affinity: "cookie"
   hosts:
     - host: $(SERVICE_INGRESS_HOST) 
       paths:

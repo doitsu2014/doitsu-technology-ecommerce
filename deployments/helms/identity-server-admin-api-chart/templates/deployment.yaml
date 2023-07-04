@@ -35,10 +35,10 @@ spec:
           env:
             {{- toYaml . | nindent 12 }}
           {{- end }}
+          {{- with .Values.container_ports }}
           ports:
-            - name: http
-              containerPort: 5000
-              protocol: TCP
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
           livenessProbe:
             httpGet:
               path: /health

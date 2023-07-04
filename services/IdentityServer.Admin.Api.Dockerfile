@@ -19,9 +19,19 @@ RUN dotnet build "IdentityServer.Admin.Api.csproj" -c Release -o /app/build
 FROM build AS publish
 RUN dotnet publish "IdentityServer.Admin.Api.csproj" -c Release -o /app/publish
 
+# Generate Dev Certs from SDKs
+RUN dotnet dev-certs https --clean
+RUN dotnet dev-certs https -ep /app/https/default-certificate.pfx -p changeme
+RUN dotnet dev-certs https --trust
+
 FROM base AS final
+ARG HttpsCertName=aspnetapp
 WORKDIR /app
 COPY --from=publish /app/publish .
+COPY --from=publish /app/https /https
+
+ENV ASPNETCORE_Kestrel__Certificates__Default__Path=/https/default-certificate.pfx
+ENV ASPNETCORE_Kestrel__Certificates__Default__Password=changeme
 ENV ASPNETCORE_FORWARDEDHEADERS_ENABLED=true
-ENV ASPNETCORE_URLS=http://+:5000
+ENV ASPNETCORE_URLS=https://+:44302;http://+:5000
 ENTRYPOINT ["dotnet", "IdentityServer.Admin.Api.dll"]
