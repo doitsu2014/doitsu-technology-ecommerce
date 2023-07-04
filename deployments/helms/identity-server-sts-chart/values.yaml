@@ -34,6 +34,7 @@ securityContext:
 
 service:
   type: ClusterIP
+  port: 44310
   ports:
     - port: 5000
       targetPort: http
@@ -62,6 +63,7 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
+          backendServicePort: 5000
   tls:
     - secretName: tls-secret
       hosts:
