@@ -43,7 +43,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer.Admin.Api", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer.Admin", "src\IdentityServer.Admin\IdentityServer.Admin.csproj", "{63FD968E-790A-46AA-B6E7-1B24B157455B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{89B4B4EC-75CB-4312-8B86-F148C92AC06A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doitsu.Technology.Ecommerce.Domain", "src\Doitsu.Technology.Ecommerce.Domain\Doitsu.Technology.Ecommerce.Domain.csproj", "{89B4B4EC-75CB-4312-8B86-F148C92AC06A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployment", "deployment", "{F09D6BF4-BEC2-4F75-B987-5636E23003BD}"
 EndProject

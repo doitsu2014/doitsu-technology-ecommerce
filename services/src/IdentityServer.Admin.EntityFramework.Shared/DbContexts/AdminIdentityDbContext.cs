@@ -1,7 +1,7 @@
 ﻿// Copyright (c) Jan Škoruba. All Rights Reserved.
 // Licensed under the Apache License, Version 2.0.
 
-using Domain.Entities.Identity;
+using Doitsu.Technology.Ecommerce.Domain.Entities.Identity;
 using IdentityServer.Admin.EntityFramework.Shared.Constants;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;

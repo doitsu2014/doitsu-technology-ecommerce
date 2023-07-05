@@ -1,4 +1,4 @@
-﻿namespace Domain.Interfaces.Domains;
+﻿namespace Doitsu.Technology.Ecommerce.Domain.Interfaces.Domains;
 
 public interface IImported
 {

@@ -5,7 +5,7 @@ using System;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using Domain.Entities.Identity;
+using Doitsu.Technology.Ecommerce.Domain.Entities.Identity;
 using IdentityServer.Admin.EntityFramework.Shared.DbContexts;
 using IdentityServer.Admin.EntityFramework.Shared.Helpers;
 using Microsoft.AspNetCore.Hosting;

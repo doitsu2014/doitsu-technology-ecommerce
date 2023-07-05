@@ -1,5 +1,5 @@
 ﻿using System;
-using Domain.Entities.Identity;
+using Doitsu.Technology.Ecommerce.Domain.Entities.Identity;
 using HealthChecks.UI.Client;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;

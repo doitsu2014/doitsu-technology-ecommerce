@@ -2,7 +2,7 @@
 // Licensed under the Apache License, Version 2.0.
 
 using System.IdentityModel.Tokens.Jwt;
-using Domain.Entities.Identity;
+using Doitsu.Technology.Ecommerce.Domain.Entities.Identity;
 using IdentityServer.Admin.Configuration.Database;
 using IdentityServer.Admin.EntityFramework.Shared.DbContexts;
 using IdentityServer.Admin.Helpers;

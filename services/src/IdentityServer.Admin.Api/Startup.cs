@@ -4,7 +4,7 @@
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using Domain.Entities.Identity;
+using Doitsu.Technology.Ecommerce.Domain.Entities.Identity;
 using HealthChecks.UI.Client;
 using IdentityServer.Admin.Api.Configuration;
 using IdentityServer.Admin.Api.Configuration.Authorization;

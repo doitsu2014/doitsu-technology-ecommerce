@@ -1,4 +1,4 @@
-using Domain.Interfaces.Domains;
+using Doitsu.Technology.Ecommerce.Domain.Interfaces.Domains;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 

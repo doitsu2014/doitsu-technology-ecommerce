@@ -1,4 +1,4 @@
-﻿using Domain.Interfaces.BizServices;
+﻿using Doitsu.Technology.Ecommerce.Domain.Interfaces.BizServices;
 
 namespace Infrastructure.Jobs;
 

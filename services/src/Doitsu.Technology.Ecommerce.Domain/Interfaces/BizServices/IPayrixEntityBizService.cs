@@ -1,4 +1,4 @@
-namespace Domain.Interfaces.BizServices;
+namespace Doitsu.Technology.Ecommerce.Domain.Interfaces.BizServices;
 
 public interface IPayrixEntityBizService
 {

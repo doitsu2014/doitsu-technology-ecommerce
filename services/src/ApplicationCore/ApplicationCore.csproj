@@ -40,6 +40,6 @@
       <Folder Include="BizServices\" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\Domain\Domain.csproj" />
+      <ProjectReference Include="..\Doitsu.Technology.Ecommerce.Domain\Doitsu.Technology.Ecommerce.Domain.csproj" />
     </ItemGroup>
 </Project>
