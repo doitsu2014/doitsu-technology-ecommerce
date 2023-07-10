@@ -18,6 +18,7 @@ using IdentityServer.Shared.Dtos.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -140,7 +141,8 @@ namespace IdentityServer.Admin.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                
+                endpoints.MapGet("/",
+                    context => context.Response.WriteAsync("DC Portfolio Service is running"));
                 endpoints.MapHealthChecks("/health", new HealthCheckOptions
                 {
                     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
