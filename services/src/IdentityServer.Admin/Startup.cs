@@ -10,6 +10,7 @@ using IdentityServer.Shared.Dtos;
 using IdentityServer.Shared.Dtos.Identity;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,7 +28,7 @@ namespace IdentityServer.Admin
         {
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
             HostingEnvironment = env;
-            Configuration = configuration;
+            Configuration      = configuration;
         }
 
         public IConfiguration Configuration { get; }
@@ -37,13 +38,16 @@ namespace IdentityServer.Admin
         public void ConfigureServices(IServiceCollection services)
         {
             // Adds the Duende IdentityServer Admin UI with custom options.
-            services.AddIdentityServerAdminUI<AdminIdentityDbContext, IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext,
-            AdminLogDbContext, AdminAuditLogDbContext, AuditLog, IdentityServerDataProtectionDbContext,
-                UserIdentity, UserIdentityRole, UserIdentityUserClaim, UserIdentityUserRole,
-                UserIdentityUserLogin, UserIdentityRoleClaim, UserIdentityUserToken, string,
-                IdentityUserDto, IdentityRoleDto, IdentityUsersDto, IdentityRolesDto, IdentityUserRolesDto,
-                IdentityUserClaimsDto, IdentityUserProviderDto, IdentityUserProvidersDto, IdentityUserChangePasswordDto,
-                IdentityRoleClaimsDto, IdentityUserClaimDto, IdentityRoleClaimDto>(ConfigureUIOptions);
+            services
+                .AddIdentityServerAdminUI<AdminIdentityDbContext, IdentityServerConfigurationDbContext,
+                    IdentityServerPersistedGrantDbContext,
+                    AdminLogDbContext, AdminAuditLogDbContext, AuditLog, IdentityServerDataProtectionDbContext,
+                    UserIdentity, UserIdentityRole, UserIdentityUserClaim, UserIdentityUserRole,
+                    UserIdentityUserLogin, UserIdentityRoleClaim, UserIdentityUserToken, string,
+                    IdentityUserDto, IdentityRoleDto, IdentityUsersDto, IdentityRolesDto, IdentityUserRolesDto,
+                    IdentityUserClaimsDto, IdentityUserProviderDto, IdentityUserProvidersDto,
+                    IdentityUserChangePasswordDto,
+                    IdentityRoleClaimsDto, IdentityUserClaimDto, IdentityRoleClaimDto>(ConfigureUIOptions);
 
             // Monitor changes in Admin UI views
             services.AddAdminUIRazorRuntimeCompilation(HostingEnvironment);
@@ -60,6 +64,8 @@ namespace IdentityServer.Admin
 
             app.UseEndpoints(endpoint =>
             {
+                endpoint.MapGet("/",
+                    context => context.Response.WriteAsync("DC Portfolio Service is running"));
                 endpoint.MapIdentityServerAdminUI();
                 endpoint.MapIdentityServerAdminUIHealthChecks();
             });
@@ -79,7 +85,8 @@ namespace IdentityServer.Admin
             }
 
             // Set migration assembly for application of db migrations
-            var migrationsAssembly = MigrationAssemblyConfiguration.GetMigrationAssemblyByProvider(options.DatabaseProvider);
+            var migrationsAssembly =
+                MigrationAssemblyConfiguration.GetMigrationAssemblyByProvider(options.DatabaseProvider);
             options.DatabaseMigrations.SetMigrationsAssemblies(migrationsAssembly);
 
             // Use production DbContexts and auth services.
@@ -87,10 +94,3 @@ namespace IdentityServer.Admin
         }
     }
 }
-
-
-
-
-
-
-
