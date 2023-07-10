@@ -104,7 +104,7 @@ namespace IdentityServer.Admin
             }
 
             configurationBuilder
-                .AddJsonFile($"secrets/appsettings.secrets.json", optional: true, reloadOnChange: true);
+                .AddJsonFile($"secrets/appsettings.secrets.json", optional: true, reloadOnChange: false);
 
             var configuration = configurationBuilder.Build();
 
