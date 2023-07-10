@@ -141,8 +141,6 @@ namespace IdentityServer.Admin.Api
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
-                endpoints.MapGet("/",
-                    context => context.Response.WriteAsync("DC Portfolio Service is running"));
                 endpoints.MapHealthChecks("/health", new HealthCheckOptions
                 {
                     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse

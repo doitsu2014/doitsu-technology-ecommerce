@@ -64,8 +64,6 @@ namespace IdentityServer.Admin
 
             app.UseEndpoints(endpoint =>
             {
-                endpoint.MapGet("/",
-                    context => context.Response.WriteAsync("DC Portfolio Service is running"));
                 endpoint.MapIdentityServerAdminUI();
                 endpoint.MapIdentityServerAdminUIHealthChecks();
             });

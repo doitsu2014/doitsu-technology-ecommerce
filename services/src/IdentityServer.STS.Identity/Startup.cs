@@ -89,8 +89,6 @@ namespace IdentityServer.STS.Identity
             app.UseEndpoints(endpoint =>
             {
                 endpoint.MapDefaultControllerRoute();
-                endpoint.MapGet("/",
-                    context => context.Response.WriteAsync("DC Portfolio Service is running"));
                 endpoint.MapHealthChecks("/health", new HealthCheckOptions
                 {
                     ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
