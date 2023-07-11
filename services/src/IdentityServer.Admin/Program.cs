@@ -72,7 +72,7 @@ namespace IdentityServer.Admin
             IHost                                                                   host)
         {
             var applyDbMigrationWithDataSeedFromProgramArguments       = args.Any(x => x == SeedArgs);
-            if (applyDbMigrationWithDataSeedFromProgramArguments) args = args.Except(new[] { SeedArgs }).ToArray();
+            if (applyDbMigrationWithDataSeedFromProgramArguments) args = args.Except(new[] {SeedArgs}).ToArray();
 
             var seedConfiguration = configuration.GetSection(nameof(SeedConfiguration)).Get<SeedConfiguration>();
             var databaseMigrationsConfiguration = configuration.GetSection(nameof(DatabaseMigrationsConfiguration))
@@ -93,10 +93,10 @@ namespace IdentityServer.Admin
 
             var configurationBuilder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json",                optional: false, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{environment}.json", optional: true,  reloadOnChange: true)
-                .AddJsonFile("serilog.json",                    optional: true,  reloadOnChange: true)
-                .AddJsonFile($"serilog.{environment}.json",     optional: true,  reloadOnChange: true);
+                .AddJsonFile("appsettings.json",                optional: false, reloadOnChange: false)
+                .AddJsonFile($"appsettings.{environment}.json", optional: true,  reloadOnChange: false)
+                .AddJsonFile("serilog.json",                    optional: true,  reloadOnChange: false)
+                .AddJsonFile($"serilog.{environment}.json",     optional: true,  reloadOnChange: false);
 
             if (isDevelopment)
             {
@@ -122,17 +122,17 @@ namespace IdentityServer.Admin
                 {
                     var configurationRoot = configApp.Build();
 
-                    configApp.AddJsonFile("serilog.json",            optional: true, reloadOnChange: true);
-                    configApp.AddJsonFile("identitydata.json",       optional: true, reloadOnChange: true);
-                    configApp.AddJsonFile("identityserverdata.json", optional: true, reloadOnChange: true);
+                    configApp.AddJsonFile("serilog.json",            optional: true, reloadOnChange: false);
+                    configApp.AddJsonFile("identitydata.json",       optional: true, reloadOnChange: false);
+                    configApp.AddJsonFile("identityserverdata.json", optional: true, reloadOnChange: false);
 
                     var env = hostContext.HostingEnvironment;
 
-                    configApp.AddJsonFile($"serilog.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+                    configApp.AddJsonFile($"serilog.{env.EnvironmentName}.json", optional: true, reloadOnChange: false);
                     configApp.AddJsonFile($"identitydata.{env.EnvironmentName}.json", optional: true,
-                        reloadOnChange: true);
+                        reloadOnChange: false);
                     configApp.AddJsonFile($"identityserverdata.{env.EnvironmentName}.json", optional: true,
-                        reloadOnChange: true);
+                        reloadOnChange: false);
 
                     if (env.IsDevelopment())
                     {
@@ -143,7 +143,7 @@ namespace IdentityServer.Admin
 
                     configApp.AddEnvironmentVariables();
                     configApp.AddCommandLine(args);
-                    configApp.AddJsonFile($"secrets/appsettings.secrets.json", optional: true, reloadOnChange: true);
+                    configApp.AddJsonFile($"secrets/appsettings.secrets.json", optional: true, reloadOnChange: false);
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {

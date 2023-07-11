@@ -11,8 +11,8 @@ using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Configuration.AddJsonFile("appsettings.jobs.json", optional: true, reloadOnChange: true);
-builder.Configuration.AddJsonFile("secrets/appsettings.secrets.json", optional: true, reloadOnChange: true);
+builder.Configuration.AddJsonFile("appsettings.jobs.json", optional: true, reloadOnChange: false);
+builder.Configuration.AddJsonFile("secrets/appsettings.secrets.json", optional: true, reloadOnChange: false);
 
 builder.Host
     .UseSerilog((ctx, lc) => { lc.ReadFrom.Configuration(ctx.Configuration); });

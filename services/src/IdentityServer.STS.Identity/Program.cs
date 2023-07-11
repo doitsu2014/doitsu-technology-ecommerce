@@ -39,10 +39,10 @@ namespace IdentityServer.STS.Identity
 
             var configurationBuilder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appsettings.json",                optional: false, reloadOnChange: true)
-                .AddJsonFile($"appsettings.{environment}.json", optional: true,  reloadOnChange: true)
-                .AddJsonFile("serilog.json",                    optional: true,  reloadOnChange: true)
-                .AddJsonFile($"serilog.{environment}.json",     optional: true,  reloadOnChange: true);
+                .AddJsonFile("appsettings.json",                optional: false, reloadOnChange: false)
+                .AddJsonFile($"appsettings.{environment}.json", optional: true,  reloadOnChange: false)
+                .AddJsonFile("serilog.json",                    optional: true,  reloadOnChange: false)
+                .AddJsonFile($"serilog.{environment}.json",     optional: true,  reloadOnChange: false);
 
             if (isDevelopment)
             {
@@ -54,7 +54,7 @@ namespace IdentityServer.STS.Identity
             configurationBuilder.AddCommandLine(args);
             configurationBuilder.AddEnvironmentVariables();
             configurationBuilder
-                .AddJsonFile($"secrets/appsettings.secrets.json", optional: true, reloadOnChange: true);
+                .AddJsonFile($"secrets/appsettings.secrets.json", optional: true, reloadOnChange: false);
             return configurationBuilder.Build();
         }
 
@@ -64,11 +64,11 @@ namespace IdentityServer.STS.Identity
                 {
                     var configurationRoot = configApp.Build();
 
-                    configApp.AddJsonFile("serilog.json", optional: true, reloadOnChange: true);
+                    configApp.AddJsonFile("serilog.json", optional: true, reloadOnChange: false);
 
                     var env = hostContext.HostingEnvironment;
 
-                    configApp.AddJsonFile($"serilog.{env.EnvironmentName}.json", optional: true, reloadOnChange: true);
+                    configApp.AddJsonFile($"serilog.{env.EnvironmentName}.json", optional: true, reloadOnChange: false);
 
                     if (env.IsDevelopment())
                     {
@@ -79,7 +79,7 @@ namespace IdentityServer.STS.Identity
 
                     configApp.AddEnvironmentVariables();
                     configApp.AddCommandLine(args);
-                    configApp.AddJsonFile($"secrets/appsettings.secrets.json", optional: true, reloadOnChange: true);
+                    configApp.AddJsonFile($"secrets/appsettings.secrets.json", optional: true, reloadOnChange: false);
                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
