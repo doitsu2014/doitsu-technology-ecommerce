@@ -17,7 +17,7 @@ env:
   - name: ASPNETCORE_URLS
     value: http://+:5000;https://+:44310
   - name: DOTNET_HOSTBUILDER__RELOADCONFIGONCHANGE
-    value: false 
+    value: "false"
 podAnnotations: 
   linkerd.io/inject: enabled
 
