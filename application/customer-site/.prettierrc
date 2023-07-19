@@ -1,0 +1,9 @@
+{
+  "editorconfig": true,
+  "printWidth": 140,
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "alignObjectProperties": true
+}
