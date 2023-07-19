@@ -25,9 +25,11 @@ import { BlogComponent } from './widgets/blog/blog.component';
 import { LogoComponent } from './widgets/logo/logo.component';
 import { ServicesComponent } from './widgets/services/services.component';
 import { CollectionComponent } from './widgets/collection/collection.component';
+import { HatdieuComponent } from './hatdieu/hatdieu.component';
 
 @NgModule({
   declarations: [
+    HatdieuComponent,
     FashionOneComponent,
     FashionTwoComponent,
     FashionThreeComponent,
