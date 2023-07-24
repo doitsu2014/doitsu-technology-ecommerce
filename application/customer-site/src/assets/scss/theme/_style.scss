@@ -6368,6 +6368,25 @@ ngx-loading-bar {
     }
 }
 
+.ngx-slider {
+    .ngx-slider-selection {
+        background: #ff4c3b !important;
+    }
+    .ngx-slider-pointer {
+        width: 22px !important;
+        height: 22px !important;
+        top: -10px !important;
+        background-color: #ff4c3b !important;
+        &:after {
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            background-color: #fff !important;
+        }
+    }
+}
+
+
 .theme_checkbox {
     label {
         display: block;

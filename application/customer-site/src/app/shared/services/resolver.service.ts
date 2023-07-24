@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import { ActivatedRouteSnapshot, Resolve, Router } from '@angular/router';
+import { ActivatedRouteSnapshot, Router } from '@angular/router';
 import { Product } from '../classes/product';
 import { ProductService } from './product.service';
 
 @Injectable({
 	providedIn: 'root'
 })
-export class Resolver implements Resolve<Product> {
+export class Resolver  {
   
   public product: Product = {};
 

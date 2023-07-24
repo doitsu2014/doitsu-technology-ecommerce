@@ -29,7 +29,6 @@ import { HatdieuComponent } from './hatdieu/hatdieu.component';
 
 @NgModule({
   declarations: [
-    HatdieuComponent,
     FashionOneComponent,
     FashionTwoComponent,
     FashionThreeComponent,
@@ -50,6 +49,7 @@ import { HatdieuComponent } from './hatdieu/hatdieu.component';
     BlogComponent,
     LogoComponent,
     ServicesComponent,
+    HatdieuComponent,
     CollectionComponent
   ],
   imports: [

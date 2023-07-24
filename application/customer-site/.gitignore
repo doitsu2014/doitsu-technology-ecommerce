@@ -1,14 +1,2 @@
-node_modules
 .angular
-dist
-e2e
-
-# IDEs and editors
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-
-# Test output
-test-results
+node_modules

@@ -1,6 +1,6 @@
 import { Component, OnInit, AfterViewInit} from '@angular/core';
-import { ButtonsConfiguration, PlainGalleryConfiguration } from '../../../shared/data/portfolio';
-import { Image, AdvancedLayout } from '@ks89/angular-modal-gallery';
+import { ButtonsConfiguration } from '../../../shared/data/portfolio';
+import { Image } from '@ks89/angular-modal-gallery';
 
 @Component({
   selector: 'app-masonry-full-width',
@@ -11,7 +11,6 @@ export class MasonryFullWidthComponent implements OnInit, AfterViewInit  {
 
   public galleryFilter: string = 'all'
   public ButtonsConfig: any = ButtonsConfiguration;
-  public GalleryConfig: any = PlainGalleryConfiguration;
   
   public Images;
   
@@ -88,13 +87,6 @@ export class MasonryFullWidthComponent implements OnInit, AfterViewInit  {
           itemSelector: '.isotopeSelector'
         });
     }, 1000);
-  }
-
-  openImage(image) {
-    const index: number = this.getCurrentIndexCustomLayout(image, this.Images);
-    this.GalleryConfig = Object.assign({}, this.GalleryConfig, { 
-        layout: new AdvancedLayout(index, true) 
-    });
   }
 
   getCurrentIndexCustomLayout(image: Image, images: Image[]): number {

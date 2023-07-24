@@ -4,10 +4,10 @@
 import '@angular/localize/init';
 import 'zone.js/node';
 
-// Reference Error Event Not Found Solution
+// Refrence Error Event Not Found Solution
 global['Event'] = null;
 
-// Reference Error Window Not found  solution
+// Refrence Error Window Not found  solution
 const domino = require('domino');
 const fs = require('fs');
 const path = require('path');
@@ -17,8 +17,8 @@ global['window'] = win;
 global['document'] = win.document;
 global['navigator'] = win.navigator;
 
-// Reference Error localStorage Not found  solution
-import 'localstorage-polyfill';
+// Refrence Error localStorage Not found  solution
+import 'localstorage-polyfill'
 global['localStorage'] = localStorage;
 
 const cors = require('cors');
@@ -44,36 +44,28 @@ export function app() {
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
   const LAZY_MODULE_MAP = require('./src/main.server');
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
-  server.engine(
-    'html',
-    ngExpressEngine({
-      bootstrap: AppServerModule,
-    }),
-  );
+  server.engine('html', ngExpressEngine({
+    bootstrap: AppServerModule,
+  }));
 
   server.set('view engine', 'html');
   server.set('views', distFolder);
 
+  
   // Example Express Rest API endpoints
   // app.get('/api/**', (req, res) => { });
   // Serve static files from /browser
-  server.get(
-    '*.*',
-    express.static(distFolder, {
-      maxAge: '1y',
-    }),
-  );
+  server.get('*.*', express.static(distFolder, {
+    maxAge: '1y'
+  }));
 
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
-    res.render(indexHtml, {
-      req,
-      providers: [
-        {
-          provide: APP_BASE_HREF,
-          useValue: req.baseUrl,
-        },
-      ],
+    res.render(indexHtml, { req, 
+      providers: [{ 
+        provide: APP_BASE_HREF,
+        useValue: req.baseUrl 
+      }]
     });
   });
 
@@ -95,10 +87,10 @@ function run() {
 // The below code is to ensure that the server is run only when not requiring the bundle.
 declare const __non_webpack_require__: NodeRequire;
 const mainModule = __non_webpack_require__.main;
-const moduleFilename = (mainModule && mainModule.filename) || '';
+const moduleFilename = mainModule && mainModule.filename || '';
 if (moduleFilename === __filename || moduleFilename.includes('iisnode')) {
   run();
 }
 
 export * from './src/main.server';
-export { renderModuleFactory } from '@angular/platform-server';
+// export { renderModuleFactory } from '@angular/platform-server';

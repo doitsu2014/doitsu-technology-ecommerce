@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-// import { NgxPayPalModule } from 'ngx-paypal';
-import { Ng5SliderModule } from 'ng5-slider';
+import { NgxSliderModule } from 'ngx-slider-v2';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { SharedModule } from '../shared/shared.module';
 import { ShopRoutingModule } from './shop-routing.module';
@@ -44,7 +43,6 @@ import { SuccessComponent } from './checkout/success/success.component';
 
 import {RouterModule} from '@angular/router';
 
-
 @NgModule({
   declarations: [
     ProductLeftSidebarComponent, 
@@ -77,8 +75,7 @@ import {RouterModule} from '@angular/router';
   ],
   imports: [
     CommonModule,
-    // NgxPayPalModule,
-    Ng5SliderModule,
+    NgxSliderModule,
     InfiniteScrollModule,
     SharedModule,
     ShopRoutingModule,

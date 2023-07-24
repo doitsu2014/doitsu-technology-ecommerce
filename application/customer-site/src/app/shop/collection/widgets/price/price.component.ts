@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, Input, EventEmitter, Inject, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { Options } from 'ng5-slider';
+import { Options } from 'ngx-slider-v2';
 
 @Component({
   selector: 'app-price',

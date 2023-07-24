@@ -15,18 +15,18 @@ export class HatdieuComponent implements OnInit {
 
   constructor(public productService: ProductService) {
     this.productService.getProducts.subscribe(response =>
-      this.products = response.filter(item => item.type == 'hatdieus')
+      this.products = response.filter(item => item.type == 'vegetables')
     );
   }
 
   // Sliders
   public sliders = [{
     title: 'save 10%',
-    subTitle: 'fresh hatdieus',
+    subTitle: 'fresh vegetables',
     image: 'assets/images/slider/7.jpg'
   }, {
     title: 'save 10%',
-    subTitle: 'fresh hatdieus',
+    subTitle: 'fresh vegetables',
     image: 'assets/images/slider/8.jpg'
   }];
 
@@ -55,5 +55,4 @@ export class HatdieuComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }
