@@ -19,10 +19,10 @@ import { MarijuanaComponent } from './marijuana/marijuana.component';
 import { HatdieuComponent } from './hatdieu/hatdieu.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'hatdieu'
-  },
+  // {
+  //   path: '',
+  //   redirectTo: 'hatdieu'
+  // },
   {
     path: 'hatdieu',
     component: HatdieuComponent
