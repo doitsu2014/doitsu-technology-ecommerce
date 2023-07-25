@@ -16,6 +16,18 @@ const routes: Routes = [
     loadChildren: () => import('./sub-systems/hatdieu/home/home.module').then(m => m.HomeModule)
   },
   {
+    path: 'shop',
+    loadChildren: () => import('./sub-systems/hatdieu/shop/shop.module').then(m => m.ShopModule)
+  },
+  {
+    path: 'pages',
+    loadChildren: () => import('./sub-systems/hatdieu/pages/pages.module').then(m => m.PagesModule)
+  },
+  {
+    path: 'elements',
+    loadChildren: () => import('./sub-systems/hatdieu/elements/elements.module').then(m => m.ElementsModule)
+  },
+  {
     path: 'archived/shop',
     component: ShopComponent,
     loadChildren: () => import('./shop/shop.module').then(m => m.ShopModule)

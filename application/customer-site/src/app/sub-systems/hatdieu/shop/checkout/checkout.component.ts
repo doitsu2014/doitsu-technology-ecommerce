@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 // import { IPayPalConfig, ICreateOrderRequest } from 'ngx-paypal';
-import { environment } from '../../../environments/environment';
 import { Product } from "../../shared/classes/product";
 import { ProductService } from "../../shared/services/product.service";
 import { OrderService } from "../../shared/services/order.service";
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-checkout',
