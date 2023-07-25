@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { HomeSlider } from 'src/app/shared/data/slider';
+import { HomeSlider } from 'src/app/sub-systems/hatdieu/shared/data/slider';
 
 @Component({
   selector: 'app-slider',

@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from '../../../shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
+import { SharedModule } from '../shared/shared.module';
+
 // Widgest Components
 import { SliderComponent } from './widgets/slider/slider.component';
 import { BlogComponent } from './widgets/blog/blog.component';

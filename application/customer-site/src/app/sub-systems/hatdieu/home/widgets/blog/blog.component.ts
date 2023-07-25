@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { BlogSlider } from 'src/app/shared/data/slider';
+import { BlogSlider } from 'src/app/sub-systems/hatdieu/shared/data/slider';
 
 @Component({
   selector: 'app-blog',
@@ -7,7 +7,7 @@ import { BlogSlider } from 'src/app/shared/data/slider';
   styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent implements OnInit {
-  
+
   @Input() blogs: any[] = [];
 
   constructor() { }

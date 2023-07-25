@@ -22,7 +22,7 @@ export class AppComponent {
     private loader: LoadingBarService, translate: TranslateService) {
     if (isPlatformBrowser(this.platformId)) {
       translate.setDefaultLang('en');
-      translate.addLangs(['en', 'fr']);
+      translate.addLangs(['en', 'fr', 'vi']);
     }
   }
 

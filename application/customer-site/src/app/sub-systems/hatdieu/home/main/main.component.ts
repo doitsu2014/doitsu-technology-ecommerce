@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from 'src/app/shared/classes/product';
-import { ProductSlider } from 'src/app/shared/data/slider';
+import { ProductSlider } from 'src/app/sub-systems/hatdieu/shared/data/slider';
 import { ProductService } from 'src/app/shared/services/product.service';
 
 
