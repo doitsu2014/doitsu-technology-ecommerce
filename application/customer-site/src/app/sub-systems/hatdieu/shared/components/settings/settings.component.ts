@@ -19,9 +19,6 @@ export class SettingsComponent implements OnInit {
     name: 'English',
     code: 'en'
   }, {
-    name: 'French',
-    code: 'fr'
-  }, {
     name: 'Việt Nam',
     code: 'vi'
   }];
