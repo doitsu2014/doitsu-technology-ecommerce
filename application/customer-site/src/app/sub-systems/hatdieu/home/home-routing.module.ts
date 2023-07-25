@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HatdieuComponent } from './hatdieu/hatdieu.component';
+import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: 'hatdieu'
-  // },
   {
-    path: 'hatdieu',
-    component: HatdieuComponent
+    path: '',
+    component: MainComponent
   },
+  // {
+  //   path: 'hatdieu',
+  //   component: HatdieuComponent
+  // },
   // {
   //   path: 'fashion',
   //   component: FashionOneComponent

@@ -8,30 +8,35 @@ import { ElementsComponent } from './elements/elements.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home/fashion',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+    loadChildren: () => import('./sub-systems/hatdieu/home/home.module').then(m => m.HomeModule)
   },
   {
-    path: 'shop',
+    path: 'archived/shop',
     component: ShopComponent,
     loadChildren: () => import('./shop/shop.module').then(m => m.ShopModule)
   },
-  { 
-    path: 'pages',
+  {
+    path: 'archived/pages',
     component: PagesComponent,
-    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule) 
+    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
   },
-  { 
-    path: 'elements', 
+  {
+    path: 'archived/elements',
     component: ElementsComponent,
-    loadChildren: () => import('./elements/elements.module').then(m => m.ElementsModule) },
+    loadChildren: () => import('./elements/elements.module').then(m => m.ElementsModule)
+  },
+  {
+    path: 'archived/home',
+    loadChildren: () => import('./home/home.module').then(m => m.HomeModule)
+  },
   {
     path: '**', // Navigate to Home Page if not found any page
-    redirectTo: 'home/fashion',
+    redirectTo: 'home/hatdieu',
   },
 ];
 
@@ -40,7 +45,7 @@ const routes: Routes = [
     useHash: false,
     anchorScrolling: 'enabled',
     scrollPositionRestoration: 'enabled'
-})],
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

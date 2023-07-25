@@ -44,12 +44,12 @@ import { HatdieuComponent } from './hatdieu/hatdieu.component';
     ShoesComponent,
     BagsComponent,
     MarijuanaComponent,
+    HatdieuComponent,
     // Widgest Components
     SliderComponent,
     BlogComponent,
     LogoComponent,
     ServicesComponent,
-    HatdieuComponent,
     CollectionComponent
   ],
   imports: [
