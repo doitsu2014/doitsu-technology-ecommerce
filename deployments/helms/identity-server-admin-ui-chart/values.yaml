@@ -18,6 +18,7 @@ nameOverride: ""
 fullnameOverride: ""
 env: []
 podAnnotations: {}
+serviceAnnotations: {}
 
 podSecurityContext:
   {}
