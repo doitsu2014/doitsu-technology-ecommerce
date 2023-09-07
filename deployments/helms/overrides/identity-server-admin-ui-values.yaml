@@ -66,6 +66,7 @@ ingress:
     nginx.ingress.kubernetes.io/proxy-buffers-number: "12"
     nginx.ingress.kubernetes.io/client-body-buffer-size: 1m
     nginx.ingress.kubernetes.io/affinity: "cookie"
+    nginx.ingress.kubernetes.io/service-upstream: "true"
   hosts:
     - host: $(SERVICE_INGRESS_HOST) 
       paths:
