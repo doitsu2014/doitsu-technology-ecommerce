@@ -20,6 +20,8 @@ env:
     value: "false"
 podAnnotations:
   linkerd.io/inject: enabled
+serviceAnnotations:
+  linkerd.io/inject: enabled
 
 podSecurityContext:
   {}
