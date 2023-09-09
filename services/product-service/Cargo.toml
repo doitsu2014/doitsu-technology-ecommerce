@@ -1,0 +1,13 @@
+[package]
+name = "product-service"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace]
+
+# members = ["product-domain", "product-infrastructure"]
+[dependencies]
+tokio = { version = "1.32.0", features = ["full"] }
+product-domain = { path = "product-domain", version = "0.1.0" }
+product-infrastructure = { path = "product-infrastructure", version = "0.1.0" }
