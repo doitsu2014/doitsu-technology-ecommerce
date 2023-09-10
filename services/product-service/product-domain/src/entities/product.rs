@@ -14,19 +14,19 @@ pub struct Product {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct ProductAttributes {
-    pub attributeCode: String,
-    pub productId: String,
+    pub attribute_code: String,
+    pub product_id: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct Attributes {
     pub code: String,
-    pub displayName: String,
+    pub display_name: String,
     pub value: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct AttributeTypes {
     pub code: String,
-    pub displayName: String,
+    pub display_name: String,
 }
