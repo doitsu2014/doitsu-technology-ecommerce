@@ -1,0 +1,7 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "./blog-infrastructure/Cargo.toml",
+        "./blog-domain/Cargo.toml"
+    ]
+  
+}
