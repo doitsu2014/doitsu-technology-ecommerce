@@ -1,7 +1,6 @@
 {
-    "rust-analyzer.linkedProjects": [
-        "./blog-infrastructure/Cargo.toml",
-        "./blog-domain/Cargo.toml"
+    "rust_analyzer.linkedProjects": [
+        "./blog_infrastructure/Cargo.toml",
+        "./blog_domain/Cargo.toml"
     ]
-  
 }
