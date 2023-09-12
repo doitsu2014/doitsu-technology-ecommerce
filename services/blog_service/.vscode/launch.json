@@ -7,16 +7,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in library 'blog-domain'",
+            "name": "Debug unit tests in library 'blog_domain'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
                     "--lib",
-                    "--package=blog-domain"
+                    "--package=blog_domain"
                 ],
                 "filter": {
-                    "name": "blog-domain",
+                    "name": "blog_domain",
                     "kind": "lib"
                 }
             },
@@ -26,16 +26,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in library 'blog-infrastructure'",
+            "name": "Debug unit tests in library 'blog_infrastructure'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
                     "--lib",
-                    "--package=blog-infrastructure"
+                    "--package=blog_infrastructure"
                 ],
                 "filter": {
-                    "name": "blog-infrastructure",
+                    "name": "blog_infrastructure",
                     "kind": "lib"
                 }
             },
@@ -45,15 +45,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug executable 'blog-service'",
+            "name": "Debug executable 'blog_service'",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=blog-service",
-                    "--package=blog-service"
+                    "--bin=blog_service",
+                    "--package=blog_service"
                 ],
                 "filter": {
-                    "name": "blog-service",
+                    "name": "blog_service",
                     "kind": "bin"
                 }
             },
@@ -63,16 +63,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'blog-service'",
+            "name": "Debug unit tests in executable 'blog_service'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=blog-service",
-                    "--package=blog-service"
+                    "--bin=blog_service",
+                    "--package=blog_service"
                 ],
                 "filter": {
-                    "name": "blog-service",
+                    "name": "blog_service",
                     "kind": "bin"
                 }
             },

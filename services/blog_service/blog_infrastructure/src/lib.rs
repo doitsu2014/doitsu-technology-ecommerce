@@ -8,7 +8,7 @@ const MIGRATIONS: EmbeddedMigrations = embed_migrations!("migrations");
 
 pub fn initialize_db(connection_string: String) {
     let mut conn = PgConnection::establish(&connection_string)
-        .unwrap_or_else(|_| panic!("Error connecting to {}", connection_string));
+        .unwrap_or_else(|error| panic!("Error connecting to {}: {}", connection_string, error));
     run_migrations(&mut conn)
         .unwrap_or_else(|_| panic!("Error migrating database {}", connection_string));
 }
