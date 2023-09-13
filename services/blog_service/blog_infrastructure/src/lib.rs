@@ -1,4 +1,5 @@
 pub mod schema;
+pub mod data_access_services;
 
 use diesel::{pg::Pg, Connection, PgConnection, migration::MigrationVersion};
 use diesel_migrations::{embed_migrations, EmbeddedMigrations, MigrationHarness};
