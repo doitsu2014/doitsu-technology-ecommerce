@@ -2,5 +2,33 @@
     "rust_analyzer.linkedProjects": [
         "./blog_infrastructure/Cargo.toml",
         "./blog_domain/Cargo.toml"
+    ],
+    "rust-analyzer.linkedProjects": [
+        "./blog_domain/Cargo.toml",
+        "./blog_infrastructure/Cargo.toml"
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "postgressql-postgresql.infrastructure.svc.cluster.local",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "Postgres Database",
+            "group": "Localhost",
+            "database": "postgres",
+            "username": "postgres",
+            "password": "gRRDL66p8u"
+        },
+        {
+            "previewLimit": 50,
+            "server": "postgressql-postgresql.infrastructure.svc.cluster.local",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "microservices_blogs Database",
+            "group": "Localhost",
+            "database": "microservices_blogs",
+            "username": "postgres",
+            "password": "gRRDL66p8u"
+        }
     ]
 }
