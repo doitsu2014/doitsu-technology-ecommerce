@@ -1,4 +1,4 @@
 variable "namespace" {
   description = "(Required) Namespace"
-  default     = "infrastructure"
+  default     = "strapi"
 }

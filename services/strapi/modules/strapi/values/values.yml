@@ -1,0 +1,30 @@
+image:
+  repository: tccr.io/truecharts/strapi
+  tag: v4.13.7@sha256:d9ee683da99bac5098bc1b62099decba1d28e600b02e3a422ae7c9f28a5dc134
+  pullPolicy: Always
+service:
+  main:
+    ports:
+      main:
+        port: 1337
+persistence:
+  data:
+    enabled: true
+    mountPath: /srv/app
+# Enabled postgres
+cnpg:
+  main:
+    enabled: true
+    user: strapi
+    database: strapi
+portal:
+  open:
+    enabled: true
+workload:
+  main:
+    podSpec:
+      containers:
+        main:
+          env:
+            JWT_SECRET: $(STRAPI_JWT_SECRET)
+            ADMIN_JWT_SECRET: $(STRAPI_ADMIN_JWT_SECRET)
