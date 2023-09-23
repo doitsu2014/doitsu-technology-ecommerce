@@ -1,0 +1,23 @@
+diff --git a/node_modules/purest/config/providers.json b/node_modules/purest/config/providers.json
+index 8dd1dae..46f1e7c 100644
+--- a/node_modules/purest/config/providers.json
++++ b/node_modules/purest/config/providers.json
+@@ -2784,5 +2784,18 @@
+         "authorization": "Bearer {auth}"
+       }
+     }
++  },
++  "dtech": {
++    "default": {
++      "origin": "https://ids-sts.doitsu.tech",
++      "path": "api/{path}",
++      "headers": {
++        "authorization": "Bearer {auth}"
++      }
++    },
++    "oauth": {
++      "origin": "https://ids-sts.doitsu.tech",
++      "path": "connect/{path}"
++    }
+   }
+ }
