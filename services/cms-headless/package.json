@@ -7,14 +7,16 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "postinstall": "patch-package"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "patch-package": "^8.0.0"
+  },
   "dependencies": {
     "@strapi/plugin-i18n": "4.13.7",
     "@strapi/plugin-users-permissions": "4.13.7",
     "@strapi/strapi": "4.13.7",
-    "patch-package": "^8.0.0",
     "pg": "8.8.0"
   },
   "author": {
