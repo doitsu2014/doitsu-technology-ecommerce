@@ -2,25 +2,26 @@
   "name": "cms-headless",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Headless CMS of Doitsu Technology",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
+    "patch-strapi-plugin-users-permissions": "patch-package @strapi/plugin-users-permissions",
     "postinstall": "patch-package"
   },
   "devDependencies": {
     "patch-package": "^8.0.0"
   },
   "dependencies": {
-    "@strapi/plugin-i18n": "4.13.7",
-    "@strapi/plugin-users-permissions": "4.13.7",
-    "@strapi/strapi": "4.13.7",
+    "@strapi/plugin-i18n": "4.14.3",
+    "@strapi/plugin-users-permissions": "4.14.3",
+    "@strapi/strapi": "4.14.3",
     "pg": "8.8.0"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Doitsu Technology"
   },
   "strapi": {
     "uuid": "78df2dcc-5f52-484d-a853-2b68a3d5ba84"
