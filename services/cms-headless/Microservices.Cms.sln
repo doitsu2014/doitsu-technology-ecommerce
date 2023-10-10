@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1195B1AD-E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Cms.WebApp", "src\Microservices.Cms.WebApp\Microservices.Cms.WebApp.csproj", "{1CB415C9-3447-4A9A-9522-FC7785D63F21}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployment", "deployment", "{2C6A7F11-AE2A-4B6C-BE7E-C70C314B448D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

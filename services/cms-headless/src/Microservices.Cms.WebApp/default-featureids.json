@@ -1,0 +1,198 @@
+{
+  "Api": [
+    "OrchardCore.Apis.GraphQL"
+  ],
+  "Application": [],
+  "Commerce": [
+    "OrchardCore.Commerce.ContentFields",
+    "OrchardCore.Commerce",
+    "OrchardCore.Commerce.CurrencySettingsSelector",
+    "OrchardCore.Commerce.Tax.CustomTaxRates",
+    "OrchardCore.Commerce.Inventory",
+    "OrchardCore.Commerce.Promotion",
+    "OrchardCore.Commerce.SessionCartStorage",
+    "OrchardCore.Commerce.Tax"
+  ],
+  "Configuration": [],
+  "Content": [
+    "OrchardCore.Feeds",
+    "OrchardCore.Flows",
+    "OrchardCore.Forms",
+    "OrchardCore.Layers",
+    "OrchardCore.Shortcodes.Templates",
+    "OrchardCore.Widgets"
+  ],
+  "Content_Management": [
+    "OrchardCore.Contents.Deployment.AddToDeploymentPlan",
+    "OrchardCore.AdminDashboard",
+    "OrchardCore.AdminMenu",
+    "OrchardCore.Alias",
+    "OrchardCore.ArchiveLater",
+    "OrchardCore.ContentFields",
+    "OrchardCore.ContentFields.Indexing.SQL",
+    "OrchardCore.ContentFields.Indexing.SQL.UserPicker",
+    "OrchardCore.ContentPreview",
+    "OrchardCore.ContentTypes",
+    "OrchardCore.Contents",
+    "OrchardCore.Contents.Deployment.ExportContentToDeploymentTarget",
+    "OrchardCore.Contents.FileContentDefinition",
+    "OrchardCore.Html",
+    "OrchardCore.Liquid",
+    "OrchardCore.Lists",
+    "OrchardCore.Markdown",
+    "OrchardCore.Media",
+    "OrchardCore.Media.Cache",
+    "OrchardCore.Media.Slugify",
+    "OrchardCore.PublishLater",
+    "OrchardCore.Queries",
+    "OrchardCore.Seo",
+    "OrchardCore.Sitemaps",
+    "OrchardCore.Sitemaps.Cleanup",
+    "OrchardCore.Sitemaps.RazorPages",
+    "OrchardCore.Spatial",
+    "OrchardCore.Queries.Sql",
+    "OrchardCore.Taxonomies",
+    "OrchardCore.Taxonomies.ContentsAdminList",
+    "OrchardCore.Title",
+    "OrchardCore.Contents.Deployment.Download"
+  ],
+  "Deployment": [
+    "OrchardCore.Deployment",
+    "OrchardCore.Deployment.Remote"
+  ],
+  "Development": [
+    "OrchardCore.AdminTemplates",
+    "OrchardCore.Placements",
+    "OrchardCore.Placements.FileStorage",
+    "OrchardCore.Templates"
+  ],
+  "Distributed": [
+    "OrchardCore.Tenants.Distributed",
+    "OrchardCore.Redis",
+    "OrchardCore.Redis.Bus",
+    "OrchardCore.Redis.Cache",
+    "OrchardCore.Redis.DataProtection",
+    "OrchardCore.Redis.Lock"
+  ],
+  "GitHub": [
+    "OrchardCore.GitHub.Authentication"
+  ],
+  "Google": [
+    "OrchardCore.Google.Analytics",
+    "OrchardCore.Google.GoogleAuthentication",
+    "OrchardCore.Google.TagManager"
+  ],
+  "Hosting": [
+    "OrchardCore.Media.AmazonS3",
+    "OrchardCore.Media.Azure.Storage"
+  ],
+  "Infrastructure": [
+    "OrchardCore.Admin",
+    "OrchardCore.HealthChecks",
+    "OrchardCore.HomeRoute",
+    "OrchardCore.Diagnostics",
+    "OrchardCore.RemotePublishing",
+    "OrchardCore.ResponseCompression",
+    "OrchardCore.ReverseProxy",
+    "OrchardCore.Rules",
+    "OrchardCore.Setup",
+    "OrchardCore.Shortcodes",
+    "OrchardCore.Tenants.FileProvider",
+    "OrchardCore.Tenants.FeatureProfiles",
+    "OrchardCore.Tenants",
+    "OrchardCore.XmlRpc"
+  ],
+  "Internationalization": [
+    "OrchardCore.Localization.AdminCulturePicker",
+    "OrchardCore.ContentLocalization.ContentCulturePicker",
+    "OrchardCore.Localization.ContentLanguageHeader",
+    "OrchardCore.ContentLocalization",
+    "OrchardCore.Localization",
+    "OrchardCore.ContentLocalization.Sitemaps"
+  ],
+  "Messaging": [
+    "OrchardCore.Email"
+  ],
+  "Meta": [
+    "OrchardCore.Facebook.Login",
+    "OrchardCore.Facebook.Pixel",
+    "OrchardCore.Facebook.Widgets"
+  ],
+  "Microsoft_Authentication": [
+    "OrchardCore.Microsoft.Authentication.MicrosoftAccount",
+    "OrchardCore.Microsoft.Authentication.AzureAD"
+  ],
+  "Navigation": [
+    "OrchardCore.Autoroute",
+    "OrchardCore.Menu"
+  ],
+  "Notifications": [
+    "OrchardCore.Notifications.Email",
+    "OrchardCore.Notifications",
+    "OrchardCore.Notifications.Sms"
+  ],
+  "OpenID_Connect": [
+    "OrchardCore.OpenId.Server",
+    "OrchardCore.OpenId.Client",
+    "OrchardCore.OpenId.Management",
+    "OrchardCore.OpenId.Validation"
+  ],
+  "Performance": [
+    "OrchardCore.DynamicCache",
+    "OrchardCore.MiniProfiler"
+  ],
+  "Search": [
+    "OrchardCore.Search.Elasticsearch",
+    "OrchardCore.Search.Elasticsearch.ContentPicker",
+    "OrchardCore.Search.Elasticsearch.Worker",
+    "OrchardCore.Indexing",
+    "OrchardCore.Search.Lucene",
+    "OrchardCore.Search.Lucene.ContentPicker",
+    "OrchardCore.Search.Lucene.Worker",
+    "OrchardCore.Media.Indexing",
+    "OrchardCore.Search"
+  ],
+  "Security": [
+    "OrchardCore.AuditTrail",
+    "OrchardCore.Cors",
+    "OrchardCore.DataProtection.Azure",
+    "OrchardCore.Https",
+    "OrchardCore.ReCaptcha",
+    "OrchardCore.ReCaptcha.Users",
+    "OrchardCore.Roles",
+    "OrchardCore.Security",
+    "OrchardCore.Users.2FA.AuthenticatorApp",
+    "OrchardCore.Users.2FA.Email",
+    "OrchardCore.Users.2FA.Sms",
+    "OrchardCore.Users",
+    "OrchardCore.Users.AuditTrail",
+    "OrchardCore.Users.Authentication.CacheTicketStore",
+    "OrchardCore.Users.ChangeEmail",
+    "OrchardCore.Users.Registration",
+    "OrchardCore.Users.ResetPassword"
+  ],
+  "Settings": [
+    "OrchardCore.CustomSettings",
+    "OrchardCore.Users.CustomUserSettings",
+    "OrchardCore.Users.TimeZone"
+  ],
+  "SMS": [
+    "OrchardCore.Sms"
+  ],
+  "Tasks": [
+    "OrchardCore.BackgroundTasks"
+  ],
+  "Theming": [
+    "OrchardCore.Themes"
+  ],
+  "Twitter": [
+    "OrchardCore.Twitter.Signin",
+    "OrchardCore.Twitter"
+  ],
+  "Workflows": [
+    "OrchardCore.Workflows.Http",
+    "OrchardCore.Workflows.Session",
+    "OrchardCore.Workflows.Timers",
+    "OrchardCore.Workflows"
+  ]
+}
