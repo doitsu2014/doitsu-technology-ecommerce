@@ -1,0 +1,1838 @@
+{
+  "ContentTypeDefinitionRecords": [
+    {
+      "Name": "HtmlDashboardWidget",
+      "DisplayName": "Html Dashboard Widget",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Draftable": true,
+          "Versionable": true,
+          "Stereotype": "DashboardWidget",
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "HtmlDashboardWidget",
+          "Name": "HtmlDashboardWidget",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "DashboardPart",
+          "Name": "DashboardPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1",
+              "Editor": "Wysiwyg"
+            },
+            "GraphQLContentTypePartSettings": {},
+            "HtmlBodyPartSettings": {}
+          }
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Form",
+      "DisplayName": "Form",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "Widget"
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "TitlePartSettings": {
+              "RenderTitle": false
+            },
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "FormElementPart",
+          "Name": "FormElementPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "FormPart",
+          "Name": "FormPart",
+          "Settings": {}
+        },
+        {
+          "PartName": "FlowPart",
+          "Name": "FlowPart",
+          "Settings": {}
+        }
+      ]
+    },
+    {
+      "Name": "Label",
+      "DisplayName": "Label",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "Widget"
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "TitlePartSettings": {
+              "RenderTitle": false
+            }
+          }
+        },
+        {
+          "PartName": "FormElementPart",
+          "Name": "FormElementPart",
+          "Settings": {}
+        },
+        {
+          "PartName": "LabelPart",
+          "Name": "LabelPart",
+          "Settings": {}
+        }
+      ]
+    },
+    {
+      "Name": "Input",
+      "DisplayName": "Input",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "Widget"
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "FormInputElementPart",
+          "Name": "FormInputElementPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "FormElementPart",
+          "Name": "FormElementPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "InputPart",
+          "Name": "InputPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "PartName": "FormElementLabelPart",
+          "Name": "FormElementLabelPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "FormElementValidationPart",
+          "Name": "FormElementValidationPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "TextArea",
+      "DisplayName": "Text Area",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "Widget"
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "FormInputElementPart",
+          "Name": "FormInputElementPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "FormElementPart",
+          "Name": "FormElementPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "TextAreaPart",
+          "Name": "TextAreaPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "PartName": "FormElementLabelPart",
+          "Name": "FormElementLabelPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "FormElementValidationPart",
+          "Name": "FormElementValidationPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Select",
+      "DisplayName": "Select",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "Widget"
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "FormInputElementPart",
+          "Name": "FormInputElementPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "FormElementPart",
+          "Name": "FormElementPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "SelectPart",
+          "Name": "SelectPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "PartName": "FormElementLabelPart",
+          "Name": "FormElementLabelPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "FormElementValidationPart",
+          "Name": "FormElementValidationPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "5"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Button",
+      "DisplayName": "Button",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "Widget"
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "FormInputElementPart",
+          "Name": "FormInputElementPart",
+          "Settings": {}
+        },
+        {
+          "PartName": "FormElementPart",
+          "Name": "FormElementPart",
+          "Settings": {}
+        },
+        {
+          "PartName": "ButtonPart",
+          "Name": "ButtonPart",
+          "Settings": {}
+        }
+      ]
+    },
+    {
+      "Name": "ValidationSummary",
+      "DisplayName": "Validation Summary",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "Widget"
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "ValidationSummaryPart",
+          "Name": "ValidationSummaryPart",
+          "Settings": {}
+        }
+      ]
+    },
+    {
+      "Name": "Validation",
+      "DisplayName": "Validation",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "Widget"
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "ValidationPart",
+          "Name": "ValidationPart",
+          "Settings": {}
+        }
+      ]
+    },
+    {
+      "Name": "SocialMetaSettings",
+      "DisplayName": "Social Meta Settings",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "CustomSettings"
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "SocialMetaSettings",
+          "Name": "SocialMetaSettings",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Taxonomy",
+      "DisplayName": "Taxonomy",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "AliasPart",
+          "Name": "AliasPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            },
+            "AliasPartSettings": {
+              "Pattern": "{{ Model.ContentItem | display_text | slugify }}"
+            }
+          }
+        },
+        {
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            },
+            "AutoroutePartSettings": {
+              "Pattern": "{{ Model.ContentItem | display_text | slugify }}",
+              "AllowRouteContainedItems": true
+            }
+          }
+        },
+        {
+          "PartName": "TaxonomyPart",
+          "Name": "TaxonomyPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "MvcTitle",
+      "DisplayName": "Mvc Title",
+      "Settings": {
+        "ContentTypeSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "TitlePartSettings": {
+              "Options": 3
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ShoppingCartWidget",
+      "DisplayName": "Shopping Cart Widget",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Stereotype": "Widget"
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "ShoppingCartWidgetPart",
+          "Name": "ShoppingCartWidgetPart",
+          "Settings": {}
+        }
+      ]
+    },
+    {
+      "Name": "Order",
+      "DisplayName": "Order",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Description": "The title of the order"
+            }
+          }
+        },
+        {
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Editor": "Wysiwyg"
+            }
+          }
+        },
+        {
+          "PartName": "OrderPart",
+          "Name": "OrderPart",
+          "Settings": {}
+        },
+        {
+          "PartName": "StripePaymentPart",
+          "Name": "StripePaymentPart",
+          "Settings": {}
+        }
+      ]
+    },
+    {
+      "Name": "Page",
+      "DisplayName": "Page",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "TitlePartSettings": {
+              "Options": 3
+            }
+          }
+        },
+        {
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": {
+            "AutoroutePartSettings": {
+              "AllowCustomPath": true,
+              "ShowHomepageOption": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "MultiPriceProduct",
+      "DisplayName": "MultiPriceProduct",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2",
+              "Editor": "Wysiwyg"
+            },
+            "HtmlBodyPartSettings": {}
+          }
+        },
+        {
+          "PartName": "ProductPart",
+          "Name": "ProductPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "PricePart",
+          "Name": "PriceUSD",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "DisplayName": "Price USD",
+              "Description": "Adds a simple price to a product.",
+              "Position": "4"
+            },
+            "PricePartSettings": {
+              "CurrencySelectionMode": "DefaultCurrency"
+            }
+          }
+        },
+        {
+          "PartName": "PricePart",
+          "Name": "PriceSEK",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "DisplayName": "Price SEK",
+              "Description": "Adds a simple price to a product.",
+              "Position": "5"
+            },
+            "PricePartSettings": {
+              "CurrencySelectionMode": "SpecificCurrency",
+              "SpecificCurrencyIsoCode": "SEK"
+            }
+          }
+        },
+        {
+          "PartName": "PricePart",
+          "Name": "PriceNOK",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "DisplayName": "Price NOK",
+              "Description": "Adds a simple price to a product.",
+              "Position": "6"
+            },
+            "PricePartSettings": {
+              "CurrencySelectionMode": "SpecificCurrency",
+              "SpecificCurrencyIsoCode": "NOK"
+            }
+          }
+        },
+        {
+          "PartName": "MultiPriceProduct",
+          "Name": "MultiPriceProduct",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "7"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "Product",
+      "DisplayName": "Product",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "AutoroutePart",
+          "Name": "AutoroutePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            },
+            "AutoroutePartSettings": {
+              "AllowCustomPath": true,
+              "Pattern": "{{ ContentItem | display_text | slugify }}"
+            }
+          }
+        },
+        {
+          "PartName": "HtmlBodyPart",
+          "Name": "HtmlBodyPart",
+          "Settings": {
+            "HtmlBodyPartSettings": {},
+            "ContentTypePartSettings": {
+              "Position": "2",
+              "Editor": "Wysiwyg"
+            }
+          }
+        },
+        {
+          "PartName": "ProductPart",
+          "Name": "ProductPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "PricePart",
+          "Name": "PricePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "PartName": "TaxPart",
+          "Name": "TaxPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "5"
+            }
+          }
+        },
+        {
+          "PartName": "DiscountPart",
+          "Name": "DiscountPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "6"
+            }
+          }
+        },
+        {
+          "PartName": "InventoryPart",
+          "Name": "InventoryPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "7"
+            }
+          }
+        },
+        {
+          "PartName": "Product",
+          "Name": "Product",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "999"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "PriceVariantsProduct",
+      "DisplayName": "PriceVariantsProduct",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "PriceVariantsProduct",
+          "Name": "PriceVariantsProduct",
+          "Settings": {}
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {}
+        },
+        {
+          "PartName": "PriceVariantsPart",
+          "Name": "PriceVariantsPart",
+          "Settings": {}
+        },
+        {
+          "PartName": "ProductPart",
+          "Name": "ProductPart",
+          "Settings": {}
+        },
+        {
+          "PartName": "InventoryPart",
+          "Name": "InventoryPart",
+          "Settings": {}
+        }
+      ]
+    },
+    {
+      "Name": "LocalizedProduct",
+      "DisplayName": "Localized Product",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "LocalizedProduct",
+          "Name": "LocalizedProduct",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "TitlePart",
+          "Name": "TitlePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        },
+        {
+          "PartName": "ProductPart",
+          "Name": "ProductPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "2"
+            }
+          }
+        },
+        {
+          "PartName": "PricePart",
+          "Name": "PricePart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "3"
+            }
+          }
+        },
+        {
+          "PartName": "LocalizationPart",
+          "Name": "LocalizationPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "4"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "TestPriceVariantsProduct",
+      "DisplayName": "TestPriceVariantsProduct",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true,
+          "Draftable": true,
+          "Versionable": true,
+          "Securable": true
+        }
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "PriceVariantsPart",
+          "Name": "PriceVariantsPart",
+          "Settings": {}
+        },
+        {
+          "PartName": "ProductPart",
+          "Name": "ProductPart",
+          "Settings": {}
+        },
+        {
+          "PartName": "InventoryPart",
+          "Name": "InventoryPart",
+          "Settings": {}
+        }
+      ]
+    },
+    {
+      "Name": "Shipping",
+      "DisplayName": "Shipping",
+      "Settings": {
+        "ContentTypeSettings": {
+          "Creatable": false,
+          "Listable": true,
+          "Draftable": false,
+          "Versionable": false,
+          "Securable": false
+        },
+        "FullTextAspectSettings": {}
+      },
+      "ContentTypePartDefinitionRecords": [
+        {
+          "PartName": "Shipping",
+          "Name": "Shipping",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "0"
+            }
+          }
+        },
+        {
+          "PartName": "ProductPart",
+          "Name": "ProductPart",
+          "Settings": {
+            "ContentTypePartSettings": {
+              "Position": "1"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "ContentPartDefinitionRecords": [
+    {
+      "Name": "LiquidPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a Liquid formatted body for your content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "CommonPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides an editor for the common properties of a content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "HtmlBodyPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides an HTML Body for your content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "TitlePart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a Title for your content item.",
+          "DefaultPosition": "0"
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "DashboardPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a way to add widgets to a dashboard."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "AliasPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a way to define custom aliases for content items."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "ArchiveLaterPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Adds the ability to schedule content items to be archived at a given future date and time."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "AutoroutePart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a custom url for your content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "LocalizationPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a way to create localized version of content."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "SitemapPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides an optional part that allows content items to be excluded, or configured, on a content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "PreviewPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a way to define the url that is used to render your content item for preview. You only need to use this for the content preview feature when running the frontend decoupled from the admin."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "WidgetsListPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a way to add widgets to Layout zones for your content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "FlowPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a customizable body for your content item where you can build a content structure with widgets."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "BagPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Reusable": true,
+          "Description": "Provides a collection behavior for your content item where you can place other content items."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "FormPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Turns your content item into a form."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "FormElementPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Description": "Provides attributes common to all form elements."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "FormInputElementPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Description": "Provides attributes common to all input form elements."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "LabelPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Description": "Provides label properties."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "InputPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Description": "Provides input field properties."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "TextAreaPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Description": "Provides text area properties."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "SelectPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Description": "Provides select field properties."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "ButtonPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Description": "Provides button properties."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "ValidationSummaryPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Description": "Displays a validation summary."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "ValidationPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Description": "Displays a field validation error."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "FormElementLabelPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "DisplayName": "Form Element Label Part",
+          "Description": "Provides a way to capture element's label."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "FormElementValidationPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "DisplayName": "Form Element Validation Part"
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "ListPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Add a list behavior."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "MarkdownBodyPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a Markdown formatted body for your content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "PublishLaterPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Adds the ability to schedule content items to be published at a given future date and time."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "HtmlDashboardWidget",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "SeoMetaPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Provides a part that allows SEO meta descriptions to be applied to a content item."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "MediaField",
+          "Name": "DefaultSocialImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Default social image"
+            },
+            "MediaFieldSettings": {
+              "Multiple": false,
+              "AllowedExtensions": []
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "OpenGraphImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Open graph image"
+            },
+            "MediaFieldSettings": {
+              "Multiple": false,
+              "AllowedExtensions": []
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "TwitterImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Twitter image"
+            },
+            "MediaFieldSettings": {
+              "Multiple": false,
+              "AllowedExtensions": []
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "SocialMetaSettings",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "MediaField",
+          "Name": "DefaultSocialImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Default social image",
+              "Position": "1"
+            },
+            "MediaFieldSettings": {
+              "Multiple": false
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "OpenGraphImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Open graph image",
+              "Position": "2"
+            },
+            "MediaFieldSettings": {
+              "Multiple": false
+            }
+          }
+        },
+        {
+          "FieldName": "MediaField",
+          "Name": "TwitterImage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Twitter Image",
+              "Position": "3"
+            },
+            "MediaFieldSettings": {
+              "Multiple": false
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "OpenGraphType",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Open Graph Type",
+              "Position": "4"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "TwitterCard",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Twitter Card",
+              "Position": "8"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "TwitterCreator",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Twitter Creator",
+              "Position": "10"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "TwitterSite",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Twitter Site",
+              "Position": "11"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "GoogleSchema",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Google Schema",
+              "Editor": "CodeMirror",
+              "Position": "12"
+            },
+            "TextFieldSettings": {}
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "OpenGraphSiteName",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Open Graph Site Name",
+              "Position": "6"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "OpenGraphAppId",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Open Graph App Id",
+              "Position": "7"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "DefaultMetaDescription",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Default Meta Description",
+              "Editor": "CodeMirror",
+              "Position": "0"
+            },
+            "TextFieldSettings": {}
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "DefaultTwitterDescription",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Default Twitter Description",
+              "Editor": "CodeMirror",
+              "Position": "9"
+            },
+            "TextFieldSettings": {}
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "DefaultOpenGraphDescription",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Default Open Graph Description",
+              "Editor": "CodeMirror",
+              "Position": "5"
+            },
+            "TextFieldSettings": {}
+          }
+        }
+      ]
+    },
+    {
+      "Name": "ProductPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Makes a content item into a product."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "PricePart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Reusable": true,
+          "Description": "Adds a simple price to a product."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "PriceField",
+          "Name": "PriceField",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Price"
+            },
+            "PriceFieldSettings": {
+              "Hint": "The base price of the product.",
+              "Required": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "PriceVariantsPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "A product variants prices based on predefined attributes."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": []
+    },
+    {
+      "Name": "OrderPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Makes a content item into an order."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "OrderId",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Order Id",
+              "Description": "The id of the order."
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "VatNumber",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "VAT Number",
+              "Description": "The VAT number of the buyer, in case it's a corporation."
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "Status",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Status",
+              "Description": "The status of the order.",
+              "Editor": "PredefinedList"
+            },
+            "TextFieldPredefinedListEditorSettings": {
+              "Options": [
+                {
+                  "name": "Pending",
+                  "value": "pending"
+                },
+                {
+                  "name": "Ordered",
+                  "value": "ordered"
+                },
+                {
+                  "name": "Shipped",
+                  "value": "shipped"
+                },
+                {
+                  "name": "Arrived",
+                  "value": "arrived"
+                }
+              ],
+              "DefaultValue": "pending"
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "Email",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "E-mail"
+            },
+            "TextFieldSettings": {
+              "Required": true
+            }
+          }
+        },
+        {
+          "FieldName": "TextField",
+          "Name": "Phone",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Phone Number"
+            },
+            "TextFieldSettings": {
+              "Required": true
+            }
+          }
+        },
+        {
+          "FieldName": "AddressField",
+          "Name": "BillingAddress",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Billing Address",
+              "Description": "The address of the party that should be billed for this order."
+            }
+          }
+        },
+        {
+          "FieldName": "AddressField",
+          "Name": "ShippingAddress",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Shipping Address",
+              "Description": "The address where the order should be shipped."
+            }
+          }
+        },
+        {
+          "FieldName": "BooleanField",
+          "Name": "BillingAndShippingAddressesMatch",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Shipping Address and Billing Address are the same"
+            }
+          }
+        },
+        {
+          "FieldName": "BooleanField",
+          "Name": "IsCorporation",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Buyer is a corporation"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "StripePaymentPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "PaymentIntentId",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "PaymentIntentId"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "InventoryPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Description": "Adds basic inventory management capabilities to a product."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "BooleanField",
+          "Name": "AllowsBackOrder",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Allows Back Order"
+            },
+            "BooleanFieldSettings": {
+              "Hint": "Allows ordering even if Inventory is less than or equal to zero."
+            }
+          }
+        },
+        {
+          "FieldName": "BooleanField",
+          "Name": "IgnoreInventory",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Ignore Inventory"
+            },
+            "BooleanFieldSettings": {
+              "Hint": "Makes it so Inventory is ignored (same as if no InventoryPart was present). Useful for digital products for example."
+            }
+          }
+        },
+        {
+          "FieldName": "NumericField",
+          "Name": "MaximumOrderQuantity",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Maximum Order Quantity"
+            },
+            "NumericFieldSettings": {
+              "Hint": "The maximum number of this item one can order. Ignored if set to zero or a negative value."
+            }
+          }
+        },
+        {
+          "FieldName": "NumericField",
+          "Name": "MinimumOrderQuantity",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Minimum Order Quantity"
+            },
+            "NumericFieldSettings": {
+              "Hint": "The minimum number of this item one can order. Ignored if set to zero or a negative value."
+            }
+          }
+        },
+        {
+          "FieldName": "HtmlField",
+          "Name": "OutOfStockMessage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Out of Stock Message",
+              "Editor": "Multiline"
+            },
+            "HtmlFieldSettings": {
+              "Hint": "Enables a specific message for an out of stock product. Can be used to give an ETA."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "DiscountPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Reusable": true,
+          "Description": "Adds configurable discount to the product."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "NumericField",
+          "Name": "DiscountPercentage",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Discount Percentage"
+            },
+            "NumericFieldSettings": {
+              "Hint": "The discount percentage that is applied to the product. Out of discount percentage and discount amount only one can be used.",
+              "Minimum": 0.0,
+              "Maximum": 100.0
+            }
+          }
+        },
+        {
+          "FieldName": "PriceField",
+          "Name": "DiscountAmount",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Discount Amount"
+            },
+            "PriceFieldSettings": {
+              "Hint": "The discount amount that is subtracted from the product's price. Out of discount percentage and discount amount only one can be used."
+            }
+          }
+        },
+        {
+          "FieldName": "DateTimeField",
+          "Name": "BeginningUtc",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Beginning"
+            },
+            "DateTimeFieldSettings": {
+              "Hint": "The beginning date and time of the discount."
+            }
+          }
+        },
+        {
+          "FieldName": "DateTimeField",
+          "Name": "ExpirationUtc",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Expiration"
+            },
+            "DateTimeFieldSettings": {
+              "Hint": "The expiration date and time of the discount."
+            }
+          }
+        },
+        {
+          "FieldName": "NumericField",
+          "Name": "MaximumProducts",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Maximum Products"
+            },
+            "NumericFieldSettings": {
+              "Hint": "The amount of maximum products that the discount can be applied to. If the quantity is higher than this, the discount is ignored. Type 0 for infinite products.",
+              "Minimum": 0.0
+            }
+          }
+        },
+        {
+          "FieldName": "NumericField",
+          "Name": "MinimumProducts",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Minimum Products"
+            },
+            "NumericFieldSettings": {
+              "Hint": "The amount of minimum products that the discount can be applied to. If the quantity is lower than this, the discount is ignored.",
+              "Minimum": 0.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "TaxPart",
+      "Settings": {
+        "ContentPartSettings": {
+          "Attachable": true,
+          "Reusable": true,
+          "Description": "Adds tax information usable for local VAT or sales tax."
+        }
+      },
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextField",
+          "Name": "ProductTaxCode",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Tax Code"
+            },
+            "TextFieldSettings": {
+              "Hint": "The ID that identifies the product of product category for taxing purposes."
+            }
+          }
+        },
+        {
+          "FieldName": "PriceField",
+          "Name": "GrossPrice",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Gross Price"
+            },
+            "PriceFieldSettings": {
+              "Hint": "The price with tax. If specified along with the Tax Rate, then Price content part is updated to the calculated net value on publish."
+            }
+          }
+        },
+        {
+          "FieldName": "NumericField",
+          "Name": "TaxRate",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Tax Rate"
+            },
+            "NumericFieldSettings": {
+              "Hint": "The tax percentage of the net price, which is added to get the gross price.",
+              "Minimum": 0.0,
+              "Maximum": 100.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "Name": "PriceVariantsProduct",
+      "Settings": {},
+      "ContentPartFieldDefinitionRecords": [
+        {
+          "FieldName": "TextProductAttributeField",
+          "Name": "Size",
+          "Settings": {
+            "ContentPartFieldSettings": {
+              "DisplayName": "Size"
+            },
+            "TextProductAttributeFieldSettings": {
+              "PredefinedValues": [
+                "Small",
+                "Medium",
+                "Large"
+              ],
+              "RestrictToPredefinedValues": true,
+              "DefaultValue": "Small"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "Identifier": "48rg2mbsy752rtekm1xyyex0na"
+}

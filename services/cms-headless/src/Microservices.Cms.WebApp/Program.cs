@@ -14,6 +14,7 @@ builder.Host.UseSerilog((hostingContext, configBuilder) =>
 
 builder.Services
     .AddOrchardCms()
+    .AddDatabaseShellsConfiguration()
     // Orchard Specific Pipeline
     .ConfigureServices(services =>
     {
