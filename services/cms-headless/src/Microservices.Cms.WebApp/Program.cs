@@ -1,7 +1,4 @@
-using OrchardCore.FileStorage;
 using OrchardCore.Logging;
-using OrchardCore.Media;
-using OrchardCore.Media.Core;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -68,6 +65,32 @@ builder.Services
         "OrchardCore.Redis.Cache",
         "OrchardCore.Redis.DataProtection",
         "OrchardCore.Redis.Lock",
+        "OrchardCore.Admin",
+        "OrchardCore.HealthChecks",
+        "OrchardCore.HomeRoute",
+        "OrchardCore.Diagnostics",
+        "OrchardCore.ResponseCompression",
+        "OrchardCore.ReverseProxy",
+        "OrchardCore.Rules",
+        "OrchardCore.Setup",
+        "OrchardCore.Shortcodes",
+        "OrchardCore.Tenants.FileProvider",
+        "OrchardCore.Tenants.FeatureProfiles",
+        "OrchardCore.Tenants",
+        "OrchardCore.Localization.AdminCulturePicker",
+        "OrchardCore.ContentLocalization.ContentCulturePicker",
+        "OrchardCore.Localization.ContentLanguageHeader",
+        "OrchardCore.ContentLocalization",
+        "OrchardCore.Localization",
+        "OrchardCore.ContentLocalization.Sitemaps",
+        "OrchardCore.OpenId.Server",
+        "OrchardCore.OpenId.Client",
+        "OrchardCore.OpenId.Management",
+        "OrchardCore.OpenId.Validation",
+        "OrchardCore.Workflows.Http",
+        "OrchardCore.Workflows.Session",
+        "OrchardCore.Workflows.Timers",
+        "OrchardCore.Workflows",
         "OrchardCore.AutoSetup")
     .AddDatabaseShellsConfiguration()
 
