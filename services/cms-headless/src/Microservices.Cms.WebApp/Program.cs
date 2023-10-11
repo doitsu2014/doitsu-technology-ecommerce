@@ -11,7 +11,7 @@ builder.Host.UseSerilog((hostingContext, configBuilder) =>
 
 builder.Services
     .AddOrchardCms()
-    .AddGlobalFeatures(
+    .AddSetupFeatures(
         "OrchardCore.AutoSetup"
     )
     .AddDatabaseShellsConfiguration()
