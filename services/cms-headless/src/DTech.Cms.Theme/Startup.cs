@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace DTech.Cms;
+namespace DTech.Cms.Theme;
 
 public class Startup : StartupBase
 {

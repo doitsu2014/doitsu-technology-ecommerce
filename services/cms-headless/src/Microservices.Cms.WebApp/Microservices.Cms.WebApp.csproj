@@ -37,6 +37,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\DTech.Cms\DTech.Cms.csproj" />
+      <ProjectReference Include="..\DTech.Cms.Abstractions\DTech.Cms.Abstractions.csproj" />
+      <ProjectReference Include="..\DTech.Cms.Theme\DTech.Cms.Theme.csproj" />
     </ItemGroup>
 </Project>

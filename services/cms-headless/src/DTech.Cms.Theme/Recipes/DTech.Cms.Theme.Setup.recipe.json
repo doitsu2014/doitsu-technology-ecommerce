@@ -1,5 +1,5 @@
 ﻿{
-  "name": "DTech.Cms.Recipes.Setup.Cms",
+  "name": "DTech.Cms.Theme.Setup",
   "displayName": "DTech Recipes Cms Recipes - Setup D Tech CMS",
   "description": "Install features, config features",
   "author": "DTech",
@@ -13,7 +13,6 @@
     "cms"
   ],
   "steps": [
-
     {
       "name": "feature",
       "disable": [],
@@ -27,13 +26,11 @@
         "OrchardCore.Commerce.Promotion",
         "OrchardCore.Commerce.SessionCartStorage",
         "OrchardCore.Commerce.Tax",
-        
-        "OrchardCore.Admin",
-        "YourTheme",
+
+        "DTech.Cms.Theme",
         "TheAdmin"
       ]
     }
-
   ]
 }
 
