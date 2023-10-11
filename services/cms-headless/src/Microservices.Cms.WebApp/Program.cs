@@ -9,6 +9,7 @@ builder.Host.UseSerilog((hostingContext, configBuilder) =>
         .Enrich.FromLogContext();
 });
 
+
 builder.Services
     .AddOrchardCms()
     .AddSetupFeatures(

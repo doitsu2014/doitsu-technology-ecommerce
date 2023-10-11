@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservices.Cms.WebApp", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deployment", "deployment", "{2C6A7F11-AE2A-4B6C-BE7E-C70C314B448D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardCore.Dtech.Recipes", "src\OrchardCore.Dtech.Recipes\OrchardCore.Dtech.Recipes.csproj", "{87E65D26-DD6B-4D6D-B742-FDD5BF290125}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTech.Cms", "src\DTech.Cms\DTech.Cms.csproj", "{87E65D26-DD6B-4D6D-B742-FDD5BF290125}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

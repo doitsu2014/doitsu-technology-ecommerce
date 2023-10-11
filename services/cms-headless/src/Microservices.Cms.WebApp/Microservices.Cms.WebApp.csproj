@@ -33,14 +33,10 @@
         <PackageReference Include="OrchardCore.Seo" Version="1.7.0"/>
         <PackageReference Include="OrchardCore.Seo.Abstractions" Version="1.7.0"/>
         <PackageReference Include="OrchardCore.Workflows" Version="1.7.0"/>
+        <PackageReference Include="OrchardCore.Recipes" Version="1.7.0"/>
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\OrchardCore.Dtech.Recipes\OrchardCore.Dtech.Recipes.csproj" />
+        <ProjectReference Include="..\DTech.Cms\DTech.Cms.csproj" />
     </ItemGroup>
-
-    <ItemGroup>
-        <_ContentIncludedByDefault Remove="Recipes\Dtech.recipe.json"/>
-    </ItemGroup>
-
 </Project>

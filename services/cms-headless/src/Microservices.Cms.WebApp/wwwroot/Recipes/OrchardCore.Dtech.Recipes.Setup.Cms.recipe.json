@@ -6,12 +6,6 @@
   "website": "https://doitsu.tech",
   "version": "1.0.0",
   "issetuprecipe": false,
-  "categories": [
-    "default"
-  ],
-  "tags": [
-    "cms"
-  ],
   "steps": [
 
   ]

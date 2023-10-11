@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace OrchardCore.Dtech.Recipes;
+namespace DTech.Cms;
 
 public class Startup : StartupBase
 {
