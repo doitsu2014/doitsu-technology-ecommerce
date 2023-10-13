@@ -5,7 +5,7 @@
   "author": "DTech",
   "website": "https://doitsu.tech",
   "version": "1.0.0",
-  "issetuprecipe": true,
+  "issetuprecipe": false,
   "categories": [
     "default"
   ],
@@ -21,6 +21,8 @@
       "disable": [],
       "enable": [
         "OrchardCore.Apis.GraphQL",
+        "OrchardCore.Shortcodes.Templates",
+        "OrchardCore.Users.Registration",
         "OrchardCore.Commerce.ContentFields",
         "OrchardCore.Commerce",
         "OrchardCore.Commerce.CurrencySettingsSelector",
@@ -29,8 +31,11 @@
         "OrchardCore.Commerce.Promotion",
         "OrchardCore.Commerce.SessionCartStorage",
         "OrchardCore.Commerce.Tax",
+        "OrchardCore.Google.Analytics",
+        "OrchardCore.Google.GoogleAuthentication",
+        "OrchardCore.Google.TagManager",
+        "OrchardCore.GitHub.Authentication",
         "OrchardCore.OpenId.Server",
-        "OrchardCore.OpenId.Client",
         "OrchardCore.OpenId.Management",
         "OrchardCore.OpenId.Validation",
         "TheAdmin",
@@ -43,18 +48,6 @@
       "name": "themes",
       "site": "DTech.Cms.SiteTheme",
       "admin": "DTech.Cms.AdminTheme"
-    },
-    {
-      "name": "OpenIdClientSettings",
-      "Authority": "https://ids-sts.doitsu.tech",
-      "DisplayName": "DTech | IdP",
-      "ClientId": "cms-headless.orchard",
-      "CallbackPath": "/signin-oidc",
-      "SignedOutCallbackPath": "/signout-callback-oidc",
-      "Scopes": "roles profile openid email",
-      "ResponseMode": "form_post",
-      "ResponseType": "code",
-      "ClientSecret": ""
     },
     {
       "name": "OpenIdServerSettings",

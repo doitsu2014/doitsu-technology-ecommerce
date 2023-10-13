@@ -8,5 +8,7 @@ using OrchardCore.DisplayManagement.Manifest;
     Website = ManifestConstants.ManifestWebsite,
     Version = ManifestConstants.ManifestVersion,
     Description = "Doitsu Technology Theme",
-    Category = ManifestConstants.ManifestCategory
+    Category = ManifestConstants.ManifestCategory,
+    BaseTheme = "TheTheme",
+    Tags = new[] {"Blog", "Bootstrap", "Razor"}
 )]
