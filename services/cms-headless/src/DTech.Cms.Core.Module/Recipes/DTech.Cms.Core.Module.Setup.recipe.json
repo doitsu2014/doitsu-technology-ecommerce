@@ -5,7 +5,7 @@
   "author": "DTech",
   "website": "https://doitsu.tech",
   "version": "1.0.0",
-  "issetuprecipe": false,
+  "issetuprecipe": true,
   "categories": [
     "default"
   ],
@@ -32,8 +32,17 @@
         "OrchardCore.OpenId.Server",
         "OrchardCore.OpenId.Client",
         "OrchardCore.OpenId.Management",
-        "OrchardCore.OpenId.Validation"
+        "OrchardCore.OpenId.Validation",
+        "TheAdmin",
+        "DTech.Cms.AdminTheme",
+        "DTech.Cms.SiteTheme",
+        "DTech.Cms.Core.Module"
       ]
+    },
+    {
+      "name": "themes",
+      "site": "DTech.Cms.SiteTheme",
+      "admin": "DTech.Cms.AdminTheme"
     },
     {
       "name": "OpenIdClientSettings",
@@ -44,7 +53,7 @@
       "SignedOutCallbackPath": "/signout-callback-oidc",
       "Scopes": "roles profile openid email",
       "ResponseMode": "form_post",
-      "ResponseType": "code id_token",
+      "ResponseType": "code",
       "ClientSecret": ""
     },
     {

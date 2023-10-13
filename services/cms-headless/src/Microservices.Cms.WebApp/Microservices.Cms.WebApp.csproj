@@ -37,9 +37,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\DTech.Cms.Abstractions\DTech.Cms.Abstractions.csproj" />
-      <ProjectReference Include="..\DTech.Cms.AdminTheme\DTech.Cms.AdminTheme.csproj" />
-      <ProjectReference Include="..\DTech.Cms.Core.Module\DTech.Cms.Core.Module.csproj" />
-      <ProjectReference Include="..\DTech.Cms.Theme\DTech.Cms.Theme.csproj" />
+        <ProjectReference Include="..\DTech.Cms.Abstractions\DTech.Cms.Abstractions.csproj"/>
+        <ProjectReference Include="..\DTech.Cms.Core.Module\DTech.Cms.Core.Module.csproj"/>
     </ItemGroup>
 </Project>

@@ -1,5 +1,9 @@
-﻿<h2>@T["Welcome to PlayCMS"]</h2>
-<p>@T["PlayCMS is powered by Orchard Core, and built to be a flexible platform for your needs."]</p>
+﻿@{
+    var name = "Doitsu Technology CMS";
+}
+
+<h2>@T[$"Welcome to {name}"]</h2>
+<p>@T[$"{name} is powered by Orchard Core, and built to be a flexible platform for your needs."]</p>
 <p>@T["Let's get started, shall we?"]</p>
 <h3>@T["Getting Started"]</h3>
 <p>@T["The menu on the left allows you to access the different sections of the CMS. Your pages live in the Content section, which you can browse to find and edit existing pages, while the New section allows you to create entirely new content."]</p>
@@ -7,4 +11,6 @@
 <h3>@T["Next Steps"]</h3>
 <p>@T["The other sections of the menu relate to advanced features, such as configuration, themes, and powerful workflows for automating procedures, such as form submissions. Lots of users have no need to interact with these sections at all, but feel free to familiarise yourself with these capabilities if you'd like."]</p>
 <h3>@T["Getting Help"]</h3>
-<p>@T["If you have any questions about how to use the system, or how to accomplish your goals with PlayCMS, "]<a href="mailto:playteam@etchuk.com">@T["get in touch"]</a>@T["."]</p>
+<p>
+    @T["If you have any questions about how to use the system, or how to accomplish your goals with PlayCMS, "]<a href="mailto:duc.tran@doitsu.tech">@T["get in touch"]</a>@T["."]
+</p>

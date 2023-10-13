@@ -1,0 +1,18 @@
+body {
+    background-color: #dbdbf3;
+    background-image: radial-gradient(#000000 0.75px, transparent 0.75px), radial-gradient(#000000 0.75px, #dbdbf3 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+}
+
+.auth-wrapper {
+    height: 100vh;
+}
+
+.auth-wrapper > .row {
+    width: 100%;
+    padding: 1rem;
+    background: white;
+    align-self: center;
+    border-radius: 15px;
+}

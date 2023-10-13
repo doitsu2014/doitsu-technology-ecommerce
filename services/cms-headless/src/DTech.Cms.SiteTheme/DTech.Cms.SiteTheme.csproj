@@ -16,10 +16,7 @@
         <PackageReference Include="OrchardCore.ContentManagement" Version="1.7.0"/>
         <PackageReference Include="OrchardCore.DisplayManagement" Version="1.7.0"/>
         <PackageReference Include="OrchardCore.ResourceManagement" Version="1.7.0"/>
-
         <PackageReference Include="OrchardCore.Themes" Version="1.7.0"/>
-        <PackageReference Include="OrchardCore.Admin" Version="1.7.0"/>
-        <PackageReference Include="OrchardCore.Users.Core" Version="1.7.0" />
     </ItemGroup>
 
     <ItemGroup>
@@ -27,16 +24,8 @@
     </ItemGroup>
 
     <ItemGroup>
-        <Content Include="Views\AdminBranding.cshtml" />
-        <Content Include="Views\AdminDashboard.cshtml"/>
-        <Content Include="Views\Layout-Login.cshtml" />
-        <Content Include="Views\Layout.cshtml" />
-        <Content Include="Views\_ViewImports.cshtml" />
-        <Content Include="wwwroot\css\login\main.css" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <None Remove="Assets.json" />
+        <Content Include="Views\Layout.cshtml"/>
+        <Content Include="Views\_ViewImports.cshtml"/>
     </ItemGroup>
 
 </Project>

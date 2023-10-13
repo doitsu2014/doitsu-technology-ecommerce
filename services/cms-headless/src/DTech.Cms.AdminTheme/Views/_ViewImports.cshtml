@@ -1,14 +1,10 @@
 ﻿@inherits OrchardCore.DisplayManagement.Razor.RazorPage<TModel>
 
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
-@addTagHelper *, OrchardCore.Contents.TagHelpers
 @addTagHelper *, OrchardCore.DisplayManagement
 @addTagHelper *, OrchardCore.ResourceManagement
 
+@using Microsoft.Extensions.Options
 @using OrchardCore.Admin
-@using OrchardCore.Admin.Models
-@using OrchardCore.ContentManagement
-@using OrchardCore.DisplayManagement.Views
-@using OrchardCore.Entities
-@using OrchardCore.Mvc.Utilities
 @using OrchardCore.Themes.Services
+@using OrchardCore.Admin.Models

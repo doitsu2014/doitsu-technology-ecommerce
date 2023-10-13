@@ -2,8 +2,8 @@ using DTech.Cms.Abstractions;
 using OrchardCore.DisplayManagement.Manifest;
 
 [assembly: Theme(
-    Id = "DTech.Cms.Theme",
-    Name = "DTech Cms Theme",
+    Id = "DTech.Cms.SiteTheme",
+    Name = "DTech Cms Theme for Website",
     Author = ManifestConstants.ManifestAuthor,
     Website = ManifestConstants.ManifestWebsite,
     Version = ManifestConstants.ManifestVersion,
