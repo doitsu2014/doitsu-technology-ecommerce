@@ -1,29 +1,33 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
-  <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <FrameworkReference Include="Microsoft.AspNetCore.App" />
-  </ItemGroup>
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="OrchardCore.Theme.Targets" Version="1.7.0" />
-    <PackageReference Include="OrchardCore.ContentManagement" Version="1.7.0" />
-    <PackageReference Include="OrchardCore.DisplayManagement" Version="1.7.0" />
-    <PackageReference Include="OrchardCore.ResourceManagement" Version="1.7.0" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="OrchardCore.Theme.Targets" Version="1.7.0"/>
+        <PackageReference Include="OrchardCore.ContentManagement" Version="1.7.0"/>
+        <PackageReference Include="OrchardCore.DisplayManagement" Version="1.7.0"/>
+        <PackageReference Include="OrchardCore.ResourceManagement" Version="1.7.0"/>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DTech.Cms.Abstractions\DTech.Cms.Abstractions.csproj" />
-  </ItemGroup>
+        <PackageReference Include="OrchardCore.Themes" Version="1.7.0"/>
+        <PackageReference Include="OrchardCore.Admin" Version="1.7.0"/>
+    </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\" />
-  </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\DTech.Cms.Abstractions\DTech.Cms.Abstractions.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Content Include="Views\AdminDashboard.cshtml"/>
+        <Content Include="Views\_ViewImports.cshtml" />
+    </ItemGroup>
 
 </Project>

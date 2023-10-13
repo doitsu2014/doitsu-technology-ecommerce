@@ -1,6 +1,6 @@
 ﻿{
-  "name": "DTech.Cms.Theme.Setup",
-  "displayName": "DTech Cms Theme Recipes - Setup",
+  "name": "DTech.Cms.AdminTheme.Setup",
+  "displayName": "DTech Cms AdminTheme Recipes - Setup",
   "description": "Install features, config features",
   "author": "DTech",
   "website": "https://doitsu.tech",
@@ -12,6 +12,7 @@
   "tags": [
     "dtech",
     "theme",
+    "admin",
     "cms"
   ],
   "steps": [
@@ -19,7 +20,7 @@
       "name": "feature",
       "disable": [],
       "enable": [
-        "DTech.Cms.Theme"
+        "TheAdmin"
       ]
     }
   ]

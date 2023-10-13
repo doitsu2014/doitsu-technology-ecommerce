@@ -1,0 +1,93 @@
+﻿{
+  "name": "DTech.Cms.Core.Module.Setup",
+  "displayName": "DTech Cms Core Module Recipes - Setup",
+  "description": "Install features, config features",
+  "author": "DTech",
+  "website": "https://doitsu.tech",
+  "version": "1.0.0",
+  "issetuprecipe": false,
+  "categories": [
+    "default"
+  ],
+  "tags": [
+    "dtech",
+    "module",
+    "core",
+    "cms"
+  ],
+  "steps": [
+    {
+      "name": "feature",
+      "disable": [],
+      "enable": [
+        "OrchardCore.Apis.GraphQL",
+        "OrchardCore.Commerce.ContentFields",
+        "OrchardCore.Commerce",
+        "OrchardCore.Commerce.CurrencySettingsSelector",
+        "OrchardCore.Commerce.Tax.CustomTaxRates",
+        "OrchardCore.Commerce.Inventory",
+        "OrchardCore.Commerce.Promotion",
+        "OrchardCore.Commerce.SessionCartStorage",
+        "OrchardCore.Commerce.Tax",
+        "OrchardCore.OpenId.Server",
+        "OrchardCore.OpenId.Client",
+        "OrchardCore.OpenId.Management",
+        "OrchardCore.OpenId.Validation"
+      ]
+    },
+    {
+      "name": "OpenIdClientSettings",
+      "Authority": "https://ids-sts.doitsu.tech",
+      "DisplayName": "DTech | IdP",
+      "ClientId": "cms-headless.orchard",
+      "CallbackPath": "/signin-oidc",
+      "SignedOutCallbackPath": "/signout-callback-oidc",
+      "Scopes": "roles profile openid email",
+      "ResponseMode": "form_post",
+      "ResponseType": "code id_token",
+      "ClientSecret": ""
+    },
+    {
+      "name": "OpenIdServerSettings",
+      "TestingModeEnabled": false,
+      "AccessTokenFormat": "JsonWebToken",
+      // "Authority": "",
+      // "SigningCertificateStoreLocation": "LocalMachine",
+      // //More info: https://msdn.microsoft.com/en-us/library/system.security.cryptography.x509certificates.storelocation(v=vs.110).aspx
+      // "SigningCertificateStoreName": "My",
+      // //More info: https://msdn.microsoft.com/en-us/library/system.security.cryptography.x509certificates.storename(v=vs.110).aspx
+      // "SigningCertificateThumbprint": "27CCA66EF38EF46CD9022431FB1FF0F2DF5CA1D7",
+      // "EncryptionCertificateStoreLocation": "LocalMachine",
+      // "EncryptionCertificateStoreName": "My",
+      // "EncryptionCertificateThumbprint": "BC34460ABEA2D576EA68E8FFCFEEB3F45C94FB0F",
+      "EnableTokenEndpoint": true,
+      "EnableAuthorizationEndpoint": true,
+      "EnableLogoutEndpoint": true,
+      "EnableUserInfoEndpoint": true,
+      "AllowPasswordFlow": true,
+      "AllowClientCredentialsFlow": true,
+      "AllowAuthorizationCodeFlow": true,
+      "AllowRefreshTokenFlow": true,
+      "AllowImplicitFlow": false,
+      "RequireProofKeyForCodeExchange": false
+    },
+    {
+      "name": "openidapplication",
+      "ClientId": "internal.doitsu.tech.crawler",
+      "DisplayName": "Internal D Tech | Data Crawler",
+      "Type": "Confidential",
+      "ClientSecret": "default@123",
+      "EnableTokenEndpoint": true,
+      "EnableAuthorizationEndpoint": false,
+      "EnableLogoutEndpoint": true,
+      "EnableUserInfoEndpoint": false,
+      "AllowPasswordFlow": false,
+      "AllowClientCredentialsFlow": true,
+      "AllowAuthorizationCodeFlow": false,
+      "AllowRefreshTokenFlow": false,
+      "AllowImplicitFlow": false,
+      "RequireProofKeyForCodeExchange": false
+    }
+  ]
+}
+

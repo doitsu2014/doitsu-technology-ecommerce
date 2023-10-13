@@ -3,7 +3,7 @@ using OrchardCore.DisplayManagement.Manifest;
 
 [assembly: Theme(
     Id = "DTech.Cms.Theme",
-    Name = "Doitsu Technology Cms Theme",
+    Name = "DTech Cms Theme",
     Author = ManifestConstants.ManifestAuthor,
     Website = ManifestConstants.ManifestWebsite,
     Version = ManifestConstants.ManifestVersion,
