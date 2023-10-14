@@ -12,13 +12,13 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="OrchardCore.Menu" Version="1.7.1" />
-        <PackageReference Include="OrchardCore.Theme.Targets" Version="1.7.1"/>
-        <PackageReference Include="OrchardCore.ContentManagement" Version="1.7.1"/>
-        <PackageReference Include="OrchardCore.DisplayManagement" Version="1.7.1"/>
-        <PackageReference Include="OrchardCore.ResourceManagement" Version="1.7.1"/>
-        <PackageReference Include="OrchardCore.Themes" Version="1.7.1"/>
-        <PackageReference Include="OrchardCore.Users" Version="1.7.1" />
+        <PackageReference Include="OrchardCore.Menu" Version="1.7.0" />
+        <PackageReference Include="OrchardCore.Theme.Targets" Version="1.7.0"/>
+        <PackageReference Include="OrchardCore.ContentManagement" Version="1.7.0"/>
+        <PackageReference Include="OrchardCore.DisplayManagement" Version="1.7.0"/>
+        <PackageReference Include="OrchardCore.ResourceManagement" Version="1.7.0"/>
+        <PackageReference Include="OrchardCore.Themes" Version="1.7.0"/>
+        <PackageReference Include="OrchardCore.Users" Version="1.7.0" />
     </ItemGroup>
 
     <ItemGroup>

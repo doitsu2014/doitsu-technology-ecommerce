@@ -19,12 +19,21 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.7.1"/>
-        <PackageReference Include="OrchardCore.Logging.Serilog" Version="1.7.1"/>
+        <PackageReference Include="OrchardCore.Application.Cms.Targets" Version="1.7.0"/>
+        <PackageReference Include="OrchardCore.Logging.Serilog" Version="1.7.0"/>
+        
+<!--        <PackageReference Include="OrchardCore.Commerce" Version="1.3.0"/>-->
+<!--        <PackageReference Include="OrchardCore.Commerce.AddressDataType" Version="1.3.0"/>-->
+<!--        <PackageReference Include="OrchardCore.Commerce.ContentFields" Version="1.3.0"/>-->
+<!--        <PackageReference Include="OrchardCore.Commerce.Inventory" Version="1.3.0"/>-->
+<!--        <PackageReference Include="OrchardCore.Commerce.MoneyDataType" Version="1.3.0"/>-->
+<!--        <PackageReference Include="OrchardCore.Commerce.Promotion" Version="1.3.0"/>-->
+<!--        <PackageReference Include="OrchardCore.Commerce.Tax" Version="1.3.0"/>-->
     </ItemGroup>
 
     <ItemGroup>
         <ProjectReference Include="..\DTech.Cms.Abstractions\DTech.Cms.Abstractions.csproj"/>
+        <ProjectReference Include="..\DTech.Cms.Commerce.Module\DTech.Cms.Commerce.Module.csproj" />
         <ProjectReference Include="..\DTech.Cms.Core.Module\DTech.Cms.Core.Module.csproj"/>
     </ItemGroup>
 </Project>

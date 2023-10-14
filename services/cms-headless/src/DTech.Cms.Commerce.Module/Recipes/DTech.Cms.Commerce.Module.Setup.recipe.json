@@ -1,0 +1,39 @@
+{
+  "name": "DTech.Cms.Commerce.Module.Setup",
+  "displayName": "DTech Cms | Commerce Module Setup",
+  "description": "",
+  "author": "Doitsu Technology",
+  "website": "https://doitsu.tech",
+  "version": "1.0.0",
+  "issetuprecipe": false,
+  "categories": [
+    "default"
+  ],
+  "tags": [
+    "dtech",
+    "module",
+    "commerce",
+    "cms"
+  ],
+  // The variables are evaluated the first time they are accessed, and reused across steps
+  "variables": {
+    // "now": "[js: new Date().toISOString()]"
+  },
+  "steps": [
+    {
+      "name": "feature",
+      "enable": [
+        // My Module
+        "DTech.Cms.Commerce.Module",
+        "OrchardCore.Commerce.ContentFields",
+        "OrchardCore.Commerce",
+        "OrchardCore.Commerce.CurrencySettingsSelector",
+        "OrchardCore.Commerce.Tax.CustomTaxRates",
+        "OrchardCore.Commerce.Inventory",
+        "OrchardCore.Commerce.Promotion",
+        "OrchardCore.Commerce.SessionCartStorage",
+        "OrchardCore.Commerce.Tax"
+      ]
+    }
+  ]
+}
