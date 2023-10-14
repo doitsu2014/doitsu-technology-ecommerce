@@ -16,7 +16,12 @@ fullnameOverride: ""
 env:
   - name: ASPNETCORE_URLS
     value: http://+:5000;https://+:44310
-podAnnotations: {}
+  - name: DOTNET_HOSTBUILDER__RELOADCONFIGONCHANGE
+    value: "false"
+podAnnotations: 
+  linkerd.io/inject: enabled
+serviceAnnotations:
+  linkerd.io/inject: enabled
 
 podSecurityContext:
   {}
@@ -64,6 +69,7 @@ ingress:
     nginx.ingress.kubernetes.io/proxy-buffers-number: "12"
     nginx.ingress.kubernetes.io/client-body-buffer-size: 1m
     nginx.ingress.kubernetes.io/affinity: "cookie"
+    nginx.ingress.kubernetes.io/service-upstream: "true"
   hosts:
     - host: $(SERVICE_INGRESS_HOST) 
       paths:

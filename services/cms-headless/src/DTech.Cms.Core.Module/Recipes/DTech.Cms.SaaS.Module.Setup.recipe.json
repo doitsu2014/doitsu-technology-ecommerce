@@ -1,0 +1,84 @@
+{
+  "name": "DTech.Cms.SaaS.Module.Setup",
+  "displayName": "DTech Cms | SaaS Module Setup",
+  "description": "",
+  "author": "Doitsu Technology",
+  "website": "https://doitsu.tech",
+  "version": "1.0.0",
+  "issetuprecipe": true,
+  "categories": [
+    "default"
+  ],
+  "tags": [
+    "dtech",
+    "module",
+    "saas",
+    "cms"
+  ],
+  // The variables are evaluated the first time they are accessed, and reused across steps
+  "variables": {
+    // "now": "[js: new Date().toISOString()]"
+  },
+  "steps": [
+    {
+      "name": "feature",
+      "enable": [
+        // SaaS
+        "OrchardCore.Admin",
+        "OrchardCore.Diagnostics",
+        "OrchardCore.DynamicCache",
+        "OrchardCore.HomeRoute",
+        "OrchardCore.Localization",
+        "OrchardCore.Features",
+        "OrchardCore.Navigation",
+        "OrchardCore.Recipes",
+        "OrchardCore.Resources",
+        "OrchardCore.Roles",
+        "OrchardCore.Security",
+        "OrchardCore.Settings",
+        "OrchardCore.Tenants",
+        "OrchardCore.Themes",
+        "OrchardCore.Users",
+        // Themes
+        "TheTheme",
+        "TheAdmin",
+        "SafeMode",
+        "DTech.Cms.AdminTheme",
+        "DTech.Cms.SiteTheme"
+      ]
+    },
+    {
+      "name": "themes",
+      "admin": "DTech.Cms.AdminTheme",
+      "site": "DTech.Cms.SiteTheme"
+    },
+    {
+      "name": "Roles",
+      "Roles": [
+        {
+          "Name": "Administrator",
+          "Description": "Administrator",
+          "Permissions": []
+        },
+        {
+          "Name": "Authenticated",
+          "Description": "Authenticated",
+          "Permissions": []
+        },
+        {
+          "Name": "Anonymous",
+          "Description": "Anonymous",
+          "Permissions": []
+        }
+      ]
+    },
+    {
+      "name": "settings",
+      "HomeRoute": {
+        "Action": "Index",
+        "Controller": "Home",
+        "Area": "TheTheme"
+      }
+    }
+  ]
+}
