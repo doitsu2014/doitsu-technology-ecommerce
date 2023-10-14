@@ -28,6 +28,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DTech.Cms.Abstractions\DTech.Cms.Abstractions.csproj" />
+    <ProjectReference Include="..\DTech.Cms.AdminTheme\DTech.Cms.AdminTheme.csproj" />
+    <ProjectReference Include="..\DTech.Cms.SiteTheme\DTech.Cms.SiteTheme.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Recipes\" />
   </ItemGroup>
 
 </Project>

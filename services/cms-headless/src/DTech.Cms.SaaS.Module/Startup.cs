@@ -15,7 +15,7 @@ namespace DTech.Cms.Commerce.Module
         {
             // routes.MapAreaControllerRoute(
             //     name: "Home",
-            //     areaName: "DTech.Cms.Commerce.Module",
+            //     areaName: "DTech.Cms.SaaS.Module",
             //     pattern: "Home/Index",
             //     defaults: new { controller = "Home", action = "Index" }
             // );

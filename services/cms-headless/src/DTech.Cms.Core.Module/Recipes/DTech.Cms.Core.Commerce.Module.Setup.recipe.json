@@ -1,7 +1,7 @@
 {
-  "name": "DTech.Cms.Commerce.Module.Setup",
-  "displayName": "DTech Cms | Commerce Module Setup",
-  "description": "",
+  "name": "DTech.Cms.Core.Commerce.Module.Setup",
+  "displayName": "D ech Cms | Core Commerce Module Setup",
+  "description": "Creates a headless site with Content management, Commerce, GraphQL, and OpenId features.",
   "author": "Doitsu Technology",
   "website": "https://doitsu.tech",
   "version": "1.0.0",
@@ -11,9 +11,7 @@
   ],
   "tags": [
     "dtech",
-    "module",
-    "commerce",
-    "cms"
+    "commerce"
   ],
   // The variables are evaluated the first time they are accessed, and reused across steps
   "variables": {
@@ -23,8 +21,6 @@
     {
       "name": "feature",
       "enable": [
-        // My Module
-        "DTech.Cms.Commerce.Module",
         "OrchardCore.Commerce.ContentFields",
         "OrchardCore.Commerce",
         "OrchardCore.Commerce.CurrencySettingsSelector",

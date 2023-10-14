@@ -1,6 +1,6 @@
 ﻿{
   "name": "DTech.Cms.Core.Module.Setup",
-  "displayName": "DTech.Cms.Core.Module.Setup Headless site",
+  "displayName": "DTech Cms | Core Headless Module Setup",
   "description": "Creates a headless site with Content management, Commerce, GraphQL, and OpenId features.",
   "author": "Doitsu Technology",
   "website": "https://doitsu.tech",
@@ -106,7 +106,7 @@
           "Permissions": []
         },
         {
-          "Name": "AUTHENTICATED",
+          "Name": "Authenticated",
           "Description": "Authenticated",
           "Permissions": [
             "ViewContent",
@@ -115,7 +115,7 @@
           ]
         },
         {
-          "Name": "ANONYMOUS",
+          "Name": "Anonymous",
           "Description": "Anonymous",
           "Permissions": []
         }
