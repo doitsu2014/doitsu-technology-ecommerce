@@ -1,0 +1,11 @@
+@inject IOptions<AdminOptions> AdminOptions
+
+<zone name="HeadMeta">
+    <link asp-src="~/DTech.Cms.AdminTheme/Doitsu-Tech-Logo-Square.ico" type="image/x-icon" rel="shortcut icon"/>
+</zone>
+<a class="ta-navbar-brand" href="@Url.Content("~/" + AdminOptions.Value.AdminUrlPrefix)">
+    <div class="d-flex align-items-center">
+        <img src="@Url.Content("~/DTech.Cms.AdminTheme/Doitsu-Tech-Logo-Square.png")" alt="@Site.SiteName"/>
+        <span>@Site.SiteName</span>
+    </div>
+</a>

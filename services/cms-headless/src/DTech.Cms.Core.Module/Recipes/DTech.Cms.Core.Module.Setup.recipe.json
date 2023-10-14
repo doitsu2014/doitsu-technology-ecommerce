@@ -1,0 +1,174 @@
+﻿{
+  "name": "DTech.Cms.Core.Module.Setup",
+  "displayName": "DTech Cms | Core Headless Module Setup",
+  "description": "Creates a headless site with Content management, Commerce, GraphQL, and OpenId features.",
+  "author": "Doitsu Technology",
+  "website": "https://doitsu.tech",
+  "version": "1.0.0",
+  "issetuprecipe": true,
+  "categories": [
+    "default"
+  ],
+  "tags": [
+    "dtech",
+    "module",
+    "core",
+    "headless",
+    "cms"
+  ],
+  // The variables are evaluated the first time they are accessed, and reused across steps
+  "variables": {
+    // "now": "[js: new Date().toISOString()]"
+  },
+  "steps": [
+    {
+      "name": "feature",
+      "enable": [
+        // SaaS
+        "OrchardCore.HomeRoute",
+        "OrchardCore.Admin",
+        "OrchardCore.Diagnostics",
+        "OrchardCore.Features",
+        "OrchardCore.Navigation",
+        "OrchardCore.Recipes",
+        "OrchardCore.Resources",
+        "OrchardCore.Roles",
+        "OrchardCore.Security",
+        "OrchardCore.Settings",
+        "OrchardCore.Themes",
+        "OrchardCore.Users",
+        // Content Management
+        "OrchardCore.Alias",
+        "OrchardCore.Html",
+        "OrchardCore.ContentFields",
+        "OrchardCore.Contents",
+        "OrchardCore.ContentTypes",
+        "OrchardCore.CustomSettings",
+        "OrchardCore.Deployment",
+        "OrchardCore.Deployment.Remote",
+        "OrchardCore.Apis.GraphQL",
+        "OrchardCore.Flows",
+        "OrchardCore.Indexing",
+        "OrchardCore.Layers",
+        "OrchardCore.Lists",
+        "OrchardCore.Markdown",
+        "OrchardCore.Media",
+        "OrchardCore.Menu",
+        "OrchardCore.OpenId",
+        "OrchardCore.OpenId.Management",
+        "OrchardCore.OpenId.Server",
+        "OrchardCore.OpenId.Validation",
+        "OrchardCore.Queries",
+        "OrchardCore.Title",
+        "OrchardCore.Widgets",
+        // My Module
+        "DTech.Cms.Core.Module",
+        "OrchardCore.Google.Analytics",
+        "OrchardCore.Google.GoogleAuthentication",
+        "OrchardCore.Google.TagManager",
+        "OrchardCore.GitHub.Authentication",
+        // Themes
+        "TheAdmin",
+        "DTech.Cms.AdminTheme"
+      ]
+    },
+    {
+      "name": "themes",
+      "site": "",
+      "admin": "DTech.Cms.AdminTheme"
+    },
+    {
+      "name": "Roles",
+      "Roles": [
+        {
+          "Name": "Administrator",
+          "Description": "Administrator",
+          "Permissions": []
+        },
+        {
+          "Name": "Moderator",
+          "Description": "Moderator",
+          "Permissions": []
+        },
+        {
+          "Name": "Editor",
+          "Description": "Editor",
+          "Permissions": []
+        },
+        {
+          "Name": "Author",
+          "Description": "Author",
+          "Permissions": []
+        },
+        {
+          "Name": "Contributor",
+          "Description": "Contributor",
+          "Permissions": []
+        },
+        {
+          "Name": "Authenticated",
+          "Description": "Authenticated",
+          "Permissions": [
+            "ViewContent",
+            "ExecuteGraphQL",
+            "ExecuteApiAll"
+          ]
+        },
+        {
+          "Name": "Anonymous",
+          "Description": "Anonymous",
+          "Permissions": []
+        }
+      ]
+    },
+    {
+      "name": "settings",
+      "HomeRoute": {
+        "Action": "Index",
+        "Controller": "Admin",
+        "Area": "OrchardCore.Admin"
+      }
+    },
+    {
+      "name": "OpenIdServerSettings",
+      "TestingModeEnabled": false,
+      "AccessTokenFormat": "JsonWebToken",
+      // "Authority": "",
+      // "SigningCertificateStoreLocation": "LocalMachine",
+      // //More info: https://msdn.microsoft.com/en-us/library/system.security.cryptography.x509certificates.storelocation(v=vs.110).aspx
+      // "SigningCertificateStoreName": "My",
+      // //More info: https://msdn.microsoft.com/en-us/library/system.security.cryptography.x509certificates.storename(v=vs.110).aspx
+      // "SigningCertificateThumbprint": "27CCA66EF38EF46CD9022431FB1FF0F2DF5CA1D7",
+      // "EncryptionCertificateStoreLocation": "LocalMachine",
+      // "EncryptionCertificateStoreName": "My",
+      // "EncryptionCertificateThumbprint": "BC34460ABEA2D576EA68E8FFCFEEB3F45C94FB0F",
+      "EnableTokenEndpoint": true,
+      "EnableAuthorizationEndpoint": true,
+      "EnableLogoutEndpoint": true,
+      "EnableUserInfoEndpoint": true,
+      "AllowPasswordFlow": true,
+      "AllowClientCredentialsFlow": true,
+      "AllowAuthorizationCodeFlow": true,
+      "AllowRefreshTokenFlow": true,
+      "AllowImplicitFlow": false,
+      "RequireProofKeyForCodeExchange": false
+    },
+    {
+      "name": "openidapplication",
+      "ClientId": "internal.doitsu.tech.crawler",
+      "DisplayName": "Internal D Tech | Data Crawler",
+      "Type": "Confidential",
+      "ClientSecret": "default@123",
+      "EnableTokenEndpoint": true,
+      "EnableAuthorizationEndpoint": false,
+      "EnableLogoutEndpoint": true,
+      "EnableUserInfoEndpoint": false,
+      "AllowPasswordFlow": false,
+      "AllowClientCredentialsFlow": true,
+      "AllowAuthorizationCodeFlow": false,
+      "AllowRefreshTokenFlow": false,
+      "AllowImplicitFlow": false,
+      "RequireProofKeyForCodeExchange": false
+    }
+  ]
+}
