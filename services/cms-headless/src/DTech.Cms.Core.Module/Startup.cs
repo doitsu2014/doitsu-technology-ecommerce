@@ -13,12 +13,12 @@ namespace DTech.Cms.Core.Module
 
         public override void Configure(IApplicationBuilder builder, IEndpointRouteBuilder routes, IServiceProvider serviceProvider)
         {
-            routes.MapAreaControllerRoute(
-                name: "Home",
-                areaName: "DTech.Cms.Core.Module",
-                pattern: "Home/Index",
-                defaults: new {controller = "Home", action = "Index"}
-            );
+            // routes.MapAreaControllerRoute(
+            //     name: "Home",
+            //     areaName: "DTech.Cms.Core.Module",
+            //     pattern: "Home/Index",
+            //     defaults: new {controller = "Home", action = "Index"}
+            // );
         }
     }
 }
