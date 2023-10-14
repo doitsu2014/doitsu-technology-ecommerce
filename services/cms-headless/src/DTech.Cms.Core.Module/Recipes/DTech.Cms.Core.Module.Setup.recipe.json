@@ -40,9 +40,14 @@
         // Content Management
         "OrchardCore.Alias",
         "OrchardCore.Html",
+        
         "OrchardCore.ContentFields",
-        "OrchardCore.Contents",
+        "OrchardCore.ContentFields.Indexing.SQL",
+        "OrchardCore.ContentFields.Indexing.SQL.UserPicker",
+        "OrchardCore.ContentPreview",
         "OrchardCore.ContentTypes",
+        "OrchardCore.Contents",
+        
         "OrchardCore.CustomSettings",
         "OrchardCore.Deployment",
         "OrchardCore.Deployment.Remote",
@@ -54,13 +59,30 @@
         "OrchardCore.Markdown",
         "OrchardCore.Media",
         "OrchardCore.Menu",
+        "OrchardCore.Queries",
+        "OrchardCore.Title",
+        "OrchardCore.Widgets",
+
+        "OrchardCore.Media",
+        "OrchardCore.Media.Cache",
+        "OrchardCore.Media.Slugify",
+        "OrchardCore.PublishLater",
+        
+        "OrchardCore.Queries",
+        "OrchardCore.Seo",
+        
+        "OrchardCore.Sitemaps",
+        "OrchardCore.Sitemaps.Cleanup",
+        
+        // Navigation
+        "OrchardCore.Autoroute",
+        
+        // Open Id
         "OrchardCore.OpenId",
         "OrchardCore.OpenId.Management",
         "OrchardCore.OpenId.Server",
         "OrchardCore.OpenId.Validation",
-        "OrchardCore.Queries",
-        "OrchardCore.Title",
-        "OrchardCore.Widgets",
+        
         // My Module
         "DTech.Cms.Core.Module",
         "OrchardCore.Google.Analytics",
