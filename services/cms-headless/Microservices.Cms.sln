@@ -20,6 +20,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTech.Cms.SiteTheme", "src\DTech.Cms.SiteTheme\DTech.Cms.SiteTheme.csproj", "{350CB5B5-6BE4-4943-B729-6F3F9B36858B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configs", "configs", "{06DBC70C-D9AA-4E0E-8176-B0495CCE05DF}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTech.Cms.SaaS.Module", "src\DTech.Cms.SaaS.Module\DTech.Cms.SaaS.Module.csproj", "{59B945A4-B376-4659-A396-BF49B867B98F}"
 EndProject

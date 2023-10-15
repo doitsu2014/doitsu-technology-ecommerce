@@ -38,6 +38,13 @@
         "OrchardCore.Themes",
         "OrchardCore.Users",
         // Content Management
+        "OrchardCore.Contents.Deployment.AddToDeploymentPlan",
+        "OrchardCore.AdminDashboard",
+        "OrchardCore.AdminMenu",
+        "OrchardCore.Contents.Deployment.ExportContentToDeploymentTarget",
+        "OrchardCore.Contents.FileContentDefinition",
+        "OrchardCore.Contents.Deployment.Download",
+        
         "OrchardCore.Alias",
         "OrchardCore.Html",
         
