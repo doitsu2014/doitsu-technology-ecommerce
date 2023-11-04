@@ -1,0 +1,1 @@
+NODE_ENV=production tailwindcss -c ./tailwind.config.js -o ./tailwind.css --minify
