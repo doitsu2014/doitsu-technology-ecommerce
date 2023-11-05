@@ -1,36 +1,20 @@
-version="0.3.2"
+version = "0.3.2"
 
 [scripts]
-## Builds Tailwind CSS for development (no purging)
-build-tailwind-dev = [
+setup.subcommands.csr = [
     "cd dtech_csr",
-    "tailwindcss -c ./tailwind.config.js -o ./tailwind.css"
+    "bonnie setup"
 ]
-## Builds Tailwind CSS for production (maximum purging and minification)
-build-tailwind-prod = [
-    "cd dtech_csr",
-    "NODE_ENV=production tailwindcss -c ./tailwind.config.js -o ./tailwind.css --minify"
-]
-## Builds Tailwind CSS for development usage
-setup.subcommands.tailwind = "bonnie build-tailwind-dev"
-setup.subcommands.prompt-tailwind = "echo \"Have you installed the Tailwind CLI globally with 'npm i -g tailwindcss' or 'yarn global add tailwindcss'?\""
-setup.order = """
-tailwind {
-    Failure => prompt-tailwind
-}
-"""
 
-## Builds everything
-build.cmd = "cargo build"
 ## Builds the frontend
-build.subcommands.frontend = [
+build.subcommands.csr = [
     "cd dtech_csr",
     "bonnie build-tailwind-prod",
     "cargo build"
 ]
 ## Runs the frontend, watching for changes (uses Trunk)
 ## Tailwind is assumed to be set up after `setup`
-run.subcommands.frontend = [
+run.subcommands.csr = [
     "cd dtech_csr",
     "trunk serve"
 ]
