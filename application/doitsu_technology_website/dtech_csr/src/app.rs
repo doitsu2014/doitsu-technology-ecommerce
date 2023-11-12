@@ -5,9 +5,11 @@ use yew_router::prelude::*;
 #[function_component]
 pub fn App() -> Html {
     html! {
-        <div class="container flex mr-2">
-            <h1>{ "Hello, World!" }</h1>
-        </div>
+        <section class="w-full flex">
+            <article class="flex-1 text-center prose lg:prose-xl">
+                { "# First Blog" }
+            </article>
+        </section>
         // <BrowserRouter>
         //     <Nav />
         //     <main>

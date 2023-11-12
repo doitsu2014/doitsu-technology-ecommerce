@@ -1,20 +1,12 @@
 version = "0.3.2"
 
 [scripts]
-setup.subcommands.csr = [
-    "cd dtech_csr",
-    "bonnie setup"
-]
-
-## Builds the frontend
 build.subcommands.csr = [
     "cd dtech_csr",
-    "bonnie build-tailwind-prod",
-    "cargo build"
+    "bonnie build"
 ]
-## Runs the frontend, watching for changes (uses Trunk)
-## Tailwind is assumed to be set up after `setup`
+
 run.subcommands.csr = [
     "cd dtech_csr",
-    "trunk serve"
+    "bonnie run"
 ]
