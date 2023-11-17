@@ -15,7 +15,6 @@ required-features = ["ssr"]
 yew = { version = "0.21.0", features = ["hydration"] }
 log = "0.4.20"
 
-
 [target.'cfg(target_arch = "wasm32")'.dependencies]
 wasm-bindgen-futures = "0.4"
 wasm-logger = "0.2"
