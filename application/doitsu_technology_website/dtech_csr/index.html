@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>D Tech • Website</title>
-    <base data-trunk-public-url/>
-    <!--    <link data-trunk href="./tailwind.css" rel="css"/>-->
-    <link data-trunk rel="rust" data-cargo-features="yew/csr" data-bin="dtech_csr"/>
-    <link data-trunk rel="tailwind-css" href="tailwind.css" />
-</head>
+        <title>D Tech • Website</title>
+        <base data-trunk-public-url />
+        <!--    <link data-trunk href="./tailwind.css" rel="css"/>-->
+        <link data-trunk rel="rust" data-cargo-features="yew/csr" data-bin="dtech_csr" />
+        <link data-trunk rel="tailwind-css" href="tailwind.css" />
 
-<body>
+        <!-- Material Icons Link -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="icon" />
 
-<div class="container">
+        <!-- Font Awesome Link -->
+        <link
+            rel="icon"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+            integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+            crossorigin="anonymous"
+        />
+    </head>
 
-</div>
+    <body>
+        <div class="container"></div>
+    </body>
 
-
-</body>
+    <script data-trunk async="async" src="node_modules/@material-tailwind/html/scripts/ripple.js"></script>
+    <!-- from node_modules -->
+    <script data-trunk async="async" src="node_modules/@material-tailwind/html/scripts/collapse.js"></script>
 </html>
