@@ -1,5 +1,5 @@
 **/target
-**/tailwind.css
 **/dist
 
 !**/bin
+!**/tailwind.css
