@@ -108,7 +108,9 @@ dependencies = [
  "once_cell",
  "rand",
  "serde",
+ "wasm-bindgen",
  "wasm-logger",
+ "web-sys",
  "yew",
  "yew-router",
 ]
