@@ -1,41 +1,39 @@
-
-/* Coolors Exported Palette - https://coolors.co/000000-45a1ba-40c8ed-02bcf0-569db0-6ec4db-c7bdbd-3d7382-301010-50d9ff */
+/* Coolors Exported Palette - https://coolors.co/ade8f4-00b4d8-023e8a-caf0f8-0096c7-03045e-90e0ef-0077b6-48cae4 */
 
 - Tailwind
 
-{ 'black': { DEFAULT: '#000000', 100: '#000000', 200: '#000000', 300: '#000000', 400: '#000000', 500: '#000000', 600: '#333333', 700: '#666666', 800: '#999999', 900: '#cccccc' }, 'moonstone': { DEFAULT: '#45A1BA', 100: '#0e2025', 200: '#1c404a', 300: '#296070', 400: '#378195', 500: '#45a1ba', 600: '#6ab4c8', 700: '#8fc6d6', 800: '#b5d9e3', 900: '#daecf1' }, 'vivid_sky_blue': { DEFAULT: '#40C8ED', 100: '#052c37', 200: '#0a586e', 300: '#0f85a5', 400: '#14b1dc', 500: '#40c8ed', 600: '#66d3f1', 700: '#8cdef4', 800: '#b2e9f8', 900: '#d9f4fb' }, 'process_cyan': { DEFAULT: '#02BCF0', 100: '#00252f', 200: '#014b5f', 300: '#01708e', 400: '#0295be', 500: '#02bcf0', 600: '#29cffd', 700: '#5edbfd', 800: '#94e7fe', 900: '#c9f3fe' }, 'moonstone': { DEFAULT: '#569DB0', 100: '#111f23', 200: '#213f47', 300: '#325e6a', 400: '#437d8d', 500: '#569db0', 600: '#77afbf', 700: '#99c3cf', 800: '#bbd7df', 900: '#ddebef' }, 'sky_blue': { DEFAULT: '#6EC4DB', 100: '#0d2c35', 200: '#1b596a', 300: '#28859f', 400: '#3baece', 500: '#6ec4db', 600: '#8dd0e2', 700: '#a9dcea', 800: '#c6e7f1', 900: '#e2f3f8' }, 'silver': { DEFAULT: '#C7BDBD', 100: '#2a2424', 200: '#544747', 300: '#7e6b6b', 400: '#a39393', 500: '#c7bdbd', 600: '#d2caca', 700: '#ddd7d7', 800: '#e8e5e5', 900: '#f4f2f2' }, 'payne's_gray': { DEFAULT: '#3D7382', 100: '#0c171a', 200: '#182d33', 300: '#24444d', 400: '#305b67', 500: '#3d7382', 600: '#5198ac', 700: '#7cb2c1', 800: '#a8ccd6', 900: '#d3e5ea' }, 'black_bean': { DEFAULT: '#301010', 100: '#0a0303', 200: '#140707', 300: '#1e0a0a', 400: '#280d0d', 500: '#301010', 600: '#742727', 700: '#b73d3d', 800: '#d37a7a', 900: '#e9bcbc' }, 'vivid_sky_blue': { DEFAULT: '#50D9FF', 100: '#003543', 200: '#006987', 300: '#009eca', 400: '#0ecbff', 500: '#50d9ff', 600: '#74e1ff', 700: '#97e8ff', 800: '#baf0ff', 900: '#dcf7ff' } }
+{ 'non_photo_blue': { DEFAULT: '#ade8f4', 100: '#0a3f4a', 200: '#147e93', 300: '#1ebddd', 400: '#65d4ea', 500: '#ade8f4', 600: '#beedf6', 700: '#cff1f8', 800: '#dff6fb', 900: '#effafd' }, 'pacific_cyan': { DEFAULT: '#00b4d8', 100: '#00242b', 200: '#004756', 300: '#006b81', 400: '#008fab', 500: '#00b4d8', 600: '#12d8ff', 700: '#4ee1ff', 800: '#89ebff', 900: '#c4f5ff' }, 'marian_blue': { DEFAULT: '#023e8a', 100: '#000c1b', 200: '#011836', 300: '#012451', 400: '#02306d', 500: '#023e8a', 600: '#035cd1', 700: '#2381fc', 800: '#6cabfd', 900: '#b6d5fe' }, 'light_cyan': { DEFAULT: '#caf0f8', 100: '#0a444f', 200: '#15889f', 300: '#2ac4e3', 400: '#79daee', 500: '#caf0f8', 600: '#d4f3f9', 700: '#dff6fb', 800: '#e9f9fc', 900: '#f4fcfe' }, 'blue_green': { DEFAULT: '#0096c7', 100: '#001e28', 200: '#003c50', 300: '#005a77', 400: '#00779f', 500: '#0096c7', 600: '#06c1ff', 700: '#44d0ff', 800: '#83e0ff', 900: '#c1efff' }, 'federal_blue': { DEFAULT: '#03045e', 100: '#010113', 200: '#010226', 300: '#020338', 400: '#02044b', 500: '#03045e', 600: '#0508ae', 700: '#0f12f8', 800: '#5f61fa', 900: '#afb0fd' }, 'non_photo_blue': { DEFAULT: '#90e0ef', 100: '#0a3a43', 200: '#137586', 300: '#1dafc9', 400: '#4ccfe6', 500: '#90e0ef', 600: '#a6e7f2', 700: '#bcedf5', 800: '#d2f3f9', 900: '#e9f9fc' }, 'honolulu_blue': { DEFAULT: '#0077b6', 100: '#001825', 200: '#003049', 300: '#00486e', 400: '#005f93', 500: '#0077b6', 600: '#00a2f9', 700: '#3bbaff', 800: '#7cd1ff', 900: '#bee8ff' }, 'vivid_sky_blue': { DEFAULT: '#48cae4', 100: '#082d34', 200: '#105a69', 300: '#17879d', 400: '#1fb4d1', 500: '#48cae4', 600: '#6dd5e9', 700: '#92dfef', 800: '#b6eaf4', 900: '#dbf4fa' } }
 
 - CSV
 
-000000,45A1BA,40C8ED,02BCF0,569DB0,6EC4DB,C7BDBD,3D7382,301010,50D9FF
+ade8f4,00b4d8,023e8a,caf0f8,0096c7,03045e,90e0ef,0077b6,48cae4
 
 - With #
 
-#000000, #45A1BA, #40C8ED, #02BCF0, #569DB0, #6EC4DB, #C7BDBD, #3D7382, #301010, #50D9FF
+#ade8f4, #00b4d8, #023e8a, #caf0f8, #0096c7, #03045e, #90e0ef, #0077b6, #48cae4
 
 - Array
 
-["000000","45A1BA","40C8ED","02BCF0","569DB0","6EC4DB","C7BDBD","3D7382","301010","50D9FF"]
+["ade8f4","00b4d8","023e8a","caf0f8","0096c7","03045e","90e0ef","0077b6","48cae4"]
 
 - Object
 
-{"Black":"000000","Moonstone":"45A1BA","Vivid sky blue":"40C8ED","Process Cyan":"02BCF0","Moonstone 2":"569DB0","Sky blue":"6EC4DB","Silver":"C7BDBD","Payne's gray":"3D7382","Black bean":"301010","Vivid sky blue 2":"50D9FF"}
+{"Non Photo blue":"ade8f4","Pacific cyan":"00b4d8","Marian blue":"023e8a","Light cyan":"caf0f8","Blue Green":"0096c7","Federal blue":"03045e","Non Photo blue 2":"90e0ef","Honolulu Blue":"0077b6","Vivid sky blue":"48cae4"}
 
 - Extended Array
 
-[{"name":"Black","hex":"000000","rgb":[0,0,0],"cmyk":[0,0,0,100],"hsb":[0,0,0],"hsl":[0,0,0],"lab":[0,0,0]},{"name":"Moonstone","hex":"45A1BA","rgb":[69,161,186],"cmyk":[63,13,0,27],"hsb":[193,63,73],"hsl":[193,46,50],"lab":[62,-20,-21]},{"name":"Vivid sky blue","hex":"40C8ED","rgb":[64,200,237],"cmyk":[73,16,0,7],"hsb":[193,73,93],"hsl":[193,83,59],"lab":[75,-24,-29]},{"name":"Process Cyan","hex":"02BCF0","rgb":[2,188,240],"cmyk":[99,22,0,6],"hsb":[193,99,94],"hsl":[193,98,47],"lab":[71,-21,-37]},{"name":"Moonstone","hex":"569DB0","rgb":[86,157,176],"cmyk":[51,11,0,31],"hsb":[193,51,69],"hsl":[193,36,51],"lab":[61,-17,-17]},{"name":"Sky blue","hex":"6EC4DB","rgb":[110,196,219],"cmyk":[50,11,0,14],"hsb":[193,50,86],"hsl":[193,60,65],"lab":[75,-20,-20]},{"name":"Silver","hex":"C7BDBD","rgb":[199,189,189],"cmyk":[0,5,5,22],"hsb":[0,5,78],"hsl":[0,8,76],"lab":[77,4,1]},{"name":"Payne's gray","hex":"3D7382","rgb":[61,115,130],"cmyk":[53,12,0,49],"hsb":[193,53,51],"hsl":[193,36,37],"lab":[45,-13,-14]},{"name":"Black bean","hex":"301010","rgb":[48,16,16],"cmyk":[0,67,67,81],"hsb":[0,67,19],"hsl":[0,50,13],"lab":[9,16,7]},{"name":"Vivid sky blue","hex":"50D9FF","rgb":[80,217,255],"cmyk":[69,15,0,0],"hsb":[193,69,100],"hsl":[193,100,66],"lab":[81,-25,-29]}]
+[{"name":"Non Photo blue","hex":"ade8f4","rgb":[173,232,244],"cmyk":[29,5,0,4],"hsb":[190,29,96],"hsl":[190,76,82],"lab":[89,-16,-12]},{"name":"Pacific cyan","hex":"00b4d8","rgb":[0,180,216],"cmyk":[100,17,0,15],"hsb":[190,100,85],"hsl":[190,100,42],"lab":[68,-25,-29]},{"name":"Marian blue","hex":"023e8a","rgb":[2,62,138],"cmyk":[99,55,0,46],"hsb":[214,99,54],"hsl":[214,97,27],"lab":[28,15,-47]},{"name":"Light cyan","hex":"caf0f8","rgb":[202,240,248],"cmyk":[19,3,0,3],"hsb":[190,19,97],"hsl":[190,77,88],"lab":[92,-11,-8]},{"name":"Blue Green","hex":"0096c7","rgb":[0,150,199],"cmyk":[100,25,0,22],"hsb":[195,100,78],"hsl":[195,100,39],"lab":[58,-16,-35]},{"name":"Federal blue","hex":"03045e","rgb":[3,4,94],"cmyk":[97,96,0,63],"hsb":[239,97,37],"hsl":[239,94,19],"lab":[8,36,-50]},{"name":"Non Photo blue","hex":"90e0ef","rgb":[144,224,239],"cmyk":[40,6,0,6],"hsb":[189,40,94],"hsl":[189,75,75],"lab":[85,-21,-15]},{"name":"Honolulu Blue","hex":"0077b6","rgb":[0,119,182],"cmyk":[100,35,0,29],"hsb":[201,100,71],"hsl":[201,100,36],"lab":[48,-4,-41]},{"name":"Vivid sky blue","hex":"48cae4","rgb":[72,202,228],"cmyk":[68,11,0,11],"hsb":[190,68,89],"hsl":[190,74,59],"lab":[76,-27,-23]}]
 
 - XML
 
 <palette>
-  <color name="Black" hex="000000" r="0" g="0" b="0" />
-  <color name="Moonstone" hex="45A1BA" r="69" g="161" b="186" />
-  <color name="Vivid sky blue" hex="40C8ED" r="64" g="200" b="237" />
-  <color name="Process Cyan" hex="02BCF0" r="2" g="188" b="240" />
-  <color name="Moonstone" hex="569DB0" r="86" g="157" b="176" />
-  <color name="Sky blue" hex="6EC4DB" r="110" g="196" b="219" />
-  <color name="Silver" hex="C7BDBD" r="199" g="189" b="189" />
-  <color name="Payne's gray" hex="3D7382" r="61" g="115" b="130" />
-  <color name="Black bean" hex="301010" r="48" g="16" b="16" />
-  <color name="Vivid sky blue" hex="50D9FF" r="80" g="217" b="255" />
+  <color name="Non Photo blue" hex="ade8f4" r="173" g="232" b="244" />
+  <color name="Pacific cyan" hex="00b4d8" r="0" g="180" b="216" />
+  <color name="Marian blue" hex="023e8a" r="2" g="62" b="138" />
+  <color name="Light cyan" hex="caf0f8" r="202" g="240" b="248" />
+  <color name="Blue Green" hex="0096c7" r="0" g="150" b="199" />
+  <color name="Federal blue" hex="03045e" r="3" g="4" b="94" />
+  <color name="Non Photo blue" hex="90e0ef" r="144" g="224" b="239" />
+  <color name="Honolulu Blue" hex="0077b6" r="0" g="119" b="182" />
+  <color name="Vivid sky blue" hex="48cae4" r="72" g="202" b="228" />
 </palette>
