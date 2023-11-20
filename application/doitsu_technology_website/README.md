@@ -2,10 +2,16 @@
 
 ## 1. Install and Setup
 
-- Of course the rust tool! (Skip this one if you have installed it on your machine): `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`. And append to the PATH the bin `export PATH=$PATH:$HOME/.cargo/bin`
+-   Of course the rust tool! (Skip this one if you have installed it on your machine): `curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh`. And append to the PATH the bin `export PATH=$PATH:$HOME/.cargo/bin`
+-   The first tool need to setup in there project is `bonnie`, you can install it using `cargo install bonnie`
+-   The second tool need to setup in there project is `npm`.
+-   Tailwindcss and vscode, you need to config the including languages to load tailwindcss intellisense in \*.rs files. There is the config:
 
-- The first tool need to setup in there project is `bonnie`, you can install it using `cargo install bonnie`
-- The second tool need to setup in there project is `npm`.
+```json
+    "tailwindCSS.includeLanguages": {
+        "rust": "html"
+    }
+```
 
 After you have installed all neccessary tools.
 
