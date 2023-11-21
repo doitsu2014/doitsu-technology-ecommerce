@@ -77,6 +77,18 @@ module.exports = withMT({
                     800: "#5f61fa",
                     900: "#afb0fd",
                 },
+                non_photo_blue: {
+                    DEFAULT: "#90e0ef",
+                    100: "#0a3a43",
+                    200: "#137586",
+                    300: "#1dafc9",
+                    400: "#4ccfe6",
+                    500: "#90e0ef",
+                    600: "#a6e7f2",
+                    700: "#bcedf5",
+                    800: "#d2f3f9",
+                    900: "#e9f9fc",
+                },
                 honolulu_blue: {
                     DEFAULT: "#0077b6",
                     100: "#001825",
@@ -100,7 +112,7 @@ module.exports = withMT({
                     700: "#92dfef",
                     800: "#b6eaf4",
                     900: "#dbf4fa",
-                }
+                },
             },
         },
     },

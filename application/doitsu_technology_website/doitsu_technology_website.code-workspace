@@ -8,7 +8,7 @@
     "files.exclude": {
       "**/.git": true,
       "**/.DS_Store": true
-    }
+    },
   },
   "extensions": {
     "recommendations": [
@@ -23,6 +23,7 @@
       "jinxdash.prettier-rust",
       "techtheawesome.rust-yew",
       "dracula-theme.theme-dracula",
+      "anseki.vscode-color",
       "vadimcn.vscode-lldb"
     ]
   }
