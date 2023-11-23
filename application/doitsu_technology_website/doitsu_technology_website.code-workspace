@@ -24,7 +24,8 @@
       "techtheawesome.rust-yew",
       "dracula-theme.theme-dracula",
       "anseki.vscode-color",
-      "vadimcn.vscode-lldb"
+      "vadimcn.vscode-lldb",
+      "tamasfe.even-better-toml"
     ]
   }
 }
