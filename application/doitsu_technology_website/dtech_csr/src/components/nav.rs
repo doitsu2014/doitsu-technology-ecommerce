@@ -3,6 +3,8 @@ use yew_router::Router;
 
 #[function_component]
 pub fn Nav() -> Html {
+
+
     html! {
     <nav class="mx-auto
         block 
@@ -17,27 +19,27 @@ pub fn Nav() -> Html {
         backdrop-saturate-200 
         lg:px-8 
         lg:py-4">
-        <div>
-            <div class="container mx-auto flex items-center justify-between text-black">
+        <div class="container mx-auto flex items-center justify-between text-black">
+            <div class="flex items-center">
+                <img src="Doitsu-Tech-Logo-Square.svg" class="w-12 h-12 rounded-md" />
                 <a
                     href="#"
-                    class="mr-4 block cursor-pointer py-1.5 text-base font-medium leading-relaxed text-inherit antialiased"
-                >
-                    <h1>{"D Tech"}</h1>
+                    class="ml-2 block cursor-pointer py-1.5 text-base font-medium leading-relaxed text-inherit antialiased">
+                    <h1 class="font-bold">{"D Tech"}</h1>
                 </a>
             </div>
+            <ul class="hidden items-center gap-6 lg:flex">
+                <li class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
+                    <a class="flex items-center" href="#">
+                        {"Home"}
+                    </a>
+                </li>
+            </ul>
         </div>
     </nav>
     }
 }
 
-// <ul class="hidden items-center gap-6 lg:flex">
-//     <li class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
-//     <a class="flex items-center" href="#">
-//         {"Home"}
-//     </a>
-//     </li>
-// </ul>
 // <button
 //     class="middle none center hidden rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
 //     type="button"
