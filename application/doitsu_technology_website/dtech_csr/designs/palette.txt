@@ -1,0 +1,39 @@
+/* Coolors Exported Palette - https://coolors.co/ade8f4-00b4d8-023e8a-caf0f8-0096c7-03045e-90e0ef-0077b6-48cae4 */
+
+- Tailwind
+
+{ 'non_photo_blue': { DEFAULT: '#ade8f4', 100: '#0a3f4a', 200: '#147e93', 300: '#1ebddd', 400: '#65d4ea', 500: '#ade8f4', 600: '#beedf6', 700: '#cff1f8', 800: '#dff6fb', 900: '#effafd' }, 'pacific_cyan': { DEFAULT: '#00b4d8', 100: '#00242b', 200: '#004756', 300: '#006b81', 400: '#008fab', 500: '#00b4d8', 600: '#12d8ff', 700: '#4ee1ff', 800: '#89ebff', 900: '#c4f5ff' }, 'marian_blue': { DEFAULT: '#023e8a', 100: '#000c1b', 200: '#011836', 300: '#012451', 400: '#02306d', 500: '#023e8a', 600: '#035cd1', 700: '#2381fc', 800: '#6cabfd', 900: '#b6d5fe' }, 'light_cyan': { DEFAULT: '#caf0f8', 100: '#0a444f', 200: '#15889f', 300: '#2ac4e3', 400: '#79daee', 500: '#caf0f8', 600: '#d4f3f9', 700: '#dff6fb', 800: '#e9f9fc', 900: '#f4fcfe' }, 'blue_green': { DEFAULT: '#0096c7', 100: '#001e28', 200: '#003c50', 300: '#005a77', 400: '#00779f', 500: '#0096c7', 600: '#06c1ff', 700: '#44d0ff', 800: '#83e0ff', 900: '#c1efff' }, 'federal_blue': { DEFAULT: '#03045e', 100: '#010113', 200: '#010226', 300: '#020338', 400: '#02044b', 500: '#03045e', 600: '#0508ae', 700: '#0f12f8', 800: '#5f61fa', 900: '#afb0fd' }, 'non_photo_blue': { DEFAULT: '#90e0ef', 100: '#0a3a43', 200: '#137586', 300: '#1dafc9', 400: '#4ccfe6', 500: '#90e0ef', 600: '#a6e7f2', 700: '#bcedf5', 800: '#d2f3f9', 900: '#e9f9fc' }, 'honolulu_blue': { DEFAULT: '#0077b6', 100: '#001825', 200: '#003049', 300: '#00486e', 400: '#005f93', 500: '#0077b6', 600: '#00a2f9', 700: '#3bbaff', 800: '#7cd1ff', 900: '#bee8ff' }, 'vivid_sky_blue': { DEFAULT: '#48cae4', 100: '#082d34', 200: '#105a69', 300: '#17879d', 400: '#1fb4d1', 500: '#48cae4', 600: '#6dd5e9', 700: '#92dfef', 800: '#b6eaf4', 900: '#dbf4fa' } }
+
+- CSV
+
+ade8f4,00b4d8,023e8a,caf0f8,0096c7,03045e,90e0ef,0077b6,48cae4
+
+- With #
+
+#ade8f4, #00b4d8, #023e8a, #caf0f8, #0096c7, #03045e, #90e0ef, #0077b6, #48cae4
+
+- Array
+
+["ade8f4","00b4d8","023e8a","caf0f8","0096c7","03045e","90e0ef","0077b6","48cae4"]
+
+- Object
+
+{"Non Photo blue":"ade8f4","Pacific cyan":"00b4d8","Marian blue":"023e8a","Light cyan":"caf0f8","Blue Green":"0096c7","Federal blue":"03045e","Non Photo blue 2":"90e0ef","Honolulu Blue":"0077b6","Vivid sky blue":"48cae4"}
+
+- Extended Array
+
+[{"name":"Non Photo blue","hex":"ade8f4","rgb":[173,232,244],"cmyk":[29,5,0,4],"hsb":[190,29,96],"hsl":[190,76,82],"lab":[89,-16,-12]},{"name":"Pacific cyan","hex":"00b4d8","rgb":[0,180,216],"cmyk":[100,17,0,15],"hsb":[190,100,85],"hsl":[190,100,42],"lab":[68,-25,-29]},{"name":"Marian blue","hex":"023e8a","rgb":[2,62,138],"cmyk":[99,55,0,46],"hsb":[214,99,54],"hsl":[214,97,27],"lab":[28,15,-47]},{"name":"Light cyan","hex":"caf0f8","rgb":[202,240,248],"cmyk":[19,3,0,3],"hsb":[190,19,97],"hsl":[190,77,88],"lab":[92,-11,-8]},{"name":"Blue Green","hex":"0096c7","rgb":[0,150,199],"cmyk":[100,25,0,22],"hsb":[195,100,78],"hsl":[195,100,39],"lab":[58,-16,-35]},{"name":"Federal blue","hex":"03045e","rgb":[3,4,94],"cmyk":[97,96,0,63],"hsb":[239,97,37],"hsl":[239,94,19],"lab":[8,36,-50]},{"name":"Non Photo blue","hex":"90e0ef","rgb":[144,224,239],"cmyk":[40,6,0,6],"hsb":[189,40,94],"hsl":[189,75,75],"lab":[85,-21,-15]},{"name":"Honolulu Blue","hex":"0077b6","rgb":[0,119,182],"cmyk":[100,35,0,29],"hsb":[201,100,71],"hsl":[201,100,36],"lab":[48,-4,-41]},{"name":"Vivid sky blue","hex":"48cae4","rgb":[72,202,228],"cmyk":[68,11,0,11],"hsb":[190,68,89],"hsl":[190,74,59],"lab":[76,-27,-23]}]
+
+- XML
+
+<palette>
+  <color name="Non Photo blue" hex="ade8f4" r="173" g="232" b="244" />
+  <color name="Pacific cyan" hex="00b4d8" r="0" g="180" b="216" />
+  <color name="Marian blue" hex="023e8a" r="2" g="62" b="138" />
+  <color name="Light cyan" hex="caf0f8" r="202" g="240" b="248" />
+  <color name="Blue Green" hex="0096c7" r="0" g="150" b="199" />
+  <color name="Federal blue" hex="03045e" r="3" g="4" b="94" />
+  <color name="Non Photo blue" hex="90e0ef" r="144" g="224" b="239" />
+  <color name="Honolulu Blue" hex="0077b6" r="0" g="119" b="182" />
+  <color name="Vivid sky blue" hex="48cae4" r="72" g="202" b="228" />
+</palette>

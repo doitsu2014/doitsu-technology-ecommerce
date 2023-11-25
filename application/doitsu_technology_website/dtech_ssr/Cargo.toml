@@ -1,0 +1,33 @@
+[package]
+name = "dtech_ssr"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "dtech_ssr_hydrate"
+required-features = ["hydration"]
+
+[[bin]]
+name = "dtech_ssr_server"
+required-features = ["ssr"]
+
+[dependencies]
+yew = { version = "0.21.0", features = ["hydration"] }
+log = "0.4.20"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wasm-bindgen-futures = "0.4"
+wasm-logger = "0.2"
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+tokio = { version = "1.33.0", features = ["full"] }
+axum = { version = "0.6.20" }
+tower = { version = "0.4.13", features = ["make"] }
+tower-http = { version = "0.4.4", features = ["fs"] }
+env_logger = "0.10.0"
+clap = { version = "4.4.7", features = ["derive"] }
+hyper = { version = "1.0.0-rc.4", features = ["server", "http1"] }
+
+[features]
+hydration = ["yew/hydration"]
+ssr = ["yew/ssr"]

@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true
+    },
+  },
+  "extensions": {
+    "recommendations": [
+      "donjayamanne.git-extension-pack",
+      "bradlc.vscode-tailwindcss",
+      "austenc.tailwind-docs",
+      "swellaby.rust-pack",
+      "vscodevim.vim",
+      "xadillax.viml",
+      "andenetalexander.vim-cheatsheet",
+      "esbenp.prettier-vscode",
+      "jinxdash.prettier-rust",
+      "techtheawesome.rust-yew",
+      "dracula-theme.theme-dracula",
+      "anseki.vscode-color",
+      "vadimcn.vscode-lldb",
+      "tamasfe.even-better-toml"
+    ]
+  }
+}

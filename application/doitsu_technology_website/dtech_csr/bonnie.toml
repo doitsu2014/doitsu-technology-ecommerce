@@ -1,0 +1,10 @@
+version = "0.3.2"
+
+[scripts]
+build = [
+    "trunk build"
+]
+
+run = [
+    "trunk serve"
+]
