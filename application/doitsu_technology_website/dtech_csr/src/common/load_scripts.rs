@@ -2,7 +2,7 @@ use web_sys::Element;
 
 pub fn initialize_scripts() {
     // load_script_by_src(
-    //     "https://unpkg.com/@material-tailwind/html@latest/scripts/collapse.js".to_string()
+    //     "https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/datepicker.min.js".to_string()
     // );
 
     // load_script_by_src(

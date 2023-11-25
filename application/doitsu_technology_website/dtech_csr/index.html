@@ -10,9 +10,7 @@
         <link data-trunk rel="rust" data-cargo-features="yew/csr" data-bin="dtech_csr" />
         <link data-trunk rel="tailwind-css" href="tailwind.css" />
 
-        <link data-trunk rel="copy-file" href="images/Doitsu-Tech-Logo-Rect.svg" />
-        <link data-trunk rel="copy-file" href="images/Doitsu-Tech-Logo-Square.svg" />
-        <link data-trunk rel="copy-file" href="images/grim-repo.jpg" />
+        <link data-trunk rel="copy-dir" href="images" />
 
         <!-- Material Icons Link -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="icon" />
@@ -28,7 +26,9 @@
 
     <body>
         <div class="container"></div>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script> -->
+        <script data-trunk src="node_modules/flowbite/dist/flowbite.min.js"></script>
+        <script data-trunk src="node_modules/flowbite/dist/datepicker.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/datepicker.min.js"></script> -->
     </body>
 </html>

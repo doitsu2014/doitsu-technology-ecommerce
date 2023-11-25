@@ -16,7 +16,7 @@ pub fn Nav(props: &Props) -> Html {
         }>
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="https://doitsu.tech/" class="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="Doitsu-Tech-Logo-Square.svg" class="h-8" alt="D Tech Logo" />
+                    <img src="images/Doitsu-Tech-Logo-Square.svg" class="h-8" alt="D Tech Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">{"D Tech"}</span>
                 </a>
                 <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
