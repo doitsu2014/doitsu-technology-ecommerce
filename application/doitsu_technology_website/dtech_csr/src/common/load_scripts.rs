@@ -8,14 +8,12 @@ pub fn initialize_scripts() {
     // load_script_by_src(
     //     "https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js".to_string()
     // );
-
-
-    load_script_by_src(
-        "collapse.js".to_string()
-    );
-    load_script_by_src(
-        "ripple.js".to_string()
-    );
+    // load_script_by_src(
+    //     "collapse.js".to_string()
+    // );
+    // load_script_by_src(
+    //     "ripple.js".to_string()
+    // );
 }
 
 pub fn load_script_by_src(src: String) -> Element {

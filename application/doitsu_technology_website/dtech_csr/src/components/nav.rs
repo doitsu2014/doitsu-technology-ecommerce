@@ -1,69 +1,42 @@
-use yew::{function_component, html, Html};
-use yew_router::Router;
+use yew::{ function_component, html, Html, Properties, classes };
 
-#[function_component]
-pub fn Nav() -> Html {
-
-
-    html! {
-    <nav class="mx-auto
-        block 
-        w-full
-        bg-non_photo_blue 
-        bg-opacity-80 
-        py-2 
-        px-4 
-        text-black
-        shadow-md
-        backdrop-blur-2xl 
-        backdrop-saturate-200 
-        lg:px-8 
-        lg:py-4">
-        <div class="container mx-auto flex items-center justify-between text-black">
-            <div class="flex items-center">
-                <img src="Doitsu-Tech-Logo-Square.svg" class="w-12 h-12 rounded-md" />
-                <a
-                    href="#"
-                    class="ml-2 block cursor-pointer py-1.5 text-base font-medium leading-relaxed text-inherit antialiased">
-                    <h1 class="font-bold">{"D Tech"}</h1>
-                </a>
-            </div>
-            <ul class="hidden items-center gap-6 lg:flex">
-                <li class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased">
-                    <a class="flex items-center" href="#">
-                        {"Home"}
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    }
+#[derive(Clone, PartialEq, Properties)]
+pub struct Props {
+    pub is_sticky: bool,
 }
 
-// <button
-//     class="middle none center hidden rounded-lg bg-gradient-to-tr from-pink-600 to-pink-400 py-2 px-4 font-sans text-xs font-bold uppercase text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:inline-block"
-//     type="button"
-//     data-ripple-light="true"
-// >
-//     <span>{"Buy Now"}</span>
-// </button>
-// <button
-//     class="middle none relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] rounded-lg text-center font-sans text-xs font-medium uppercase text-blue-gray-500 transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
-//     data-collapse-target="navbar"
-// >
-//     <span class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 transform">
-//     <svg
-//         xmlns="http://www.w3.org/2000/svg"
-//         class="h-6 w-6"
-//         fill="none"
-//         stroke="currentColor"
-//         strokeWidth="2"
-//     >
-//         <path
-//         strokeLinecap="round"
-//         strokeLinejoin="round"
-//         d="M4 6h16M4 12h16M4 18h16"
-//         ></path>
-//     </svg>
-//     </span>
-// </button>
+#[function_component]
+pub fn Nav(props: &Props) -> Html {
+    html! {
+        <nav class={
+            classes!(
+                "bg-white", "dark:bg-gray-900", "w-full", "z-20", "top-0", "start-0", "border-b", "border-gray-200", "dark:border-gray-600",
+                if props.is_sticky { "sticky top-0" } else { "" }
+            )
+        }>
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="https://doitsu.tech/" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="Doitsu-Tech-Logo-Square.svg" class="h-8" alt="D Tech Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">{"D Tech"}</span>
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false"> <span class="sr-only">{"Open main menu"}</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">{"Home"}</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{"Blogs"}</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    }
+}

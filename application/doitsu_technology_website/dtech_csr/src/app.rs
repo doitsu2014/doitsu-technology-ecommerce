@@ -23,13 +23,15 @@ pub enum Route {
 
 #[function_component]
 pub fn App() -> Html {
-    use_effect(move || { initialize_scripts() });
+    use_effect(move || { 
+        initialize_scripts() 
+    
+    });
 
     html! {
         <BrowserRouter>
-            <Nav>
+            <Nav is_sticky={true}>
             </Nav>
-
             <main>
                 <Switch<Route> render={switch} />
             </main>

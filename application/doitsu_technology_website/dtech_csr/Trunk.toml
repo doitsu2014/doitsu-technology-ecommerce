@@ -84,8 +84,10 @@ insecure = true
 # typing "echo Hello Trunk!" right at the start of the build process (even before the HTML file
 # is read). By default, the command is spawned directly and no shell is used.
 stage = "pre_build"
-command = "sh"
-command_arguments = ["npm", "install"]
+# command = "sh"
+# command_arguments = ["npm", "install"]
+command = "npm"
+command_arguments = ["install"]
 
 [[hooks]]
 # This hook example shows running a command inside a shell. As a result, features such as variable

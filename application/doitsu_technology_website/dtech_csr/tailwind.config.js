@@ -1,7 +1,11 @@
-const withMT = require("@material-tailwind/html/utils/withMT");
-
-module.exports = withMT({
-    content: ["./src/**/*.rs", "./index.html", "*.html", "*.css"],
+module.exports = {
+    content: [
+        "./src/**/*.rs",
+        "./index.html",
+        "*.html",
+        "*.css",
+        "./node_modules/flowbite/**/*.js",
+    ],
     theme: {
         extend: {
             colors: {
@@ -117,5 +121,7 @@ module.exports = withMT({
         },
     },
     variants: {},
-    plugins: [],
-});
+    plugins: [
+        require('flowbite/plugin')
+    ],
+};

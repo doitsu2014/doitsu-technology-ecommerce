@@ -12,17 +12,18 @@
         "rust": "html"
     }
 ```
-
 After you have installed all neccessary tools.
-
 Please add targeting webassembly platform to your rustc: `rustup target add wasm32-unknown-unknown`
 
 ## 2. Run
 
 Please use bonnie to run build csr first: `bonnie build csr`
-
 Then your application is ready to run working.
 
 ## 3. Dependencies
 
-This application using the Material Theme please refer this link to get more detail: https://www.material-tailwind.com/docs/html/installation
+This application is using the Flowbite to enhance the UI. So, please refer this link to get more detail: https://flowbite.com/docs/components/navbar/#solid-background
+- Flowbite Version: `2.2.0`
+- Tailwindcss Version: `3.3.5`
+
+

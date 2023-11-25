@@ -7,6 +7,9 @@
   "author": "Doitsu Technology",
   "license": "ISC",
   "dependencies": {
-    "@material-tailwind/html": "^2.0.0"
+  },
+  "devDependencies": {
+    "flowbite": "2.2.0",
+    "tailwindcss": "^3.3.5"
   }
 }
