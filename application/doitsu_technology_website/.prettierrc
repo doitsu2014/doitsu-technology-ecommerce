@@ -1,6 +1,6 @@
 {
   "useTabs": false,
-  "tabWidth": 4,
+  "tabWidth": 2,
   "printWidth": 100,
   "endOfLine": "lf",
   "overrides": [
@@ -13,11 +13,7 @@
       "options": { "printWidth": 80 }
     },
     {
-      "files": [
-        "*.json",
-        "**/*.json",
-        "*.code-workspace"
-      ],
+      "files": ["*.json", "**/*.json", "*.code-workspace"],
       "options": {
         "printWidth": 40,
         "tabWidth": 2
