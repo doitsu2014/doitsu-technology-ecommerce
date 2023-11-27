@@ -5,10 +5,16 @@ use yew::{classes, function_component, html, Html, use_effect_with, use_state};
 
 #[function_component]
 pub fn Nav() -> Html {
+    let location = use_location().expect("");
     let is_sticky = use_state(|| true);
     use_effect_with(*is_sticky, |_| {
         log!("Changed");
     });
+    log!(location.path());
+    // use_location(|_| {
+
+
+    // });
 
     html! {
         <nav class={
