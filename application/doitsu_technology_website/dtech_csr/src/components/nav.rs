@@ -1,17 +1,20 @@
-use yew::{classes, function_component, html, Html, Properties};
-
-#[derive(Clone, PartialEq, Properties)]
-pub struct Props {
-    pub is_sticky: bool,
-}
+use gloo::console::log;
+use yew::prelude::*;
+use yew_router::prelude::*;
+use yew::{classes, function_component, html, Html, use_effect_with, use_state};
 
 #[function_component]
-pub fn Nav(props: &Props) -> Html {
+pub fn Nav() -> Html {
+    let is_sticky = use_state(|| true);
+    use_effect_with(*is_sticky, |_| {
+        log!("Changed");
+    });
+
     html! {
         <nav class={
             classes!(
                 "bg-white", "dark:bg-gray-900", "w-full", "z-20", "top-0", "start-0", "border-b", "border-gray-200", "dark:border-gray-600",
-                if props.is_sticky { "sticky top-0" } else { "" }
+                if *is_sticky { "sticky top-0" } else { "" }
             )
         }>
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">

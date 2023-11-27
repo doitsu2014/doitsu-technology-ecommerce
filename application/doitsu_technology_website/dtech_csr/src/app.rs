@@ -30,7 +30,7 @@ pub fn App() -> Html {
 
     html! {
         <BrowserRouter>
-            <Nav is_sticky={true}>
+            <Nav>
             </Nav>
             <main>
                 <Switch<Route> render={switch} />
