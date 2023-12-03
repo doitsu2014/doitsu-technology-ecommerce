@@ -59,7 +59,7 @@ pub fn NavBar() -> Html {
                             <NavLink route={Route::Home} />
                         </li>
                         <li>
-                            <NavLink route={Route::Blogs} />
+                            <NavLink route={Route::Posts} />
                         </li>
                     </ul>
                 </div>

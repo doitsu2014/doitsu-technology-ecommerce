@@ -7,7 +7,7 @@ use yew_router::Router;
 use crate::components::skeletons::image_placeholder_skeleton::ImagePlaceholderSkeleton;
 
 #[function_component]
-pub fn PageBlogs() -> Html {
+pub fn PagePosts() -> Html {
     let items = (1..=1).collect::<Vec<_>>();
     use_effect(|| {
         let window = web_sys::window().expect("window does not exist");

@@ -1,12 +1,10 @@
 version = "0.3.2"
 
 [scripts]
-build.subcommands.csr = [
-    "cd dtech_csr",
-    "bonnie build"
+build = [
+    "trunk build"
 ]
 
-run.subcommands.csr = [
-    "cd dtech_csr",
-    "bonnie run"
+run = [
+    "trunk serve"
 ]

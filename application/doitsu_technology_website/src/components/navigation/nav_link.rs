@@ -18,7 +18,8 @@ pub fn NavLink(props: &NavLinkProps) -> Html {
     let route_display_name = match owned_route {
         Route::Home => "Home",
         Route::NotFound => "Not Found",
-        Route::Blogs => "Blogs",
+        Route::Posts => "Posts",
+        Route::Post { id } => "Post"
     };
     let route_path = owned_route.to_path();
     let is_active = location_path == route_path;
