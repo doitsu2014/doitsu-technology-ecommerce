@@ -1,10 +1,10 @@
 use yew::{ function_component, Html, html };
 use yew::prelude::*;
-use yew_router::history::{ AnyHistory, History, MemoryHistory };
 use yew_router::prelude::*;
 
 use crate::common::initialize_scripts;
-use crate::components::nav::Nav;
+use crate::components::navigation::nav_bar::NavBar;
+use crate::pages::blogs::PageBlogs;
 use crate::pages::home::PageHome;
 use crate::pages::not_found::PageNotFound;
 
@@ -17,8 +17,8 @@ pub enum Route {
     NotFound,
     // #[at("/posts/:id")]
     // Post { id: u32 },
-    // #[at("/posts")]
-    // Posts,
+    #[at("/blogs")]
+    Blogs,
 }
 
 #[function_component]
@@ -30,20 +30,19 @@ pub fn App() -> Html {
 
     html! {
         <BrowserRouter>
-            <Nav>
-            </Nav>
+            <NavBar>
+            </NavBar>
+
             <main>
                 <Switch<Route> render={switch} />
             </main>
 
-            <footer class="footer">
-                <div class="content has-text-centered">
-                    { "Powered by " }
-                    <a href="https://yew.rs">{ "Yew" }</a>
-                    { " using " }
-                    <a href="https://bulma.io">{ "Bulma" }</a>
-                    { " and images from " }
-                    <a href="https://unsplash.com">{ "Unsplash" }</a>
+            <footer class="flex w-full mt-4">
+                <div class="mx-auto text-center">
+                    { "Powered by " } <br/>
+                    <a href="https://yew.rs">{ "Doitsu Technology" }</a> <br/>
+                    { "using " } <br/>
+                    <a href="https://yew.rs">{ "Rust yew" }</a>
                 </div>
             </footer>
         </BrowserRouter>
@@ -52,17 +51,14 @@ pub fn App() -> Html {
 
 fn switch(routes: Route) -> Html {
     match routes {
-        // Route::Post { id } => {
-        //     html! { <Post seed={id} /> }
-        // }
-        // Route::Posts => {
-        //     html! { <PostList /> }
-        // }
         Route::Home => {
             html! { <PageHome /> }
-        }
+        },
         Route::NotFound => {
             html! { <PageNotFound /> }
+        },
+        Route::Blogs => {
+            html! { <PageBlogs /> }
         }
     }
 }

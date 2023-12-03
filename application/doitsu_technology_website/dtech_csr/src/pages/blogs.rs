@@ -1,3 +1,4 @@
+
 use wasm_bindgen::{JsCast, JsValue};
 use web_sys::js_sys::{Array, Reflect};
 use yew::{function_component, html, use_effect, Html};
@@ -6,16 +7,14 @@ use yew_router::Router;
 use crate::components::skeletons::image_placeholder_skeleton::ImagePlaceholderSkeleton;
 
 #[function_component]
-pub fn PageHome() -> Html {
-    let items = (1..=80).collect::<Vec<_>>();
+pub fn PageBlogs() -> Html {
+    let items = (1..=1).collect::<Vec<_>>();
     use_effect(|| {
         let window = web_sys::window().expect("window does not exist");
         let flowbite = window.get("Flowbite").expect("Flowbite.initDatepickers");
         let init_date_pickers =
             Reflect::get(&flowbite, &JsValue::from_str("initDatepickers")).unwrap();
         let arr = Array::new();
-        // let function_1 = function.("initDatepickers").expect("Flowbite.initDatepickers");
-        // web_sys::console::log_1(&initDatepickers);
         Reflect::apply(
             init_date_pickers.unchecked_ref(),
             &JsValue::from_str(""),

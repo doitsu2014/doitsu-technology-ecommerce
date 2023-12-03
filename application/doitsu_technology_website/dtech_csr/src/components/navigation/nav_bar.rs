@@ -1,21 +1,15 @@
 use gloo::console::log;
 use yew::prelude::*;
+use yew::{classes, function_component, html, use_effect_with, use_state, Html};
 use yew_router::prelude::*;
-use yew::{classes, function_component, html, Html, use_effect_with, use_state};
+
+use crate::Route;
+use crate::components::navigation::nav_link::NavLink;
 
 #[function_component]
-pub fn Nav() -> Html {
-    let location = use_location().expect("");
+pub fn NavBar() -> Html {
     let is_sticky = use_state(|| true);
-    use_effect_with(*is_sticky, |_| {
-        log!("Changed");
-    });
-    log!(location.path());
-    // use_location(|_| {
-
-
-    // });
-
+    use_effect_with(*is_sticky, |_| {});
     html! {
         <nav class={
             classes!(
@@ -62,10 +56,10 @@ pub fn Nav() -> Html {
                     </div>
                     <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                            <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">{"Home"}</a>
+                            <NavLink route={Route::Home} />
                         </li>
                         <li>
-                            <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">{"Blogs"}</a>
+                            <NavLink route={Route::Blogs} />
                         </li>
                     </ul>
                 </div>
