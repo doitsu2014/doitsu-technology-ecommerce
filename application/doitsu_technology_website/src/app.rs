@@ -7,9 +7,9 @@ use yew_router::prelude::*;
 
 use crate::common::initialize_scripts;
 use crate::components::navigation::nav_bar::NavBar;
-use crate::pages::posts::PagePosts;
 use crate::pages::home::PageHome;
 use crate::pages::not_found::PageNotFound;
+use crate::pages::posts::PagePosts;
 
 #[derive(Routable, PartialEq, Eq, Clone, Debug)]
 pub enum Route {
@@ -30,8 +30,7 @@ pub fn App() -> Html {
 
     html! {
         <BrowserRouter>
-            <NavBar>
-            </NavBar>
+            <NavBar />
 
             <main>
                 <Switch<Route> render={switch} />
