@@ -1,5 +1,5 @@
 [package]
-name = "dtech_csr"
+name = "dtech_website"
 version = "0.1.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
@@ -17,9 +17,25 @@ instant = { version = "0.1.12", features = ["wasm-bindgen"] }
 once_cell = "1.18.0"
 wasm-bindgen = "0.2.89"
 wasm-logger = "0.2.0"
+futures = { version = "0.3", features = ["std"], default-features = false }
 
 [target.'cfg(target_arch = "wasm32")'.dependencies]
 getrandom = { version = "0.2", features = ["js"] }
+wasm-bindgen-futures = "0.4"
+wasm-logger = "0.2"
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+tokio = { version = "1.33.0", features = ["full"] }
+axum = "0.6"
+tower = { version = "0.4", features = ["make"] }
+tower-http = { version = "0.3", features = ["fs"] }
+env_logger = "0.10"
+clap = { version = "4", features = ["derive"] }
+hyper = { version = "0.14", features = ["server", "http1"] }
+
+[target.'cfg(unix)'.dependencies]
+jemallocator = "0.5"
+
 
 [[bin]]
 name = "dtech_csr"
@@ -28,3 +44,11 @@ required-features = ["yew/csr"]
 [[bin]]
 name = "dtech_hydrate"
 required-features = ["hydration"]
+
+[[bin]]
+name = "dtech_ssr"
+required-features = ["ssr"]
+
+[features]
+ssr = ["yew/ssr"]
+hydration = ["yew/hydration"]
