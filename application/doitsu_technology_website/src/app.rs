@@ -91,7 +91,7 @@ fn switch(routes: Route) -> Html {
         Route::Posts => {
             html! { <PagePosts /> }
         }
-        Route::Post { id: u32 } => {
+        Route::Post { id: _u32 } => {
             todo!()
         }
     }

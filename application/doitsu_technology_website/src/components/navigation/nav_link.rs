@@ -1,4 +1,4 @@
-use gloo::console::log;
+
 use yew::prelude::*;
 use yew::{classes, function_component, html, Html};
 use yew_router::prelude::*;
@@ -19,7 +19,7 @@ pub fn NavLink(props: &NavLinkProps) -> Html {
         Route::Home => "Home",
         Route::NotFound => "Not Found",
         Route::Posts => "Posts",
-        Route::Post { id } => "Post"
+        Route::Post { id: _ } => "Post"
     };
     let route_path = owned_route.to_path();
     let is_active = location_path == route_path;

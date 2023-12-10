@@ -1,7 +1,7 @@
 use wasm_bindgen::{JsCast, JsValue};
 use web_sys::js_sys::{Array, Reflect};
 use yew::{function_component, html, use_effect, Html};
-use yew_router::Router;
+
 
 use crate::components::skeletons::image_placeholder_skeleton::ImagePlaceholderSkeleton;
 
@@ -37,7 +37,7 @@ pub fn PageHome() -> Html {
           </div>
         </div>
         <span class="text-2xl font-semibold text-center w-full">
-            {"Home Page"}
+            {"Home Page 1 2"}
         </span>
         {
             items

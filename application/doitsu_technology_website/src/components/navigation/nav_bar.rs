@@ -1,4 +1,4 @@
-use gloo::console::log;
+
 use yew::prelude::*;
 use yew::{classes, function_component, html, use_effect_with, use_state, Html};
 use yew_router::prelude::*;
